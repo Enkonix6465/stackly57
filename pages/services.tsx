@@ -4,14 +4,16 @@ import { Facebook, Mail, Twitch, Twitter } from "lucide-react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 type Props = {};
 
 const services = (props: Props) => {
+  const { t } = useTranslation();
   const serviceList = [
     {
-      name: "Network Security",
-      desc: "Protect your business from cyber threats with advanced firewall, intrusion detection, and monitoring solutions.",
+      nameKey: "services.list.0.name",
+      descKey: "services.list.0.desc",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -22,14 +24,14 @@ const services = (props: Props) => {
           <path
             fill="#0066d1"
             d="M13 19h1a1 1 0 0 1 1 1h7v2h-7a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1H2v-2h7a1 1 0 0 1 1-1h1v-1.66C8.07 16.13 6 13 6 9.67v-4L12 3l6 2.67v4c0 3.33-2.07 6.46-5 7.67zM12 5L8 6.69V10h4zm0 5v6c1.91-.47 4-2.94 4-5v-1z"
-          ></path>
+          />
         </svg>
       ),
       color: "from-blue-200 to-blue-100 dark:from-blue-900 dark:to-blue-800",
     },
     {
-      name: "Cloud Backup and Recovery",
-      desc: "Ensure your data is safe and recoverable with automated cloud backups and disaster recovery planning.",
+      nameKey: "services.list.1.name",
+      descKey: "services.list.1.desc",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -40,15 +42,15 @@ const services = (props: Props) => {
           <path
             fill="#0066d1"
             d="M24 8.5a9.5 9.5 0 0 0-9.497 9.721a1.25 1.25 0 0 1-1.25 1.279H11.5a6 6 0 0 0 0 12h9.74c-.157.809-.24 1.645-.24 2.5h-9.5a8.5 8.5 0 0 1 0-17h.541C12.55 10.84 17.71 6 24 6s11.45 4.84 11.959 11h.541a8.5 8.5 0 0 1 8.387 9.892a13 13 0 0 0-2.575-2.888A6 6 0 0 0 36.5 19.5h-1.753a1.25 1.25 0 0 1-1.25-1.279q.003-.11.003-.221A9.5 9.5 0 0 0 24 8.5M45 34c0 6.075-4.925 11-11 11s-11-4.925-11-11s4.925-11 11-11s11 4.925 11 11m-10.293-7.707a1 1 0 0 0-1.414 0l-5 5a1 1 0 0 0 1.414 1.414L33 29.414V41a1 1 0 1 0 2 0V29.414l3.293 3.293a1 1 0 0 0 1.414-1.414z"
-          ></path>
+          />
         </svg>
       ),
       color:
         "from-purple-200 to-purple-100 dark:from-purple-900 dark:to-purple-800",
     },
     {
-      name: "IT Infrastructure",
-      desc: "Build a robust IT foundation with scalable servers, networking, and virtualization tailored to your needs.",
+      nameKey: "services.list.2.name",
+      descKey: "services.list.2.desc",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -62,32 +64,32 @@ const services = (props: Props) => {
               fillRule="evenodd"
               d="M.65 8.074v3.62l3.167 1.357l3.167-1.357l3.166 1.357l3.167-1.357v-3.62l-.008-.003l-3.159 1.353l-3.166-1.357l3.166-1.35l.002-3.621l-.002.026L6.983 4.48L3.82 3.123l-.002 3.594l3.167 1.35l-3.167 1.359z"
               clipRule="evenodd"
-            ></path>
+            />
             <path
               fill="#fff"
               d="m6.985 1.738l3.167 1.357l-.002.027l-3.167 1.357l-3.166-1.357l.002-.027zm3.165 4.979l3.158 1.354l-3.158 1.353l-3.166-1.357l-3.167 1.359L.65 8.074l3.167-1.357l3.167 1.35z"
-            ></path>
+            />
             <path
               stroke="#4147d5"
               strokeLinecap="round"
               strokeLinejoin="round"
               d="m.65 8.067l3.167 1.357l3.167-1.357M3.817 3.122l3.166 1.357l3.167-1.357"
               strokeWidth={1}
-            ></path>
+            />
             <path
               stroke="#4147d5"
               strokeLinecap="round"
               strokeLinejoin="round"
               d="m6.983 8.067l3.167 1.357l3.167-1.357M.65 11.694v-3.62l3.167-1.357l3.167 1.357v3.62L3.817 13.05z"
               strokeWidth={1}
-            ></path>
+            />
             <path
               stroke="#4147d5"
               strokeLinecap="round"
               strokeLinejoin="round"
               d="M3.819 6.715v-3.62l3.166-1.357l3.167 1.357v3.62L6.985 8.072zm3.164 4.979v-3.62l3.167-1.357l3.167 1.357v3.62L10.15 13.05zM3.817 9.426v3.625m6.335-3.625v3.625M6.983 4.48v3.624"
               strokeWidth={1}
-            ></path>
+            />
           </g>
         </svg>
       ),
@@ -95,8 +97,8 @@ const services = (props: Props) => {
         "from-orange-200 to-orange-100 dark:from-orange-900 dark:to-orange-800",
     },
     {
-      name: "Endpoint Protection",
-      desc: "Safeguard devices with antivirus, anti-malware, and device management for secure remote work.",
+      nameKey: "services.list.3.name",
+      descKey: "services.list.3.desc",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -108,47 +110,47 @@ const services = (props: Props) => {
             <path
               fill="#2f88ff"
               d="M16 10C16 12.7614 13.7614 15 11 15C8.23858 15 6 12.7614 6 10C6 7.23858 8.23858 5 11 5C13.7614 5 16 7.23858 16 10Z"
-            ></path>
+            />
             <path
               stroke="#000"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={4}
               d="M16 10C16 12.7614 13.7614 15 11 15C8.23858 15 6 12.7614 6 10C6 7.23858 8.23858 5 11 5C13.7614 5 16 7.23858 16 10ZM16 10H27M27 10L23 6M27 10L23 14"
-            ></path>
+            />
             <path
               fill="#2f88ff"
               d="M32 38C32 40.7614 34.2386 43 37 43C39.7614 43 42 40.7614 42 38C42 35.2386 39.7614 33 37 33C34.2386 33 32 35.2386 32 38Z"
-            ></path>
+            />
             <path
               stroke="#000"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={4}
               d="M32 38C32 40.7614 34.2386 43 37 43C39.7614 43 42 40.7614 42 38C42 35.2386 39.7614 33 37 33C34.2386 33 32 35.2386 32 38ZM32 38H21M21 38L25 34M21 38L25 42"
-            ></path>
+            />
             <path
               fill="#2f88ff"
               d="M33 11C33 13.7614 35.2386 16 38 16C40.7614 16 43 13.7614 43 11C43 8.23858 40.7614 6 38 6C35.2386 6 33 8.23858 33 11Z"
-            ></path>
+            />
             <path
               stroke="#000"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={4}
               d="M38 16C35.2386 16 33 13.7614 33 11C33 8.23858 35.2386 6 38 6C40.7614 6 43 8.23858 43 11C43 13.7614 40.7614 16 38 16ZM38 16V27M38 27L42 23M38 27L34 23"
-            ></path>
+            />
             <path
               fill="#2f88ff"
               d="M5 37C5 34.2386 7.23858 32 10 32C12.7614 32 15 34.2386 15 37C15 39.7614 12.7614 42 10 42C7.23858 42 5 39.7614 5 37Z"
-            ></path>
+            />
             <path
               stroke="#000"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={4}
               d="M10 32C7.23858 32 5 34.2386 5 37C5 39.7614 7.23858 42 10 42C12.7614 42 15 39.7614 15 37C15 34.2386 12.7614 32 10 32ZM10 32V21M10 21L14 25M10 21L6 25"
-            ></path>
+            />
           </g>
         </svg>
       ),
@@ -156,8 +158,8 @@ const services = (props: Props) => {
         "from-green-200 to-green-100 dark:from-green-900 dark:to-green-800",
     },
     {
-      name: "Security Awareness Training",
-      desc: "Empower your team with training to recognize and avoid phishing, social engineering, and cyber risks.",
+      nameKey: "services.list.4.name",
+      descKey: "services.list.4.desc",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -169,19 +171,19 @@ const services = (props: Props) => {
             fill="#0066d1"
             d="M12 3.19L5 6.3V12h7v8.93c3.72-1.15 6.47-4.82 7-8.94h-7z"
             opacity={0.3}
-          ></path>
+          />
           <path
             fill="#0066d1"
             d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12c5.16-1.26 9-6.45 9-12V5zm0 19.93V12H5V6.3l7-3.11v8.8h7c-.53 4.12-3.28 7.79-7 8.94"
-          ></path>
+          />
         </svg>
       ),
       color:
         "from-yellow-200 to-yellow-100 dark:from-yellow-900 dark:to-yellow-800",
     },
     {
-      name: "Vulnerability Assessment",
-      desc: "Identify and remediate security gaps with expert vulnerability scanning and risk analysis.",
+      nameKey: "services.list.5.name",
+      descKey: "services.list.5.desc",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -194,7 +196,7 @@ const services = (props: Props) => {
             stroke="#0066d1"
             strokeWidth={2}
             d="M12 0v24zM0 12h24zm17 0c0-2.757-2.243-5-5-5s-5 2.243-5 5s2.243 5 5 5s5-2.243 5-5Zm-5 9c-4.962 0-9-4.037-9-9s4.038-9 9-9s9 4.037 9 9s-4.038 9-9 9Z"
-          ></path>
+          />
         </svg>
       ),
       color: "from-red-200 to-red-100 dark:from-red-900 dark:to-red-800",
@@ -203,14 +205,13 @@ const services = (props: Props) => {
   return (
     <>
       <Head>
-        <title>Our Services</title>
-        <meta name="description" content="Learn more about our services." />
+        <title>{t("services.title")}</title>
+        <meta name="description" content={t("services.metaDescription")} />
       </Head>
       <main className="bg-[#f7fafd] dark:bg-[#101624] text-gray-900 dark:text-white caret-transparent">
         <SiteHeader />
         {/* Hero Section */}
         <section className="relative h-[100vh] flex flex-col justify-center items-center text-center bg-gradient-to-r from-blue-500 to-purple-600 dark:from-blue-900 dark:to-purple-900 overflow-hidden">
-          {/* Background Video */}
           <video
             className="absolute inset-0 w-full h-full object-cover z-0 opacity-40 dark:opacity-30"
             autoPlay
@@ -219,16 +220,13 @@ const services = (props: Props) => {
             playsInline
           >
             <source src="/services-bg-video.mp4" type="video/mp4" />
-            {/* Fallback for browsers that don't support the video tag */}
           </video>
-          {/* Overlay for readability */}
           <div className="relative z-10 w-full h-full flex flex-col items-center justify-center">
             <h1 className="text-5xl font-extrabold mb-4 text-white drop-shadow-lg">
-              Our Services
+              {t("services.hero.title")}
             </h1>
             <p className="text-lg max-w-xl mx-auto mb-6 text-white/80 dark:text-white/70">
-              Discover our full range of IT solutions, cybersecurity expertise,
-              and cloud services designed to empower your business.
+              {t("services.hero.subtitle")}
             </p>
           </div>
         </section>
@@ -237,7 +235,7 @@ const services = (props: Props) => {
         <section className="py-20 px-4 bg-gradient-to-br from-white to-blue-50 dark:from-gray-900 dark:to-blue-950">
           <div className="mx-auto text-center">
             <h2 className="text-4xl font-extrabold mb-8 text-blue-700 dark:text-blue-300">
-              Our Service Offerings
+              {t("services.listTitle")}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
               {serviceList.map((service, idx) => (
@@ -251,18 +249,16 @@ const services = (props: Props) => {
                   <div className="flex flex-col items-start z-10 relative">
                     <span className="mb-4">{service.icon}</span>
                     <h3 className="font-bold text-xl mb-2 text-blue-700 dark:text-blue-300">
-                      {service.name}
+                      {t(service.nameKey)}
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300 mb-3 text-left text-sm">
-                      {service.desc}
+                      {t(service.descKey)}
                     </p>
                     <Link
-                      href={`/${service.name
-                        .replace(/\s+/g, "-")
-                        .toLowerCase()}`}
+                      href={`/${t(service.nameKey).replace(/\s+/g, "-").toLowerCase()}`}
                       className="inline-block mt-2 text-sm text-purple-600 dark:text-purple-300 font-semibold hover:underline"
                     >
-                      Know More &rarr;
+                      {t("services.knowMore")} &rarr;
                     </Link>
                   </div>
                 </div>
@@ -275,14 +271,14 @@ const services = (props: Props) => {
         <section className="py-20 px-4 bg-gradient-to-br from-purple-100 to-blue-50 dark:from-purple-900 dark:to-blue-950">
           <div className="  mx-auto text-center">
             <h2 className="text-4xl font-extrabold mb-10 text-blue-700 dark:text-blue-300 tracking-tight drop-shadow-lg">
-              Our Milestones
+              {t("services.milestonesTitle")}
             </h2>
             <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-8 relative">
               {[
                 {
                   year: "2015",
-                  title: "Founded",
-                  desc: "Started as a small startup with a vision for innovative IT solutions.",
+                  titleKey: "services.milestones.0.title",
+                  descKey: "services.milestones.0.desc",
                   icon: (
                     <svg width="32" height="32" fill="none" viewBox="0 0 24 24">
                       <circle
@@ -299,8 +295,8 @@ const services = (props: Props) => {
                 },
                 {
                   year: "2018",
-                  title: "First Major Award",
-                  desc: "Recognized for excellence in software development and client service.",
+                  titleKey: "services.milestones.1.title",
+                  descKey: "services.milestones.1.desc",
                   icon: (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -344,8 +340,8 @@ const services = (props: Props) => {
                 },
                 {
                   year: "2021",
-                  title: "100+ Projects",
-                  desc: "Delivered over 100 successful projects for clients worldwide.",
+                  titleKey: "services.milestones.2.title",
+                  descKey: "services.milestones.2.desc",
                   icon: (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -366,8 +362,8 @@ const services = (props: Props) => {
                 },
                 {
                   year: "2025",
-                  title: "Global Expansion",
-                  desc: "Expanded our reach to serve clients in 15+ countries.",
+                  titleKey: "services.milestones.3.title",
+                  descKey: "services.milestones.3.desc",
                   icon: (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -410,16 +406,16 @@ const services = (props: Props) => {
                       <span className="text-2xl font-extrabold mr-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-orange-500 dark:from-blue-300 dark:via-purple-300 dark:to-orange-300">
                         {milestone.year}
                       </span>
-                      {milestone.title}
+                      {t(milestone.titleKey)}
                     </h3>
                     <p className="text-gray-700 dark:text-gray-300 text-base px-2 mb-2 text-center">
-                      {milestone.desc}
+                      {t(milestone.descKey)}
                     </p>
                   </div>
                   {/* Highlight effect for current milestone */}
                   {idx === arr.length - 1 && (
                     <span className="inline-block mt-2 px-4 py-1 rounded-full bg-gradient-to-r from-green-400 to-blue-400 text-white text-xs font-semibold shadow-md animate-pulse">
-                      Latest Achievement
+                      {t("services.latestAchievement")}
                     </span>
                   )}
                 </div>
@@ -434,24 +430,18 @@ const services = (props: Props) => {
             {/* Left Side: Heading, Description, Button */}
             <div className="flex-1 flex flex-col items-start justify-center mb-10 md:mb-0">
               <h3 className="text-lg text-blue-600 dark:text-blue-300 font-semibold mb-2 underline underline-offset-4">
-                Our Expert Team
+                {t("services.teamTitle")}
               </h3>
               <h2 className="text-4xl md:text-5xl font-extrabold mb-6  dark:text-white leading-tight">
-                Our Dedicated
-                <br />
-                Team Is Committed
-                <br />
-                To Safeguarding
-                <br />
-                Your Digital Future.
+                {t("services.teamSubtitle")}
               </h2>
             </div>
             {/* Right Side: Team Cards */}
             <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-8">
               {[
                 {
-                  name: "Justin Kingdony",
-                  role: "UI/UX Designer",
+                  nameKey: "services.team.0.name",
+                  roleKey: "services.team.0.role",
                   photo:
                     "https://i.pinimg.com/1200x/55/63/31/556331581172c567af13dc5787455d74.jpg",
                   socials: [
@@ -474,8 +464,8 @@ const services = (props: Props) => {
                   ],
                 },
                 {
-                  name: "Michael Johnson",
-                  role: "UI/UX Designer",
+                  nameKey: "services.team.1.name",
+                  roleKey: "services.team.1.role",
                   photo:
                     "https://i.pinimg.com/736x/d9/b0/c4/d9b0c40107706b71b0470c01b3e23114.jpg",
                   socials: [
@@ -506,15 +496,15 @@ const services = (props: Props) => {
                     src={member.photo}
                     width={320}
                     height={320}
-                    alt={member.name + " photo"}
+                    alt={t(member.nameKey) + " photo"}
                     className="w-full h-full object-cover object-center mb-0"
                   />
                   <div className="absolute bottom-0 left-0 w-full px-6 py-6 bg-gradient-to-t from-[#0d1b2a]/90 to-transparent flex flex-col items-center">
                     <h3 className="font-bold text-2xl text-white mb-1 text-center">
-                      {member.name}
+                      {t(member.nameKey)}
                     </h3>
                     <span className="text-base text-blue-300 font-semibold mb-3 text-center">
-                      {member.role}
+                      {t(member.roleKey)}
                     </span>
                     <div className="flex gap-4 justify-center mb-2">
                       {member.socials.map((social, sidx) => (
@@ -540,30 +530,27 @@ const services = (props: Props) => {
         <section className="py-20 px-4 bg-gradient-to-br from-blue-50 to-purple-100 dark:from-blue-950 dark:to-purple-900">
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-4xl font-extrabold mb-10 text-purple-700 dark:text-purple-300 tracking-tight drop-shadow-lg">
-              Client Success Stories
+              {t("services.clientStoriesTitle")}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
-                  name: "Sarah Lee",
-                  company: "TechNova Inc.",
+                  name: t("services.clientStories.0.name"),
+                  company: t("services.clientStories.0.company"),
                   logo: "https://randomuser.me/api/portraits/women/65.jpg",
-                  feedback:
-                    "Enkonix delivered a robust IT infrastructure for us. Their team was responsive, knowledgeable, and truly cared about our business goals.",
+                  feedbackKey: "services.clientStories.0.feedback",
                 },
                 {
-                  name: "Michael Chen",
-                  company: "Cloudify Solutions",
+                  name: t("services.clientStories.1.name"),
+                  company: t("services.clientStories.1.company"),
                   logo: "https://randomuser.me/api/portraits/men/65.jpg",
-                  feedback:
-                    "The security awareness training transformed our team's approach to cyber threats. Highly recommended for any growing company!",
+                  feedbackKey: "services.clientStories.1.feedback",
                 },
                 {
-                  name: "Priya Patel",
-                  company: "SafeNet Corp.",
+                  name: t("services.clientStories.2.name"),
+                  company: t("services.clientStories.2.company"),
                   logo: "https://randomuser.me/api/portraits/women/66.jpg",
-                  feedback:
-                    "Their vulnerability assessment was thorough and actionable. We now feel confident in our security posture thanks to Enkonix.",
+                  feedbackKey: "services.clientStories.2.feedback",
                 },
               ].map((client, idx) => (
                 <div
@@ -587,7 +574,7 @@ const services = (props: Props) => {
                       className="w-14 h-14 mb-4 rounded-full object-contain shadow-lg border-2 border-purple-200 dark:border-purple-700 bg-white dark:bg-gray-800"
                     />
                     <p className="text-gray-800 dark:text-gray-200 text-base mb-4 text-center italic font-medium px-2">
-                      {client.feedback}
+                      {t(client.feedbackKey)}
                     </p>
                   </div>
                   <div className="mt-auto w-full flex flex-col items-center">
@@ -613,18 +600,16 @@ const services = (props: Props) => {
         >
           <div className="max-w-2xl text-center">
             <h2 className="text-4xl font-extrabold mb-6 drop-shadow-lg">
-              Ready to Elevate Your Business?
+              {t("services.ctaTitle")}
             </h2>
             <p className="text-lg md:text-xl mb-8 text-white/90">
-              Let our experts help you secure, optimize, and scale your IT,
-              cybersecurity, and cloud infrastructure. Take the next step toward
-              digital transformation today!
+              {t("services.ctaDesc")}
             </p>
             <Link
               href="/contact-us"
               className="inline-block bg-white text-blue-600 font-bold px-8 py-4 rounded-full shadow-lg hover:bg-blue-100 transition text-xl"
             >
-              Get Your Free Consultation
+              {t("services.ctaButton")}
             </Link>
             <div className="mt-8 flex flex-col md:flex-row items-center justify-center gap-6">
               <div className="flex items-center gap-2">
@@ -637,7 +622,9 @@ const services = (props: Props) => {
                 >
                   <path d="M5 13l4 4L19 7" />
                 </svg>
-                <span className="font-semibold">No obligation</span>
+                <span className="font-semibold">
+                  {t("services.ctaNoObligation")}
+                </span>
               </div>
               <div className="flex items-center gap-2">
                 <svg
@@ -649,7 +636,9 @@ const services = (props: Props) => {
                 >
                   <path d="M5 13l4 4L19 7" />
                 </svg>
-                <span className="font-semibold">Quick response</span>
+                <span className="font-semibold">
+                  {t("services.ctaQuickResponse")}
+                </span>
               </div>
               <div className="flex items-center gap-2">
                 <svg
@@ -661,7 +650,9 @@ const services = (props: Props) => {
                 >
                   <path d="M5 13l4 4L19 7" />
                 </svg>
-                <span className="font-semibold">Expert advice</span>
+                <span className="font-semibold">
+                  {t("services.ctaExpertAdvice")}
+                </span>
               </div>
             </div>
           </div>

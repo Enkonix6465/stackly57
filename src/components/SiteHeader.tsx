@@ -28,9 +28,25 @@ const SiteHeader = () => {
   const [homeOpen, setHomeOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
   const [profileOpen, setProfileOpen] = useState(false);
+  const [currentUser, setCurrentUser] =
+    useState({
+      firstName: "",
+      lastName: "",
+      email: "",
+      loginTime: "",
+      logoutTime: "",
+      registerTime: "",
+      role: "",
+    }) || null;
 
   const router = useRouter();
   const { t } = useTranslation();
+
+  React.useEffect(() => {
+    const user = JSON.parse(localStorage.getItem("Current_User") || "null");
+    setCurrentUser(user);
+  }, []);
+  console.log("Current User:", currentUser);
 
   // Restore language from localStorage on mount and on route change
   React.useEffect(() => {
@@ -85,6 +101,23 @@ const SiteHeader = () => {
   // Responsive mobile menu toggle
   const toggleMenu = () => setMenuOpen((prev) => !prev);
   console.log("Current route:", window.location.pathname);
+
+  function handleLogout(): void {
+    // Clear user session data (e.g., tokens, user info)
+    if (typeof window !== "undefined") {
+      const users = JSON.parse(localStorage.getItem("All_Users") || "[]");
+      const userLogin = JSON.parse(
+        localStorage.getItem("Current_User") || "null",
+      );
+      const user = users.find((u: any) => u.email === userLogin.email);
+      user.logoutTime = new Date().toISOString();
+      // Redirect to login page or homepage
+      localStorage.setItem("All_Users", JSON.stringify(users));
+      window.location.href = "/auth";
+
+      localStorage.removeItem("Current_User");
+    }
+  }
 
   return (
     <header
@@ -241,12 +274,38 @@ const SiteHeader = () => {
                 setLangOpen(false);
               }}
             >
-              <User size={18} /> <ChevronDown size={16} />
+              {currentUser && (
+                <>
+                  {typeof currentUser.firstName === "string" &&
+                  currentUser.firstName.length > 0
+                    ? currentUser.firstName[0]
+                    : "A"}
+                  {typeof currentUser.lastName === "string" &&
+                  currentUser.lastName.length > 0
+                    ? currentUser.lastName[0]
+                    : "D"}
+                </>
+              )}{" "}
+              <ChevronDown size={16} />
             </button>
             {profileOpen && (
               <ul className="absolute right-0 mt-2 w-36 bg-white dark:bg-gray-800 shadow-xl rounded-lg py-2 border border-blue-100 dark:border-gray-700">
+                {currentUser.role === "admin" &&
+                  window.location.pathname != "/admin-dashboard" && (
+                    <li>
+                      <Link
+                        href="/admin-dashboard"
+                        className="flex items-center gap-2 px-4 py-2 hover:bg-blue-50 dark:hover:bg-gray-700 w-full"
+                      >
+                        <User size={16} /> Admin Panel
+                      </Link>
+                    </li>
+                  )}
                 <li>
-                  <button className="flex items-center gap-2 px-4 py-2 hover:bg-blue-50 dark:hover:bg-gray-700 w-full">
+                  <button
+                    className="flex items-center gap-2 px-4 py-2 hover:bg-blue-50 dark:hover:bg-gray-700 w-full"
+                    onClick={() => handleLogout()}
+                  >
                     <LogOut size={16} /> Logout
                   </button>
                 </li>
@@ -286,7 +345,7 @@ const SiteHeader = () => {
                 <ul className="ml-6 mt-1">
                   <li>
                     <Link href="/home1" className="block py-1">
-                      {t("hedder.navbar.Home")}2
+                      {t("hedder.navbar.Home")}1
                     </Link>
                   </li>
                   <li>
@@ -386,12 +445,38 @@ const SiteHeader = () => {
                   className="flex items-center gap-2 px-3 py-2 rounded-lg bg-blue-50 dark:bg-gray-900 hover:bg-blue-200 dark:hover:bg-gray-700 shadow "
                   onClick={() => setProfileOpen((prev) => !prev)}
                 >
-                  <User size={18} /> <ChevronDown size={16} />
+                  {currentUser && (
+                    <>
+                      {typeof currentUser.firstName === "string" &&
+                      currentUser.firstName.length > 0
+                        ? currentUser.firstName[0]
+                        : "A"}
+                      {typeof currentUser.lastName === "string" &&
+                      currentUser.lastName.length > 0
+                        ? currentUser.lastName[0]
+                        : "D"}
+                    </>
+                  )}{" "}
+                  <ChevronDown size={16} />
                 </button>
                 {profileOpen && (
                   <ul className="absolute right-0 mt-2 w-32 bg-white dark:bg-gray-800 shadow-xl rounded-lg py-2 border border-blue-100 dark:border-gray-700 z-10">
+                    {currentUser.role === "admin" &&
+                      window.location.pathname != "/admin-dashboard" && (
+                        <li>
+                          <Link
+                            href="/admin-dashboard"
+                            className="flex items-center gap-2 px-4 py-2 hover:bg-blue-50 dark:hover:bg-gray-700 w-full"
+                          >
+                            <User size={16} /> Admin Panel
+                          </Link>
+                        </li>
+                      )}
                     <li>
-                      <button className="flex items-center gap-2 py-1 w-full rounded hover:bg-blue-100 dark:hover:bg-gray-700  font-semibold text-red-600 dark:text-red-400">
+                      <button
+                        className="flex items-center gap-2 py-1 w-full rounded hover:bg-blue-100 dark:hover:bg-gray-700  font-semibold text-red-600 dark:text-red-400"
+                        onClick={() => handleLogout()}
+                      >
                         <LogOut size={16} /> Logout
                       </button>
                     </li>

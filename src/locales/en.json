@@ -280,5 +280,1201 @@
       "description": "Contact us today to learn how our expert IT services and solutions can drive your business forward.",
       "button": "Contact Us"
     }
+  },
+  "about": {
+    "title": "About Us",
+    "metaDescription": "Learn more about Enkonix, our mission, values, and the team behind our success. Discover how we empower businesses with innovative software solutions and IT services.",
+    "hero": {
+      "title": "About Us",
+      "subtitle": "Empowering businesses with innovative software solutions, expert IT services, and a passion for technology."
+    },
+    "timeline": {
+      "title": "Our Journey",
+      "0": {
+        "title": "2015: Founded",
+        "desc": "Started as a small startup with a vision for innovative IT solutions."
+      },
+      "1": {
+        "title": "2018: First Major Award",
+        "desc": "Recognized for excellence in software development and client service."
+      },
+      "2": {
+        "title": "2021: 100+ Projects",
+        "desc": "Delivered over 100 successful projects for clients worldwide."
+      },
+      "3": {
+        "title": "2025: Global Expansion",
+        "desc": "Expanded our reach to serve clients in 15+ countries."
+      }
+    },
+    "story": {
+      "imageAlt": "Company Story",
+      "cardTitle": "Driven by Innovation",
+      "cardDesc": "Our story is about growth, creativity, and a relentless pursuit of excellence in technology.",
+      "since": "Since 2015"
+    },
+    "mission": {
+      "title": "Our Mission & Values",
+      "steps": {
+        "0": {
+          "title": "Innovation",
+          "desc": "We embrace new technologies and creative solutions to drive progress for our clients."
+        },
+        "1": {
+          "title": "Integrity",
+          "desc": "Honesty, transparency, and ethical practices are at the heart of everything we do."
+        },
+        "2": {
+          "title": "Excellence",
+          "desc": "We strive for excellence in every project, ensuring top-quality results and client satisfaction."
+        }
+      }
+    },
+    "team": {
+      "title": "Meet the Team",
+      "0": {
+        "name": "Ramesh",
+        "role": "Founder & CEO"
+      },
+      "1": {
+        "name": "Priya Sharma",
+        "role": "CTO"
+      },
+      "2": {
+        "name": "Amit Patel",
+        "role": "Lead Developer"
+      },
+      "3": {
+        "name": "Sara Lee",
+        "role": "UI/UX Designer"
+      }
+    },
+    "achievements": {
+      "title": "Our Achievements",
+      "0": {
+        "title": "100+ Projects",
+        "desc": "Successfully delivered over 100 projects across industries."
+      },
+      "1": {
+        "title": "Award Winning",
+        "desc": "Recognized for innovation and excellence in software."
+      },
+      "2": {
+        "title": "Global Clients",
+        "desc": "Trusted by clients in 15+ countries worldwide."
+      }
+    },
+    "cta": {
+      "title": "Ready to Work With Us?",
+      "desc": "Contact our team to discuss your project, get a free consultation, or learn more about our services.",
+      "button": "Contact Us"
+    }
+  },
+  "blog": {
+    "title": "Blog | Enkonix Theme",
+    "metaDescription": "Latest insights, tips, and stories from Enkonix.",
+    "hero": {
+      "title": "Welcome to Our Blog",
+      "subtitle": "Explore the latest insights, tips, and stories in IT, cybersecurity, and digital transformation."
+    },
+    "featured": {
+      "title": "Featured Articles",
+      "readMore": "Read More →",
+      "articles": {
+        "0": {
+          "title": "5 Ways to Secure Your Business Network",
+          "desc": "Practical strategies to protect your company from cyber threats."
+        },
+        "1": {
+          "title": "Cloud Backup: Why It Matters",
+          "desc": "Discover the benefits of cloud backup and disaster recovery."
+        },
+        "2": {
+          "title": "Building a Culture of Security Awareness",
+          "desc": "How to empower your team to recognize and avoid cyber risks."
+        }
+      }
+    },
+    "about": {
+      "title": "About Our Blog",
+      "description": {
+        "0": "Our blog is dedicated to sharing ",
+        "1": "expert advice",
+        "2": "industry news",
+        "3": " and practical tips to help you stay ahead in the fast-evolving world of technology and security."
+      },
+      "tags": {
+        "0": "#Tech",
+        "1": "#Security",
+        "2": "#Tips"
+      }
+    },
+    "categories": {
+      "title": "Categories",
+      "subtitle": "Browse our blog by category and discover tailored insights for every interest.",
+      "items": {
+        "0": "Network Security",
+        "1": "Cloud Solutions",
+        "2": "IT Infrastructure",
+        "3": "Security Awareness",
+        "4": "Vulnerability Assessment",
+        "5": "Digital Transformation"
+      }
+    },
+    "comments": {
+      "title": "Recent Comments",
+      "items": {
+        "0": {
+          "name": "Priya Patel",
+          "comment": "Loved the article on cloud backup! Very informative."
+        },
+        "1": {
+          "name": "Sarah Lee",
+          "comment": "The security tips are practical and easy to implement."
+        },
+        "2": {
+          "name": "Michael Chen",
+          "comment": "Great insights on building a security-aware culture."
+        },
+        "3": {
+          "name": "David Kim",
+          "comment": "Looking forward to more posts on IT infrastructure."
+        }
+      }
+    },
+    "newsletter": {
+      "title": "Stay Updated",
+      "subtitle": "Subscribe to our newsletter for the latest blog updates, tips, and exclusive content.",
+      "placeholder": "Your email address",
+      "button": "Subscribe"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "metaDescription": "Learn more about our services.",
+    "hero": {
+      "title": "Our Services",
+      "subtitle": "Discover our full range of IT solutions, cybersecurity expertise, and cloud services designed to empower your business."
+    },
+    "listTitle": "Our Service Offerings",
+    "list": {
+      "0": {
+        "name": "Network Security",
+        "desc": "Protect your business from cyber threats with advanced firewall, intrusion detection, and monitoring solutions."
+      },
+      "1": {
+        "name": "Cloud Backup and Recovery",
+        "desc": "Ensure your data is safe and recoverable with automated cloud backups and disaster recovery planning."
+      },
+      "2": {
+        "name": "IT Infrastructure",
+        "desc": "Build a robust IT foundation with scalable servers, networking, and virtualization tailored to your needs."
+      },
+      "3": {
+        "name": "Endpoint Protection",
+        "desc": "Safeguard devices with antivirus, anti-malware, and device management for secure remote work."
+      },
+      "4": {
+        "name": "Security Awareness Training",
+        "desc": "Empower your team with training to recognize and avoid phishing, social engineering, and cyber risks."
+      },
+      "5": {
+        "name": "Vulnerability Assessment",
+        "desc": "Identify and remediate security gaps with expert vulnerability scanning and risk analysis."
+      }
+    },
+    "milestones": {
+      "0": {
+        "title": "Founded",
+        "desc": "Started as a small startup with a vision for innovative IT solutions."
+      },
+      "1": {
+        "title": "First Major Award",
+        "desc": "Recognized for excellence in software development and client service."
+      },
+      "2": {
+        "title": "100+ Projects",
+        "desc": "Delivered over 100 successful projects for clients worldwide."
+      },
+      "3": {
+        "title": "Global Expansion",
+        "desc": "Expanded our reach to serve clients in 15+ countries."
+      }
+    },
+    "clientStories": {
+      "0": {
+        "name": "Emily Johnson",
+        "company": "TechNova Inc.",
+        "feedback": "Our IT infrastructure is now robust and scalable. The team delivered seamless migration to the cloud and ongoing support is top-notch!"
+      },
+      "1": {
+        "name": "Michael Brown",
+        "company": "Cloudify Solutions",
+        "feedback": "We saved 30% on IT costs and improved uptime after switching to their managed cloud services. Highly recommended for any growing company!"
+      },
+      "2": {
+        "name": "Priya Patel",
+        "company": "SafeNet Corp.",
+        "feedback": "Their cybersecurity experts helped us achieve compliance and peace of mind. Threats are detected and resolved before they impact our business."
+      }
+    },
+    "team": {
+      "0": {
+        "name": "Justin Kingdony",
+        "role": "UI/UX Designer"
+      },
+      "1": {
+        "name": "Michael Johnson",
+        "role": "UI/UX Designer"
+      }
+    },
+    "knowMore": "Know More",
+    "milestonesTitle": "Our Milestones",
+    "latestAchievement": "Latest Achievement",
+    "teamTitle": "Our Expert Team",
+    "teamSubtitle": "Our Dedicated Team Is Committed To Safeguarding Your Digital Future.",
+    "clientStoriesTitle": "Client Success Stories",
+    "ctaTitle": "Ready to Elevate Your Business?",
+    "ctaDesc": "Let our experts help you secure, optimize, and scale your IT, cybersecurity, and cloud infrastructure. Take the next step toward digital transformation today!",
+    "ctaButton": "Get Your Free Consultation",
+    "ctaNoObligation": "No obligation",
+    "ctaQuickResponse": "Quick response",
+    "ctaExpertAdvice": "Expert advice"
+  },
+  "networkSecurity": {
+    "title": "Network Security",
+    "metaDescription": "Protect your business with advanced network security solutions, cybersecurity, and compliance.",
+    "hero": {
+      "title": "Network Security",
+      "subtitle": "Safeguard your business with expert IT services,cutting-edge cybersecurity, and reliable cloud solutions."
+    },
+    "why": {
+      "title": "Why Network Security Matters",
+      "subtitle": "In today's digital landscape, robust network security is essential for every business. It protects your data, ensures compliance, and keeps your operations running smoothly.",
+      "dataProtection": "Data Protection",
+      "businessContinuity": "Business Continuity",
+      "complianceTrust": "Compliance & Trust",
+      "threatPrevention": "Threat Prevention",
+      "imageAlt": "Network Security Illustration"
+    },
+    "solutions": {
+      "title": "Our Cybersecurity Solutions",
+      "0": {
+        "alt": "Firewall & Threat Detection",
+        "title": "Firewall & Threat Detection",
+        "items": {
+          "0": "Advanced firewall protection",
+          "1": "Intrusion detection & response",
+          "2": "Real-time threat monitoring"
+        }
+      },
+      "1": {
+        "alt": "Endpoint Security",
+        "title": "Endpoint Security",
+        "items": {
+          "0": "Device management",
+          "1": "Antivirus & anti-malware",
+          "2": "Remote work protection"
+        }
+      },
+      "2": {
+        "alt": "Cloud Security",
+        "title": "Cloud Security",
+        "items": {
+          "0": "Cloud data encryption",
+          "1": "Backup & disaster recovery",
+          "2": "Multi-cloud security"
+        }
+      }
+    },
+    "managed": {
+      "titleIconAlt": "Cloud Services Icon",
+      "title": "Managed IT & Cloud Services",
+      "cards": {
+        "0": {
+          "iconAlt": "IT Strategy Icon",
+          "title": "IT Strategy & Consulting",
+          "items": {
+            "0": "Custom IT roadmaps",
+            "1": "Cloud migration",
+            "2": "Process automation"
+          }
+        },
+        "1": {
+          "iconAlt": "Cloud Services Icon",
+          "title": "Cloud Services",
+          "items": {
+            "0": "Scalable cloud hosting",
+            "1": "Disaster recovery",
+            "2": "Ongoing optimization"
+          }
+        },
+        "2": {
+          "iconAlt": "Managed Support Icon",
+          "title": "Managed Support",
+          "items": {
+            "0": "24/7 monitoring",
+            "1": "Proactive support",
+            "2": "Security updates"
+          }
+        }
+      }
+    },
+    "awareness": {
+      "titleIconAlt": "Security Awareness Icon",
+      "title": "Security Awareness & Compliance",
+      "steps": {
+        "0": {
+          "alt": "Training Icon",
+          "title": "Employee Training",
+          "items": {
+            "0": "Phishing awareness",
+            "1": "Social engineering prevention",
+            "2": "Best practices"
+          }
+        },
+        "1": {
+          "alt": "Compliance Icon",
+          "title": "Compliance Management",
+          "items": {
+            "0": "GDPR, HIPAA, etc.",
+            "1": "Policy enforcement",
+            "2": "Audit readiness"
+          }
+        },
+        "2": {
+          "alt": "Continuous Improvement Icon",
+          "title": "Continuous Improvement",
+          "items": {
+            "0": "Regular assessments",
+            "1": "Incident response",
+            "2": "Security updates"
+          }
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Secure Your Network?",
+      "subtitle": "Contact our cybersecurity experts for a free assessment and discover how we can protect your business.",
+      "button": "Contact Us"
+    }
+  },
+  "cloudBackupAndRecovery": {
+    "title": " Cloud Backup & Recovery | IT Services, Cybersecurity & Cloud",
+    "metaDescription": "Protect your business with reliable cloud backup, disaster recovery, and secure IT solutions.",
+    "hero": {
+      "title": "Cloud Backup & Recovery",
+      "subtitle": "Ensure business continuity with secure cloud backup, rapid disaster recovery, and expert IT support."
+    },
+    "why": {
+      "title": "Why Cloud Backup Matters",
+      "subtitle": "Cloud backup and recovery are vital for protecting your data, minimizing downtime, and ensuring your business can bounce back from any disaster.",
+      "dataProtection": "Data Security",
+      "businessContinuity": "Business Continuity",
+      "complianceTrust": "Compliance & Trust",
+      "threatPrevention": "Rapid Recovery",
+      "imageAlt": "Cloud Backup and Recovery Illustration"
+    },
+    "solutions": {
+      "title": "Our Backup & Recovery Solutions",
+      "0": {
+        "alt": "Automated Backup",
+        "title": "Automated Backup",
+        "items": {
+          "0": "Scheduled & real-time backups",
+          "1": "End-to-end encryption",
+          "2": "Multi-location redundancy"
+        }
+      },
+      "1": {
+        "alt": "Disaster Recovery",
+        "title": "Disaster Recovery",
+        "items": {
+          "0": "Automated failover",
+          "1": "Data replication",
+          "2": "Regular testing"
+        }
+      },
+      "2": {
+        "alt": "Compliance & Monitoring",
+        "title": "Compliance & Monitoring",
+        "items": {
+          "0": "Cloud data encryption",
+          "1": "Backup & disaster recovery",
+          "2": "Multi-cloud security"
+        }
+      }
+    },
+    "managed": {
+      "titleIconAlt": "Cloud Services Icon",
+      "title": "Managed IT & Cloud Services",
+      "cards": {
+        "0": {
+          "iconAlt": "IT Strategy Icon",
+          "title": "IT Strategy & Consulting",
+          "items": {
+            "0": "Custom IT roadmaps for secure growth",
+            "1": "Digital transformation leadership",
+            "2": "Process automation & workflow optimization"
+          }
+        },
+        "1": {
+          "iconAlt": "Cloud Services Icon",
+          "title": "Cloud Services",
+          "items": {
+            "0": "Scalable cloud hosting & infrastructure",
+            "1": "Disaster recovery & backup solutions",
+            "2": "Hybrid & multi-cloud deployments"
+          }
+        },
+        "2": {
+          "iconAlt": "Managed Support Icon",
+          "title": "Managed IT Support",
+          "items": {
+            "0": "24/7 monitoring & helpdesk",
+            "1": "Proactive maintenance & updates",
+            "2": "Rapid issue resolution"
+          }
+        }
+      }
+    },
+    "awareness": {
+      "titleIconAlt": "Backup Awareness & Compliance",
+      "title": "Backup Awareness & Compliance",
+      "steps": {
+        "0": {
+          "alt": "Backup Training & Awareness",
+          "title": "Backup Training & Awareness",
+          "items": {
+            "0": "Workshops & e-learning",
+            "1": "Simulated recovery drills",
+            "2": "Employee engagement"
+          }
+        },
+        "1": {
+          "alt": "Compliance Icon",
+          "title": "Compliance Management",
+          "items": {
+            "0": "GDPR, HIPAA, etc.",
+            "1": "Automated reporting",
+            "2": "Policy & audit support"
+          }
+        },
+        "2": {
+          "alt": "Continuous Improvement Icon",
+          "title": "Resilient Culture",
+          "items": {
+            "0": "Leadership buy-in",
+            "1": "Continuous improvement",
+            "2": "Celebrating successful recoveries"
+          }
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Protect Your Data?",
+      "subtitle": "Contact our cloud backup experts for a free assessment and discover how we can safeguard your business.",
+      "button": "Contact Us"
+    }
+  },
+  "itInfrastructure": {
+    "title": "IT Infrastructure | IT Services, Cybersecurity & Cloud",
+    "metaDescription": "Empower your business with robust IT infrastructure, secure networking, and expert support.",
+    "hero": {
+      "title": "IT Infrastructure",
+      "subtitle": "Build a resilient, scalable, and secure IT foundation for your business success."
+    },
+    "why": {
+      "title": "Why IT Infrastructure Matters",
+      "subtitle": "Modern IT infrastructure is the backbone of business operations, enabling performance, security, and growth in a digital world.",
+      "networking": "Reliable Networking",
+      "cloud": "Scalable Cloud",
+      "compliance": "Compliance & Security",
+      "support": "Expert Support"
+    },
+    "solutions": {
+      "title": "Our IT Infrastructure Solutions",
+      "0": {
+        "title": "Network Design & Implementation",
+        "items": {
+          "0": "Custom network architecture",
+          "1": "Secure LAN/WAN solutions",
+          "2": "Performance optimization"
+        }
+      },
+      "1": {
+        "title": "Cloud Integration",
+        "items": {
+          "0": "Hybrid & multi-cloud deployments",
+          "1": "Migration & onboarding",
+          "2": "Scalable infrastructure"
+        }
+      },
+      "2": {
+        "title": "Security & Compliance",
+        "items": {
+          "0": "GDPR, HIPAA, PCI DSS, ISO 27001",
+          "1": "Automated reporting & monitoring",
+          "2": "Policy & audit support"
+        }
+      }
+    },
+    "managed": {
+      "title": "Managed IT & Cloud Services",
+      "cards": {
+        "0": {
+          "title": "IT Strategy & Consulting",
+          "items": {
+            "0": "Custom IT roadmaps for secure growth",
+            "1": "Digital transformation leadership",
+            "2": "Process automation & workflow optimization"
+          }
+        },
+        "1": {
+          "title": "Cloud Services",
+          "items": {
+            "0": "Scalable cloud hosting & infrastructure",
+            "1": "Disaster recovery & backup solutions",
+            "2": "Hybrid & multi-cloud deployments"
+          }
+        },
+        "2": {
+          "title": "Managed IT Support",
+          "items": {
+            "0": "24/7 monitoring & helpdesk",
+            "1": "Proactive maintenance & updates",
+            "2": "Rapid issue resolution"
+          }
+        }
+      }
+    },
+    "awareness": {
+      "title": "Infrastructure Awareness & Compliance",
+      "steps": {
+        "0": {
+          "title": "Infrastructure Training & Awareness",
+          "items": {
+            "0": "Workshops & e-learning",
+            "1": "Simulated network drills",
+            "2": "Employee engagement"
+          }
+        },
+        "1": {
+          "title": "Compliance Management",
+          "items": {
+            "0": "GDPR, HIPAA, PCI DSS, ISO 27001",
+            "1": "Automated reporting",
+            "2": "Policy & audit support"
+          }
+        },
+        "2": {
+          "title": "Resilient Culture",
+          "items": {
+            "0": "Leadership buy-in",
+            "1": "Continuous improvement",
+            "2": "Celebrating successful projects"
+          }
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Upgrade Your IT Infrastructure?",
+      "subtitle": "Contact our IT infrastructure experts for a free assessment and discover how we can empower your business.",
+      "button": "Contact Us"
+    }
+  },
+  "endpointProtection": {
+    "title": "Endpoint Protection | IT Services, Cybersecurity & Cloud",
+    "metaDescription": "Safeguard your devices with advanced endpoint protection, zero-trust security, and expert IT support.",
+    "hero": {
+      "title": "Endpoint Protection",
+      "subtitle": "Defend every device with multi-layered endpoint security, zero-trust controls, and proactive threat response."
+    },
+    "why": {
+      "title": "Why Endpoint Protection Matters",
+      "subtitle": "Endpoint protection is essential for securing every device, preventing breaches, and maintaining business integrity in a connected world.",
+      "deviceSecurity": "Device Security",
+      "cloudIntegration": "Cloud Integration",
+      "complianceTrust": "Compliance & Trust",
+      "threatPrevention": "Threat Prevention"
+    },
+    "solutions": {
+      "title": "Our Endpoint Protection Solutions",
+      "0": {
+        "title": "Advanced Threat Defense",
+        "items": {
+          "0": "AI-powered malware detection",
+          "1": "Real-time threat intelligence",
+          "2": "Ransomware protection"
+        }
+      },
+      "1": {
+        "title": "Zero-Trust Security",
+        "items": {
+          "0": "Strict identity verification",
+          "1": "Micro-segmentation of devices",
+          "2": "Adaptive access controls"
+        }
+      },
+      "2": {
+        "title": "Automated Compliance & Monitoring",
+        "items": {
+          "0": "Continuous compliance checks",
+          "1": "Automated reporting & alerts",
+          "2": "24/7 device monitoring"
+        }
+      }
+    },
+    "managed": {
+      "title": "Managed IT & Cloud Services",
+      "cards": {
+        "0": {
+          "title": "IT Strategy & Consulting",
+          "items": {
+            "0": "Custom IT roadmaps for secure growth",
+            "1": "Digital transformation leadership",
+            "2": "Process automation & workflow optimization"
+          }
+        },
+        "1": {
+          "title": "Cloud Services",
+          "items": {
+            "0": "Scalable cloud hosting & infrastructure",
+            "1": "Disaster recovery & backup solutions",
+            "2": "Hybrid & multi-cloud deployments"
+          }
+        },
+        "2": {
+          "title": "Managed IT Support",
+          "items": {
+            "0": "24/7 monitoring & helpdesk",
+            "1": "Proactive maintenance & updates",
+            "2": "Rapid issue resolution"
+          }
+        }
+      }
+    },
+    "awareness": {
+      "title": "Endpoint Awareness & Compliance",
+      "steps": {
+        "0": {
+          "title": "Endpoint Training & Awareness",
+          "items": {
+            "0": "Workshops & e-learning",
+            "1": "Simulated threat drills",
+            "2": "Employee engagement"
+          }
+        },
+        "1": {
+          "title": "Compliance Management",
+          "items": {
+            "0": "GDPR, HIPAA, PCI DSS, ISO 27001",
+            "1": "Automated reporting",
+            "2": "Policy & audit support"
+          }
+        },
+        "2": {
+          "title": "Resilient Culture",
+          "items": {
+            "0": "Leadership buy-in",
+            "1": "Continuous improvement",
+            "2": "Celebrating successful threat prevention"
+          }
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Secure Your Endpoints?",
+      "subtitle": "Contact our endpoint protection experts for a free assessment and discover how we can safeguard your devices.",
+      "button": "Contact Us"
+    }
+  },
+  "securityAwarenessTraining": {
+    "title": "Security Awareness Training | IT Services, Cybersecurity & Cloud",
+    "metaDescription": "Empower your team with security awareness training, phishing simulations, and compliance support.",
+    "hero": {
+      "title": "Security Awareness Training",
+      "subtitle": "Build a resilient security culture with engaging training, real-world simulations, and compliance expertise."
+    },
+    "why": {
+      "title": "Why Security Awareness Matters",
+      "subtitle": "Human error is the leading cause of security breaches. Empower your team to recognize threats, respond effectively, and protect your business.",
+      "training": "Engaging Training",
+      "simulations": "Real-World Simulations",
+      "compliance": "Compliance & Trust",
+      "culture": "Security Culture"
+    },
+    "solutions": {
+      "title": "Our Security Awareness Solutions",
+      "0": {
+        "title": "Security Awareness Workshops",
+        "items": {
+          "0": "Live and virtual security workshops",
+          "1": "Interactive e-learning modules",
+          "2": "Practical threat recognition exercises"
+        }
+      },
+      "1": {
+        "title": "Phishing & Social Engineering Simulations",
+        "items": {
+          "0": "Simulated phishing campaigns",
+          "1": "Social engineering scenario training",
+          "2": "Immediate feedback and reporting"
+        }
+      },
+      "2": {
+        "title": "Policy & Compliance Education",
+        "items": {
+          "0": "GDPR, HIPAA, PCI DSS, ISO 27001 essentials",
+          "1": "Security policy awareness",
+          "2": "Continuous compliance monitoring"
+        }
+      }
+    },
+    "managed": {
+      "title": "Managed IT & Cloud Services",
+      "cards": {
+        "0": {
+          "title": "IT Strategy & Consulting",
+          "items": {
+            "0": "Custom IT roadmaps for secure growth",
+            "1": "Digital transformation leadership",
+            "2": "Process automation & workflow optimization"
+          }
+        },
+        "1": {
+          "title": "Cloud Services",
+          "items": {
+            "0": "Scalable cloud hosting & infrastructure",
+            "1": "Disaster recovery & backup solutions",
+            "2": "Hybrid & multi-cloud deployments"
+          }
+        },
+        "2": {
+          "title": "Managed IT Support",
+          "items": {
+            "0": "24/7 monitoring & helpdesk",
+            "1": "Proactive maintenance & updates",
+            "2": "Rapid issue resolution"
+          }
+        }
+      }
+    },
+    "awareness": {
+      "title": "Security Awareness & Compliance",
+      "steps": {
+        "0": {
+          "title": "Security Awareness Training",
+          "items": {
+            "0": "Workshops & e-learning",
+            "1": "Phishing simulations",
+            "2": "Employee engagement"
+          }
+        },
+        "1": {
+          "title": "Compliance Management",
+          "items": {
+            "0": "GDPR, HIPAA, PCI DSS, ISO 27001",
+            "1": "Automated reporting",
+            "2": "Policy & audit support"
+          }
+        },
+        "2": {
+          "title": "Security Culture",
+          "items": {
+            "0": "Leadership buy-in",
+            "1": "Continuous improvement",
+            "2": "Celebrating wins"
+          }
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Empower Your Team?",
+      "subtitle": "Contact our security awareness experts for a free assessment and discover how we can strengthen your business.",
+      "button": "Contact Us"
+    }
+  },
+  "vulnerabilityAssessment": {
+    "title": "Vulnerability Assessment | IT Services, Cybersecurity & Cloud",
+    "metaDescription": "Identify and remediate security gaps with expert vulnerability assessment, risk analysis, and compliance solutions.",
+    "hero": {
+      "title": "Vulnerability Assessment",
+      "subtitle": "Uncover and address security weaknesses with comprehensive vulnerability scans, risk analysis, and actionable remediation."
+    },
+    "why": {
+      "title": "Why Vulnerability Assessment Matters",
+      "subtitle": "Regular vulnerability assessments are essential for identifying risks, protecting sensitive data, and maintaining compliance in a dynamic threat landscape.",
+      "risk": "Risk Identification",
+      "remediation": "Actionable Remediation",
+      "compliance": "Compliance & Trust",
+      "continuous": "Continuous Improvement"
+    },
+    "solutions": {
+      "title": "Our Vulnerability Assessment Solutions",
+      "0": {
+        "title": "Automated Scanning",
+        "items": {
+          "0": "Comprehensive vulnerability scans",
+          "1": "Real-time risk detection",
+          "2": "Automated reporting"
+        }
+      },
+      "1": {
+        "title": "Risk Analysis & Prioritization",
+        "items": {
+          "0": "Detailed risk scoring",
+          "1": "Prioritized remediation",
+          "2": "Executive summary reports"
+        }
+      },
+      "2": {
+        "title": "Compliance & Monitoring",
+        "items": {
+          "0": "GDPR, HIPAA, PCI DSS, ISO 27001",
+          "1": "Continuous compliance checks",
+          "2": "Audit-ready documentation"
+        }
+      }
+    },
+    "managed": {
+      "title": "Managed IT & Cloud Services",
+      "cards": {
+        "0": {
+          "title": "IT Strategy & Consulting",
+          "items": {
+            "0": "Custom IT roadmaps for secure growth",
+            "1": "Digital transformation leadership",
+            "2": "Process automation & workflow optimization"
+          }
+        },
+        "1": {
+          "title": "Cloud Services",
+          "items": {
+            "0": "Scalable cloud hosting & infrastructure",
+            "1": "Disaster recovery & backup solutions",
+            "2": "Hybrid & multi-cloud deployments"
+          }
+        },
+        "2": {
+          "title": "Managed IT Support",
+          "items": {
+            "0": "24/7 monitoring & helpdesk",
+            "1": "Proactive maintenance & updates",
+            "2": "Rapid issue resolution"
+          }
+        }
+      }
+    },
+    "awareness": {
+      "title": "Assessment Awareness & Compliance",
+      "steps": {
+        "0": {
+          "title": "Assessment Training & Awareness",
+          "items": {
+            "0": "Workshops & e-learning",
+            "1": "Simulated vulnerability drills",
+            "2": "Employee engagement"
+          }
+        },
+        "1": {
+          "title": "Compliance Management",
+          "items": {
+            "0": "GDPR, HIPAA, PCI DSS, ISO 27001",
+            "1": "Automated reporting",
+            "2": "Policy & audit support"
+          }
+        },
+        "2": {
+          "title": "Resilient Culture",
+          "items": {
+            "0": "Leadership buy-in",
+            "1": "Continuous improvement",
+            "2": "Celebrating successful risk reduction"
+          }
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Assess Your Security?",
+      "subtitle": "Contact our vulnerability assessment experts for a free assessment and discover how we can strengthen your business.",
+      "button": "Contact Us"
+    }
+  },
+  "secureNetwork": {
+    "hero": {
+      "title": "5 Ways to Secure Your Business Network",
+      "subtitle": "Practical strategies to protect your company from cyber threats and keep your data safe.",
+      "imgAlt": "Network Security"
+    },
+    "intro": {
+      "title": "Introduction",
+      "p1": "In today’s digital world, network security is essential for every business. Cyber threats are constantly evolving, and a single breach can have devastating consequences. This guide covers five proven strategies to help you secure your business network and protect your valuable data.",
+      "p2": "Whether you’re a small business owner or an IT manager at a large enterprise, these steps will help you build a strong security foundation. Remember, network security is not a one-time task—it’s an ongoing process that requires vigilance, education, and adaptation to new threats."
+    },
+    "steps": {
+      "0": {
+        "title": "1. Implement Strong Password Policies",
+        "p": "Passwords are the first line of defense against unauthorized access. Enforce complex password requirements, mandate regular password changes, and prohibit password reuse. Consider using password managers to help employees maintain secure credentials. Weak passwords are one of the most common causes of data breaches.",
+        "list": {
+          "0": "Require a mix of uppercase, lowercase, numbers, and symbols",
+          "1": "Set minimum password length (e.g., 12 characters)",
+          "2": "Enable multi-factor authentication (MFA) wherever possible",
+          "3": "Educate staff about phishing attacks that target password theft",
+          "4": "Example: Use tools like LastPass or 1Password to securely store and share passwords"
+        }
+      },
+      "1": {
+        "title": "2. Use Firewalls and Antivirus Software",
+        "p": "Firewalls act as barriers between your internal network and external threats. Deploy both hardware and software firewalls, and keep them updated. Antivirus software helps detect and remove malware before it can cause harm. Without these tools, your network is exposed to viruses, ransomware, and other malicious attacks.",
+        "list": {
+          "0": "Install firewalls at network entry points and on individual devices",
+          "1": "Schedule regular antivirus scans and updates",
+          "2": "Block suspicious IP addresses and monitor firewall logs",
+          "3": "Example: Use solutions like Cisco ASA, Fortinet, or Bitdefender for enterprise-grade protection",
+          "4": "Tip: Set up alerts for real-time threat detection"
+        }
+      },
+      "2": {
+        "title": "3. Regularly Update and Patch Systems",
+        "p": "Outdated software is a common target for cybercriminals. Ensure all operating systems, applications, and network devices are updated with the latest security patches. Automate updates where possible to reduce human error. Unpatched vulnerabilities are often exploited in attacks like WannaCry and NotPetya.",
+        "list": {
+          "0": "Enable automatic updates for critical systems",
+          "1": "Maintain an inventory of all software and hardware",
+          "2": "Test patches in a controlled environment before deployment",
+          "3": "Subscribe to vendor security bulletins for timely alerts",
+          "4": "Example: Use WSUS or SCCM for centralized patch management"
+        }
+      },
+      "3": {
+        "title": "4. Educate Your Team on Security Awareness",
+        "p": "Human error is a leading cause of security breaches. Provide regular training on recognizing phishing emails, avoiding suspicious downloads, and reporting unusual activity. Foster a culture of security awareness throughout your organization. Employees who know what to look for can stop attacks before they start.",
+        "list": {
+          "0": "Conduct quarterly security workshops and simulations",
+          "1": "Share real-world examples of cyber attacks",
+          "2": "Encourage employees to report anything suspicious",
+          "3": "Example: Use platforms like KnowBe4 or PhishMe for interactive training",
+          "4": "Tip: Create a security newsletter to keep staff informed"
+        }
+      },
+      "4": {
+        "title": "5. Monitor Network Activity",
+        "p": "Continuous monitoring helps you detect threats before they escalate. Use network monitoring tools to track traffic, identify anomalies, and respond quickly to incidents. Set up alerts for unusual login attempts or data transfers. Proactive monitoring can prevent data loss and minimize downtime.",
+        "list": {
+          "0": "Deploy intrusion detection and prevention systems (IDS/IPS)",
+          "1": "Review network logs regularly",
+          "2": "Establish an incident response plan",
+          "3": "Example: Use tools like SolarWinds, Nagios, or Splunk for network visibility",
+          "4": "Tip: Set up automated alerts for critical events"
+        }
+      }
+    },
+    "conclusion": {
+      "title": "Conclusion",
+      "p1": "By following these five steps, you can significantly reduce your business’s risk and build a secure, resilient network. Stay proactive, keep security top of mind, and revisit your policies regularly to adapt to new threats.",
+      "p2": "Remember, cybercriminals are always looking for new ways to exploit vulnerabilities. Make security a priority, invest in the right tools and training, and don’t hesitate to seek expert advice if needed. Your business’s future depends on the strength of your network security."
+    }
+  },
+  "cloudBackup": {
+    "hero": {
+      "title": "Cloud Backup: Why It Matters",
+      "subtitle": "Discover the benefits of cloud backup and disaster recovery for your business.",
+      "imgAlt": "Cloud Backup"
+    },
+    "intro": {
+      "title": "Introduction",
+      "p1": "Data is the lifeblood of modern organizations. Losing access to critical files, customer records, or business applications can halt operations and damage your reputation. Cloud backup offers a reliable, scalable solution to protect your data and ensure business continuity—even in the face of disaster."
+    },
+    "what": {
+      "title": "What Is Cloud Backup?",
+      "p": "Cloud backup is the process of storing copies of your data on remote servers managed by a cloud provider. Unlike traditional backups, cloud solutions are accessible from anywhere, automatically updated, and protected by advanced security measures.",
+      "list": {
+        "0": "Automated backups reduce human error",
+        "1": "Data is encrypted in transit and at rest",
+        "2": "Access files from any device, anywhere"
+      }
+    },
+    "why": {
+      "title": "Why Cloud Backup Matters",
+      "p": "The risks of data loss are everywhere: hardware failure, cyberattacks, accidental deletion, and natural disasters. Cloud backup provides peace of mind by ensuring your data is always recoverable, no matter what happens.",
+      "list": {
+        "0": "Protects against ransomware and malware attacks",
+        "1": "Enables fast disaster recovery and minimal downtime",
+        "2": "Scales with your business as data grows",
+        "3": "Reduces costs compared to on-premises solutions"
+      }
+    },
+    "best": {
+      "title": "Best Practices for Cloud Backup",
+      "p": "To get the most from your cloud backup solution, follow these best practices:",
+      "list": {
+        "0": "Choose a reputable cloud provider with strong security credentials",
+        "1": "Set up automated, scheduled backups for all critical data",
+        "2": "Test your backups regularly to ensure data can be restored",
+        "3": "Encrypt sensitive information before uploading",
+        "4": "Monitor backup logs and alerts for issues"
+      }
+    },
+    "example": {
+      "title": "Real-World Example",
+      "p": "In 2023, a mid-sized retail company suffered a ransomware attack that encrypted all local files. Thanks to their cloud backup solution, they restored operations within hours, avoided paying a ransom, and maintained customer trust."
+    },
+    "conclusion": {
+      "title": "Conclusion",
+      "p": "Cloud backup is no longer optional—it’s a vital part of any business continuity plan. Invest in a robust solution, follow best practices, and regularly review your backup strategy to keep your data safe and your business running smoothly."
+    }
+  },
+  "securityAwareness": {
+    "hero": {
+      "title": "Building a Culture of Security Awareness",
+      "subtitle": "How to empower your team to recognize and avoid cyber risks.",
+      "imgAlt": "Security Awareness"
+    },
+    "intro": {
+      "title": "Introduction",
+      "p1": "Technology alone can’t protect your business from cyber threats—your people play a critical role. Building a culture of security awareness means every employee understands the risks and knows how to respond. This blog explores practical steps to foster a security-minded workplace."
+    },
+    "why": {
+      "title": "Why Security Awareness Matters",
+      "p": "Most cyberattacks target human error, not just technical vulnerabilities. Phishing, social engineering, and accidental data leaks can be prevented if your team is alert and informed. A strong security culture reduces risk and builds trust with customers and partners.",
+      "list": {
+        "0": "Employees are the first line of defense",
+        "1": "Security awareness helps prevent costly breaches",
+        "2": "Promotes compliance with regulations and standards"
+      }
+    },
+    "steps": {
+      "title": "Key Steps to Build Security Awareness",
+      "p": "Creating a culture of security awareness requires ongoing effort and leadership support. Here are essential steps to get started:",
+      "list": {
+        "0": "Provide regular training on cyber threats and safe practices",
+        "1": "Share real-world examples of attacks and how to avoid them",
+        "2": "Encourage open communication about security concerns",
+        "3": "Recognize and reward employees who demonstrate good security habits",
+        "4": "Make security part of onboarding for new hires"
+      }
+    },
+    "tips": {
+      "title": "Practical Tips for Everyday Security",
+      "list": {
+        "0": "Think before clicking links or downloading attachments",
+        "1": "Use strong, unique passwords and enable MFA",
+        "2": "Report suspicious emails or activity immediately",
+        "3": "Lock your computer when away from your desk",
+        "4": "Keep software and devices updated"
+      }
+    },
+    "example": {
+      "title": "Real-World Example",
+      "p": "In 2024, a financial services firm reduced phishing incidents by 80% after launching a monthly security newsletter and interactive training sessions. Employees became more confident in spotting threats and reporting issues, saving the company time and money."
+    },
+    "conclusion": {
+      "title": "Conclusion",
+      "p": "Building a culture of security awareness is an investment in your company’s future. Empower your team, keep security top of mind, and celebrate successes. Together, you can create a safer, more resilient organization."
+    }
+  },
+  "contactUs": {
+    "hero": {
+      "title": "Contact Us",
+      "subtitle": "We'd love to hear from you! Reach out for support, partnership, or just to say hello.",
+      "videoFallback": "Your browser does not support the video tag."
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "namePlaceholder": "Your Name",
+      "emailPlaceholder": "Your Email",
+      "messagePlaceholder": "Your Message",
+      "button": "Send Message",
+      "success": "Thank you for your message! We'll get back to you soon.",
+      "error": "Oops! Something went wrong. Please try again later."
+    },
+    "info": {
+      "address": {
+        "title": "Our Office",
+        "line1": "1234 Enkonix Ave, Suite 100",
+        "line2": "Tech City, 56789"
+      },
+      "email": {
+        "title": "Email Us"
+      },
+      "phone": {
+        "title": "Call Us",
+        "hours": "Mon-Fri, 9am-6pm"
+      }
+    },
+    "teamTitle": "Our Team Members",
+    "team": {
+      "0": { "name": "Priya Patel", "role": "CEO" },
+      "1": { "name": "Sarah Lee", "role": "CTO" },
+      "2": { "name": "Michael Chen", "role": "Lead Developer" },
+      "3": { "name": "David Kim", "role": "Product Manager" },
+      "4": { "name": "Aisha Ahmed", "role": "UX Designer" },
+      "5": { "name": "Carlos Gomez", "role": "Marketing Head" }
+    },
+    "faqTitle": "Frequently Asked Questions",
+    "faqs": {
+      "0": {
+        "question": "How do I get in touch with your team?",
+        "answer": {
+          "0": "Simply fill out the contact form above or email us at ",
+          "1": ". We aim to respond within one business day."
+        }
+      },
+      "1": {
+        "question": "Where can I find your office?",
+        "answer": {
+          "0": "Visit us at ",
+          "1": ". Our location is also shown on the map below."
+        }
+      },
+      "2": {
+        "question": "What are your working hours?",
+        "answer": {
+          "0": "Our team is available ",
+          "1": ". Feel free to reach out during these hours for a prompt reply."
+        }
+      },
+      "3": {
+        "question": "Can I schedule a visit?",
+        "answer": "Absolutely! Please contact us in advance to arrange a meeting so we can best assist you during your visit."
+      }
+    }
+  },
+  "adminDashboard": {
+    "title": "Admin Dashboard",
+    "tabs": {
+      "stats": "Statistics",
+      "graph": "User Activity",
+      "users": "All Users"
+    },
+    "stats": {
+      "title": "IT Services / Cybersecurity / Cloud Services Stats",
+      "totalITServices": "Total IT Services",
+      "cybersecurityProjects": "Cybersecurity Projects",
+      "cloudDeployments": "Cloud Deployments",
+      "activeUsers": "Active Users",
+      "incidentsResolved": "Incidents Resolved"
+    },
+    "graph": {
+      "loginsTitle": "Daily User Logins",
+      "loginsBar": "Logins",
+      "pieTitle": "Users Pie Graph",
+      "totalUsers": "Total Users:",
+      "loginUsers": "Login Users:"
+    },
+    "pie": {
+      "loginUsers": "Login Users",
+      "otherUsers": "Other Users"
+    },
+    "users": {
+      "title": "All Users",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "role": "Role",
+      "registered": "Registered",
+      "lastLogin": "Last Login",
+      "noUsers": "No users found."
+    }
   }
 }

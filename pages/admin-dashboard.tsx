@@ -1,5 +1,6 @@
 import SiteHeader from "@/components/SiteHeader";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Bar,
   BarChart,
@@ -15,11 +16,11 @@ import {
 } from "recharts";
 
 const staticStats = [
-  { label: "Total IT Services", value: 42 },
-  { label: "Cybersecurity Projects", value: 18 },
-  { label: "Cloud Deployments", value: 27 },
-  { label: "Active Users", value: 134 },
-  { label: "Incidents Resolved", value: 56 },
+  { key: "totalITServices", value: 42 },
+  { key: "cybersecurityProjects", value: 18 },
+  { key: "cloudDeployments", value: 27 },
+  { key: "activeUsers", value: 134 },
+  { key: "incidentsResolved", value: 56 },
 ];
 
 const getAllUsers = () => {
@@ -47,6 +48,7 @@ const getLoginData = () => {
 };
 
 const AdminDashboard = () => {
+  const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState("stats");
   const users = typeof window !== "undefined" ? getAllUsers() : [];
   const loginData = getLoginData();
@@ -54,8 +56,11 @@ const AdminDashboard = () => {
   const totalUsers = users.length;
   const loginUsers = users.filter((u: any) => !!u.loginTime).length;
   const pieData = [
-    { name: "Login Users", value: loginUsers },
-    { name: "Other Users", value: totalUsers - loginUsers },
+    { name: t("adminDashboard.pie.loginUsers"), value: loginUsers },
+    {
+      name: t("adminDashboard.pie.otherUsers"),
+      value: totalUsers - loginUsers,
+    },
   ];
 
   return (
@@ -66,14 +71,14 @@ const AdminDashboard = () => {
 
         <main className="flex flex-col items-center w-full px-4 md:px-8 lg:px-16 py-6 md:py-10">
           <h1 className="text-3xl md:text-5xl font-extrabold mb-4 md:mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-purple-500 to-pink-500 dark:from-blue-300 dark:via-purple-300 dark:to-pink-300 drop-shadow-lg tracking-tight">
-            Admin Dashboard
+            {t("adminDashboard.title")}
           </h1>
 
           <div className="flex gap-4 md:gap-6 mb-6">
             {[
               {
                 key: "stats",
-                label: "Static Data",
+                label: t("adminDashboard.tabs.stats"),
                 icon: "📊",
                 activeClass: "bg-blue-600 text-white scale-105",
                 inactiveClass:
@@ -83,7 +88,7 @@ const AdminDashboard = () => {
               },
               {
                 key: "graph",
-                label: "User Activity",
+                label: t("adminDashboard.tabs.graph"),
                 icon: "📈",
                 activeClass: "bg-purple-600 text-white scale-105",
                 inactiveClass:
@@ -93,7 +98,7 @@ const AdminDashboard = () => {
               },
               {
                 key: "users",
-                label: "All Users",
+                label: t("adminDashboard.tabs.users"),
                 icon: "👥",
                 activeClass: "bg-green-600 text-white scale-105",
                 inactiveClass:
@@ -120,19 +125,19 @@ const AdminDashboard = () => {
           {activeTab === "stats" && (
             <section className="w-full">
               <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-8 text-purple-700 dark:text-purple-300 tracking-wide drop-shadow-lg">
-                IT Services / Cybersecurity / Cloud Services Stats
+                {t("adminDashboard.stats.title")}
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10">
                 {staticStats.map((stat) => (
                   <div
-                    key={stat.label}
+                    key={stat.key}
                     className="bg-white/60 dark:bg-gray-900/60 rounded-2xl md:rounded-3xl shadow-2xl p-6 md:p-10 flex flex-col items-center border border-blue-100 dark:border-blue-900 backdrop-blur-lg hover:scale-105 transition-transform duration-200"
                   >
                     <span className="text-2xl md:text-4xl font-extrabold text-blue-600 dark:text-blue-400 mb-2 drop-shadow-lg">
                       {stat.value}
                     </span>
                     <span className="text-base md:text-xl font-semibold text-gray-700 dark:text-gray-300 tracking-wide">
-                      {stat.label}
+                      {t(`adminDashboard.stats.${stat.key}`)}
                     </span>
                   </div>
                 ))}
@@ -144,7 +149,7 @@ const AdminDashboard = () => {
             <section className="flex gap-6 md:gap-10 w-full">
               <div className="bg-white/60 dark:bg-gray-900/60 rounded-2xl md:rounded-3xl shadow-2xl p-6 md:p-10 border border-purple-100 dark:border-purple-900 backdrop-blur-lg flex flex-col items-center w-full">
                 <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-8 text-purple-700 dark:text-purple-300 tracking-wide drop-shadow-lg">
-                  Daily User Logins
+                  {t("adminDashboard.graph.loginsTitle")}
                 </h2>
                 <ResponsiveContainer width="100%" height={250} minHeight={180}>
                   <BarChart
@@ -156,13 +161,17 @@ const AdminDashboard = () => {
                     <YAxis fontSize={10} />
                     <Tooltip />
                     <Legend />
-                    <Bar dataKey="logins" fill="#6366f1" name="Logins" />
+                    <Bar
+                      dataKey="logins"
+                      fill="#6366f1"
+                      name={t("adminDashboard.graph.loginsBar")}
+                    />
                   </BarChart>
                 </ResponsiveContainer>
               </div>
               <div className="bg-white/60 dark:bg-gray-900/60 rounded-2xl md:rounded-3xl shadow-2xl p-6 md:p-10 border border-pink-100 dark:border-pink-900 backdrop-blur-lg flex flex-col items-center w-full">
                 <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-8 text-pink-700 dark:text-pink-300 tracking-wide drop-shadow-lg">
-                  Users Pie Graph
+                  {t("adminDashboard.graph.pieTitle")}
                 </h2>
                 <ResponsiveContainer width="100%" height={250} minHeight={180}>
                   <PieChart>
@@ -187,11 +196,13 @@ const AdminDashboard = () => {
                   </PieChart>
                 </ResponsiveContainer>
                 <div className="mt-4 md:mt-8 text-base md:text-xl font-semibold text-gray-700 dark:text-gray-300">
-                  <span className="font-bold text-blue-700">Total Users:</span>{" "}
+                  <span className="font-bold text-blue-700">
+                    {t("adminDashboard.graph.totalUsers")}
+                  </span>{" "}
                   {totalUsers}
                   <br />
                   <span className="font-bold text-purple-700">
-                    Login Users:
+                    {t("adminDashboard.graph.loginUsers")}
                   </span>{" "}
                   {loginUsers}
                 </div>
@@ -202,29 +213,29 @@ const AdminDashboard = () => {
           {activeTab === "users" && (
             <section className="w-full">
               <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-8 text-green-700 dark:text-green-400 tracking-wide drop-shadow-lg">
-                All Users
+                {t("adminDashboard.users.title")}
               </h2>
               <div className="overflow-x-auto bg-white/60 dark:bg-gray-900/60 rounded-2xl md:rounded-3xl shadow-2xl p-4 md:p-10 border border-green-100 dark:border-green-900 backdrop-blur-lg">
                 <table className="min-w-full text-left rounded-xl md:rounded-2xl overflow-hidden text-xs md:text-base">
                   <thead>
                     <tr className="border-b border-blue-200 dark:border-blue-800 bg-gradient-to-r from-green-100 via-blue-100 to-purple-100 dark:from-green-900 dark:via-blue-900 dark:to-purple-900">
                       <th className="py-2 md:py-4 px-2 md:px-6 font-bold text-xs md:text-lg">
-                        First Name
+                        {t("adminDashboard.users.firstName")}
                       </th>
                       <th className="py-2 md:py-4 px-2 md:px-6 font-bold text-xs md:text-lg">
-                        Last Name
+                        {t("adminDashboard.users.lastName")}
                       </th>
                       <th className="py-2 md:py-4 px-2 md:px-6 font-bold text-xs md:text-lg">
-                        Email
+                        {t("adminDashboard.users.email")}
                       </th>
                       <th className="py-2 md:py-4 px-2 md:px-6 font-bold text-xs md:text-lg">
-                        Role
+                        {t("adminDashboard.users.role")}
                       </th>
                       <th className="py-2 md:py-4 px-2 md:px-6 font-bold text-xs md:text-lg">
-                        Registered
+                        {t("adminDashboard.users.registered")}
                       </th>
                       <th className="py-2 md:py-4 px-2 md:px-6 font-bold text-xs md:text-lg">
-                        Last Login
+                        {t("adminDashboard.users.lastLogin")}
                       </th>
                     </tr>
                   </thead>
@@ -235,7 +246,7 @@ const AdminDashboard = () => {
                           colSpan={6}
                           className="py-4 md:py-6 text-center text-gray-500 text-xs md:text-xl"
                         >
-                          No users found.
+                          {t("adminDashboard.users.noUsers")}
                         </td>
                       </tr>
                     ) : (

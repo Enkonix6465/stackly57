@@ -72,7 +72,7 @@ const Home1 = (props: Props) => {
             muted
             playsInline
           >
-            <source src="/your-background-video.mp4" type="video/mp4" />
+            <source src="/home1-background-video.mp4" type="video/mp4" />
           </video>
           <div className="relative z-10 flex flex-col items-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg text-center">
@@ -207,7 +207,7 @@ const Home1 = (props: Props) => {
           <h2 className="text-4xl font-extrabold mb-10 text-center text-blue-600 dark:text-blue-400 tracking-tight">
             {t("home1.servicesSection.title")}
           </h2>
-          <div className="grid md:grid-cols-3 gap-10 text-nowrap">
+          <div className="grid md:grid-cols-3 gap-10  ">
             {/* IT Consulting */}
             <div className="relative bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-950 dark:to-purple-950 p-8 rounded-2xl shadow-lg hover:scale-105 transition group overflow-hidden">
               <div className="absolute top-4 right-4 opacity-20 group-hover:opacity-40 transition">
@@ -395,49 +395,6 @@ const Home1 = (props: Props) => {
             <div className="flex overflow-x-auto no-scrollbar space-x-8 px-2 md:px-10 py-4 max-w-6xl mx-auto">
               {/* Partner Card 1 */}
               <div className="min-w-[220px] flex-shrink-0 bg-white/70 dark:bg-gray-900/70 backdrop-blur-lg border border-purple-200 dark:border-purple-800 rounded-2xl shadow-lg hover:scale-105 transition-all duration-300 flex flex-col items-center py-8 px-6 group">
-                <img
-                  src="/logo-stackly.png"
-                  alt="Stackly"
-                  className="w-16 h-16 mb-3"
-                />
-                <span className="text-lg font-bold text-blue-700 dark:text-blue-300 mb-1 tracking-wide">
-                  {t("home1.partnersSection.cards.0.name")}
-                </span>
-                <span className="text-xs text-gray-500 dark:text-gray-400">
-                  {t("home1.partnersSection.cards.0.category")}
-                </span>
-              </div>
-              {/* Partner Card 2 */}
-              <div className="min-w-[220px] flex-shrink-0 bg-white/70 dark:bg-gray-900/70 backdrop-blur-lg border border-purple-200 dark:border-purple-800 rounded-2xl shadow-lg hover:scale-105 transition-all duration-300 flex flex-col items-center py-8 px-6 group">
-                <img
-                  src="/next.svg"
-                  alt="Next.js"
-                  className="w-16 h-16 mb-3 "
-                />
-                <span className="text-lg font-bold text-purple-700 dark:text-purple-300 mb-1 tracking-wide">
-                  {t("home1.partnersSection.cards.1.name")}
-                </span>
-                <span className="text-xs text-gray-500 dark:text-gray-400">
-                  {t("home1.partnersSection.cards.1.category")}
-                </span>
-              </div>
-              {/* Partner Card 3 */}
-              <div className="min-w-[220px] flex-shrink-0 bg-white/70 dark:bg-gray-900/70 backdrop-blur-lg border border-blue-200 dark:border-blue-800 rounded-2xl shadow-lg hover:scale-105 transition-all duration-300 flex flex-col items-center py-8 px-6 group">
-                {/* Vercel */}
-                <img
-                  src="/vercel.svg"
-                  alt="Vercel"
-                  className="w-16 h-16 mb-3"
-                />
-                <span className="text-lg font-bold text-blue-700 dark:text-blue-300 mb-1 tracking-wide">
-                  {t("home1.partnersSection.cards.2.name")}
-                </span>
-                <span className="text-xs text-gray-500 dark:text-gray-400">
-                  {t("home1.partnersSection.cards.2.category")}
-                </span>
-              </div>
-              {/* Partner Card 4 */}
-              <div className="min-w-[220px] flex-shrink-0 bg-white/70 dark:bg-gray-900/70 backdrop-blur-lg border border-purple-200 dark:border-purple-800 rounded-2xl shadow-lg hover:scale-105 transition-all duration-300 flex flex-col items-center py-8 px-6 group">
                 {/* Azure */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -507,11 +464,76 @@ const Home1 = (props: Props) => {
                     transform="translate(2.435 44.576)scale(.29986)"
                   ></path>
                 </svg>
-                <span className="text-lg font-bold text-purple-700 dark:text-purple-300 mb-1 tracking-wide">
+                <span className="text-lg font-bold text-blue-700 dark:text-blue-300 mb-1 tracking-wide">
                   {t("home1.partnersSection.cards.0.name")}
                 </span>
                 <span className="text-xs text-gray-500 dark:text-gray-400">
                   {t("home1.partnersSection.cards.0.category")}
+                </span>
+              </div>
+              {/* Partner Card 2 */}
+              <div className="min-w-[220px] flex-shrink-0 bg-white/70 dark:bg-gray-900/70 backdrop-blur-lg border border-purple-200 dark:border-purple-800 rounded-2xl shadow-lg hover:scale-105 transition-all duration-300 flex flex-col items-center py-8 px-6 group">
+                <Image src="/next.svg" alt="Next.js" width={80} height={80} />
+                <span className="text-lg font-bold text-purple-700 dark:text-purple-300 mb-1 tracking-wide">
+                  {t("home1.partnersSection.cards.1.name")}
+                </span>
+                <span className="text-xs text-gray-500 dark:text-gray-400">
+                  {t("home1.partnersSection.cards.1.category")}
+                </span>
+              </div>
+              {/* Partner Card 3 */}
+              <div className="min-w-[220px] flex-shrink-0 bg-white/70 dark:bg-gray-900/70 backdrop-blur-lg border border-blue-200 dark:border-blue-800 rounded-2xl shadow-lg hover:scale-105 transition-all duration-300 flex flex-col items-center py-8 px-6 group">
+                {/* Vercel */}
+                <Image src="/vercel.svg" alt="Vercel" width={80} height={80} />
+                <span className="text-lg font-bold text-blue-700 dark:text-blue-300 mb-1 tracking-wide">
+                  {t("home1.partnersSection.cards.2.name")}
+                </span>
+                <span className="text-xs text-gray-500 dark:text-gray-400">
+                  {t("home1.partnersSection.cards.2.category")}
+                </span>
+              </div>
+              {/* Partner Card 4 */}
+              <div className="min-w-[220px] flex-shrink-0 bg-white/70 dark:bg-gray-900/70 backdrop-blur-lg border border-purple-200 dark:border-purple-800 rounded-2xl shadow-lg hover:scale-105 transition-all duration-300 flex flex-col items-center py-8 px-6 group">
+                {/* Tailwind */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={80}
+                  height={80}
+                  viewBox="0 0 256 256"
+                >
+                  <g fill="none">
+                    <rect
+                      width={256}
+                      height={256}
+                      fill="#242938"
+                      rx={60}
+                    ></rect>
+                    <path
+                      fill="url(#SVGYCM7xdyn)"
+                      fillRule="evenodd"
+                      d="M83 110q9-36 45-36c36 0 40.5 27 58.5 31.5q18 4.502 31.5-13.5q-9 36-45 36c-36 0-40.5-27-58.5-31.5Q96.5 92 83 110m-45 54q9-36 45-36c36 0 40.5 27 58.5 31.5q18 4.502 31.5-13.5q-9 36-45 36c-36 0-40.5-27-58.5-31.5q-18-4.502-31.5 13.5"
+                      clipRule="evenodd"
+                    ></path>
+                    <defs>
+                      <linearGradient
+                        id="SVGYCM7xdyn"
+                        x1={86.5}
+                        x2={163.5}
+                        y1={74}
+                        y2={185.5}
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stopColor="#32b1c1"></stop>
+                        <stop offset={1} stopColor="#14c6b7"></stop>
+                      </linearGradient>
+                    </defs>
+                  </g>
+                </svg>
+                <span className="text-lg font-bold text-purple-700 dark:text-purple-300 mb-1 tracking-wide">
+                  {t("home1.partnersSection.cards.3.name")}
+                </span>
+                <span className="text-xs text-gray-500 dark:text-gray-400">
+                  {t("home1.partnersSection.cards.3.category")}
                 </span>
               </div>
             </div>
@@ -565,7 +587,9 @@ const Home1 = (props: Props) => {
                                 src={testimonial.image}
                                 width={80}
                                 height={80}
-                                alt={`Testimonial from ${t(testimonial.nameKey)}`}
+                                alt={`Testimonial from ${t(
+                                  testimonial.nameKey,
+                                )}`}
                               />
                               <p
                                 className={`text-base leading-relaxed font-light mb-4 ${
