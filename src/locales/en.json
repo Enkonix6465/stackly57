@@ -1,0 +1,284 @@
+{
+  "hedder": {
+    "services": {
+      "0": "Network Security",
+      "1": "Cloud Backup and Recovery",
+      "2": "IT Infrastructure",
+      "3": "Endpoint Protection",
+      "4": "Security Awareness Training",
+      "5": "Vulnerability Assessment"
+    },
+    "navbar": {
+      "Home": "Home",
+      "About_Us": "About Us",
+      "Services": "Services",
+      "All_Services": "All Services",
+      "Blog": "Blog",
+      "Contact_Us": "Contact Us"
+    },
+    "English": "English",
+    "Arabic": "Arabic",
+    "Hebrew": "Hebrew"
+  },
+  "footer": {
+    "about": "Empowering businesses with secure, scalable IT and cloud solutions. Your trusted partner in cybersecurity and digital transformation.",
+    "quick_links": "Quick Links",
+    "services": "Services",
+    "contact_us": "Contact Us",
+    "email": "info@enkonixit.com",
+    "phone": "+1 234 567 890",
+    "address": "123 Cyber St, Cloud City",
+    "copyright": "All rights reserved."
+  },
+  "home1": {
+    "title": "Home 1 - IT Services, Cybersecurity, Cloud",
+    "metaDescription": "IT Services, Cybersecurity, Cloud Solutions",
+    "hero": {
+      "title": "Empowering Your Business with IT, Cybersecurity & Cloud",
+      "subtitle": "Secure, scalable, and innovative solutions for the digital era."
+    },
+    "featureSection": {
+      "mainImageAlt": "IT Team Working",
+      "teamImageAlt": "Team Collaboration",
+      "stat1": { "value": "1908K", "label": "Happy Customer" },
+      "stat2": { "value": "Trusted To", "label": "Investment" },
+      "stat3": { "value": "99%", "label": "Return On Investment" },
+      "headline": "Building Smarter, Faster, & More Secure Digital Solutions With Advanced IT Services & Consulting",
+      "description": "We provide comprehensive IT solutions designed to drive innovation, enhance security, and streamline operations. From managed IT support and cloud infrastructure to cybersecurity, software development, and strategic consulting.",
+      "features": {
+        "0": "Advanced IT Services and Consulting for Smarter",
+        "1": "Powered by Expert IT Services and Consulting",
+        "2": "Secure Digital Solutions with Expert IT Consulting",
+        "3": "Empowering Digital Growth with Secure, Scalable,"
+      },
+      "cta": "About Us"
+    },
+    "servicesSection": {
+      "title": "Our IT & Cloud Services",
+      "cards": {
+        "0": {
+          "title": "IT Strategy & Consulting",
+          "items": {
+            "0": "Custom IT roadmaps for business growth",
+            "1": "Cloud migration & modernization",
+            "2": "Process automation & workflow optimization",
+            "3": "Digital transformation leadership"
+          }
+        },
+        "1": {
+          "title": "Cybersecurity Solutions",
+          "items": {
+            "0": "24/7 threat monitoring & response",
+            "1": "Advanced endpoint & network protection",
+            "2": "Compliance management (GDPR, HIPAA, etc.)",
+            "3": "Employee security awareness training"
+          }
+        },
+        "2": {
+          "title": "Managed Cloud Services",
+          "items": {
+            "0": "Scalable cloud hosting & infrastructure",
+            "1": "Disaster recovery & backup solutions",
+            "2": "Hybrid & multi-cloud deployments",
+            "3": "Ongoing cloud optimization & support"
+          }
+        }
+      }
+    },
+    "whyChooseUsSection": {
+      "title": "Why Partner With Us?",
+      "description": "As a leading provider, we offer a results-driven approach to IT, cybersecurity, and cloud solutions. Our team is dedicated to driving your business growth through technology, security, and customer-centric service.",
+      "cards": {
+        "0": "Business Growth",
+        "1": "Technology Consultancy"
+      },
+      "expertIT": "Expert IT Professionals",
+      "callUs": "Call Us: 1-888-555-8780",
+      "imageAlt": "Business IT Professional"
+    },
+    "insightsSection": {
+      "title": "Latest Insights & Resources",
+      "description": "Stay updated with the latest trends, tips, and best practices in IT, cybersecurity, and cloud computing.",
+      "cards": {
+        "0": {
+          "badge": "Popular",
+          "title": "5 Essential Cybersecurity Practices for Small Businesses",
+          "excerpt": "Protect your business from cyber threats with these essential practices."
+        },
+        "1": {
+          "badge": "New",
+
+          "title": "Cloud Migration Strategies for Growing Enterprises",
+          "excerpt": "Learn effective strategies for a smooth cloud migration process."
+        },
+        "2": {
+          "badge": "Live",
+          "title": "The Future of IT Services: Trends to Watch in 2024",
+          "excerpt": "Explore the emerging trends shaping the future of IT services."
+        }
+      }
+    },
+
+    "partnersSection": {
+      "title": "Our Trusted Partners",
+      "description": "We collaborate with industry-leading technology partners to deliver cutting-edge solutions that drive business success.",
+      "imageAlt": "Trusted Technology Partners",
+      "cards": {
+        "0": { "name": "Azure", "category": "Cloud Services" },
+        "1": { "name": "Next.js", "category": "Web Framework" },
+        "2": { "name": "Vercel", "category": "Deployment" },
+        "3": { "name": "Tailwind CSS", "category": "CSS Framework" }
+      }
+    },
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "0": {
+        "text": "Our IT infrastructure is now robust and scalable. The team delivered seamless migration to the cloud and ongoing support is top-notch!",
+        "name": "David Kim, CTO, FinTechPro"
+      },
+      "1": {
+        "text": "Their cybersecurity experts helped us achieve compliance and peace of mind. Threats are detected and resolved before they impact our business.",
+        "name": "Priya Singh, IT Manager, HealthSecure"
+      },
+      "2": {
+        "text": "We saved 30% on IT costs and improved uptime after switching to their managed cloud services. Highly recommended for any growing company!",
+        "name": "Alex Chen, CEO, Cloudify Solutions"
+      },
+      "3": {
+        "text": "The team’s proactive approach to cybersecurity keeps our data safe and our clients confident. Their training sessions are engaging and effective.",
+        "name": "Maria Lopez, Operations Director, MedTechCare"
+      },
+      "4": {
+        "text": "From IT consulting to cloud migration, every step was handled professionally. We now have a future-proof digital strategy.",
+        "name": "John Evans, CIO, RetailNext"
+      }
+    }
+  },
+  "home2": {
+    "learnMore": "Learn More",
+    "title": "Home 2 - IT Services, Cybersecurity, Cloud",
+    "metaDescription": "IT Services, Cybersecurity, Cloud Solutions",
+    "heroSubtitle": "INNOVATIVE SOFTWARE SOLUTIONS",
+    "heroTitle": "Transform Your Business with Our Expertise",
+    "heroDescription": "Leverage cutting-edge technology and expert insights to drive growth, enhance security, and streamline operations.",
+    "getStarted": "Get Started",
+    "features": {
+      "title": "Awesome Features",
+      "description": "The template is built with all modern and latest technology. Developer can easily handle this.",
+      "card1": {
+        "alt": "Made With Sass",
+        "title": "Made With Sass",
+        "description": "Sass is a preprocessor scripting language for compiling into CSS."
+      },
+      "card2": {
+        "alt": "Google Fonts",
+        "title": "Google Fonts",
+        "description": "Google Fonts is a complete font and font web font service owned by Google."
+      },
+      "card3": {
+        "alt": "W3C Validated Code",
+        "title": "W3C Validated Code",
+        "description": "W3C Validation Service is a validator for the World Wide Web Consortium."
+      },
+      "card4": {
+        "alt": "Easy to Customize",
+        "title": "Easy to Customize",
+        "description": "Our code is always very much customize friendly and standard."
+      },
+      "card5": {
+        "alt": "Fully Responsive",
+        "title": "Fully Responsive",
+        "description": "This template is fully responsive for all kind of devices both big & small."
+      },
+      "card6": {
+        "alt": "Font Awesome 6 Pro",
+        "title": "Font Awesome 6 Pro",
+        "description": "We have used the latest version of Font Awesome 6 Pro in this template."
+      },
+      "card7": {
+        "alt": "Bootstrap 5",
+        "title": "Bootstrap 5",
+        "description": "Bootstrap 5 is the latest version of the popular front-end development framework."
+      },
+      "card8": {
+        "alt": "Latest jQuery",
+        "title": "Latest jQuery",
+        "description": "jQuery is a JS framework designed to simplify HTML DOM tree traversal."
+      },
+      "card9": {
+        "alt": "Material Design",
+        "title": "Material Design",
+        "description": "Material Design is a design language developed by Google in 2014."
+      },
+      "card10": {
+        "alt": "SEO Friendly",
+        "title": "SEO Friendly",
+        "description": "Our code is SEO optimized, it will help to index the page on search engine."
+      },
+      "card11": {
+        "alt": "Dark & Light Mode",
+        "title": "Dark & Light Mode",
+        "description": "This template has both dark & light mode. User can switch between them."
+      },
+      "card12": {
+        "alt": "Tailwind CSS",
+        "title": "Tailwind CSS",
+        "description": "Tailwind CSS is a utility-first CSS framework for rapid UI development."
+      }
+    },
+    "itSolutions": {
+      "title": "Enabling Excellence With Innovative IT Solutions",
+      "description": "Our services are tailored to meet the evolving needs of businesses in a digital-first world. With a focus on reliability, scalability, and performance, we help organizations leverage technology to achieve their goals.",
+      "learnMore": "Learn More",
+      "imageAlt": "IT Solutions",
+      "card1": {
+        "title": "Expert IT Solutions",
+        "description": "IT solutions designed to drive innovation, enhance security, & streamline operations."
+      },
+      "card2": {
+        "title": "Cloud Computing",
+        "description": "Scalable cloud solutions for businesses of all sizes, from startups to enterprises."
+      }
+    },
+    "Expertise": {
+      "title": "Our Expertise",
+      "description": "We offer a comprehensive suite of IT services designed to meet the unique needs of your business. Our team of experts is dedicated to delivering solutions that drive growth, enhance security, and improve operational efficiency.",
+
+      "card1": {
+        "title": "IT Consulting",
+        "description": "Strategic IT consulting to align technology with your business goals."
+      },
+      "card2": {
+        "title": "Cybersecurity",
+        "description": "Comprehensive cybersecurity solutions to protect your digital assets."
+      },
+      "card3": {
+        "title": "Cloud Services",
+        "description": "End-to-end cloud services for seamless migration, management, and optimization."
+      }
+    },
+    "insights": {
+      "title": "Latest Insights & Resources",
+      "card1": {
+        "label": "Popular",
+        "title": "5 Essential Cybersecurity Practices for Small Businesses",
+        "description": "Protect your business from cyber threats with these essential practices."
+      },
+      "card2": {
+        "label": "New",
+        "title": "Cloud Migration Strategies for Growing Enterprises",
+        "description": "Learn effective strategies for a smooth cloud migration process."
+      },
+      "card3": {
+        "label": "Live",
+        "title": "The Future of IT Services: Trends to Watch in 2024",
+        "description": "Explore the emerging trends shaping the future of IT services."
+      }
+    },
+    "cta": {
+      "title": "Ready to Elevate Your IT Infrastructure?",
+      "description": "Contact us today to learn how our expert IT services and solutions can drive your business forward.",
+      "button": "Contact Us"
+    }
+  }
+}
