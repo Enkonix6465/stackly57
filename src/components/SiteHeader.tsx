@@ -274,23 +274,26 @@ const SiteHeader = () => {
                 setLangOpen(false);
               }}
             >
-              {currentUser && (
+              {currentUser ? (
                 <>
                   {typeof currentUser.firstName === "string" &&
                   currentUser.firstName.length > 0
                     ? currentUser.firstName[0]
-                    : "A"}
+                    : ""}
                   {typeof currentUser.lastName === "string" &&
                   currentUser.lastName.length > 0
                     ? currentUser.lastName[0]
-                    : "D"}
+                    : ""}
                 </>
+              ) : (
+                <>AD</>
               )}{" "}
               <ChevronDown size={16} />
             </button>
             {profileOpen && (
               <ul className="absolute right-0 mt-2 w-36 bg-white dark:bg-gray-800 shadow-xl rounded-lg py-2 border border-blue-100 dark:border-gray-700">
-                {currentUser.role === "admin" &&
+                {currentUser &&
+                  currentUser.role === "admin" &&
                   window.location.pathname != "/admin-dashboard" && (
                     <li>
                       <Link
@@ -445,23 +448,26 @@ const SiteHeader = () => {
                   className="flex items-center gap-2 px-3 py-2 rounded-lg bg-blue-50 dark:bg-gray-900 hover:bg-blue-200 dark:hover:bg-gray-700 shadow "
                   onClick={() => setProfileOpen((prev) => !prev)}
                 >
-                  {currentUser && (
+                  {currentUser ? (
                     <>
                       {typeof currentUser.firstName === "string" &&
                       currentUser.firstName.length > 0
                         ? currentUser.firstName[0]
-                        : "A"}
+                        : ""}
                       {typeof currentUser.lastName === "string" &&
                       currentUser.lastName.length > 0
                         ? currentUser.lastName[0]
-                        : "D"}
+                        : ""}
                     </>
+                  ) : (
+                    <>AD</>
                   )}{" "}
                   <ChevronDown size={16} />
                 </button>
                 {profileOpen && (
                   <ul className="absolute right-0 mt-2 w-32 bg-white dark:bg-gray-800 shadow-xl rounded-lg py-2 border border-blue-100 dark:border-gray-700 z-10">
-                    {currentUser.role === "admin" &&
+                    {currentUser &&
+                      currentUser.role === "admin" &&
                       window.location.pathname != "/admin-dashboard" && (
                         <li>
                           <Link
