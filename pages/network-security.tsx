@@ -41,7 +41,30 @@ const NetworkSecurity = () => {
             {/* Left: Modern Card with Icon & Headline */}
             <div className="flex-1 flex flex-col justify-center items-start bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-950 dark:to-purple-950 rounded-3xl shadow-2xl p-10 border-4 border-blue-100 dark:border-blue-900">
               <div className="mb-6 flex items-center gap-4">
-                <Image src="/shield.svg" alt="Shield" width={48} height={48} />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={50}
+                  height={50}
+                  viewBox="0 0 48 48"
+                >
+                  <g fill="none" strokeLinejoin="round" strokeWidth={4}>
+                    <path
+                      fill="#2f88ff"
+                      stroke="#000"
+                      d="M6 8.25564L24.0086 3L42 8.25564V19.0337C42 30.3622 34.7502 40.4194 24.0026 44.0005C13.2521 40.4195 6 30.36 6 19.0287V8.25564Z"
+                    ></path>
+                    <path
+                      stroke="#fff"
+                      strokeLinecap="round"
+                      d="M23.9497 14.9497V30.9497"
+                    ></path>
+                    <path
+                      stroke="#fff"
+                      strokeLinecap="round"
+                      d="M15.9497 22.9497H31.9497"
+                    ></path>
+                  </g>
+                </svg>
                 <h2 className="text-4xl font-extrabold text-blue-700 dark:text-blue-300">
                   Why Network Security Matters
                 </h2>
@@ -126,12 +149,30 @@ const NetworkSecurity = () => {
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl font-extrabold mb-14 text-purple-700 dark:text-purple-300 text-center flex items-center justify-center gap-4">
               <span className="inline-block bg-purple-100 dark:bg-purple-900 p-3 rounded-full">
-                <Image
-                  src="/shield.svg"
-                  alt="Cybersecurity"
-                  width={32}
-                  height={32}
-                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={50}
+                  height={50}
+                  viewBox="0 0 48 48"
+                >
+                  <g fill="none" strokeLinejoin="round" strokeWidth={4}>
+                    <path
+                      fill="#2f88ff"
+                      stroke="#000"
+                      d="M6 8.25564L24.0086 3L42 8.25564V19.0337C42 30.3622 34.7502 40.4194 24.0026 44.0005C13.2521 40.4195 6 30.36 6 19.0287V8.25564Z"
+                    ></path>
+                    <path
+                      stroke="#fff"
+                      strokeLinecap="round"
+                      d="M23.9497 14.9497V30.9497"
+                    ></path>
+                    <path
+                      stroke="#fff"
+                      strokeLinecap="round"
+                      d="M15.9497 22.9497H31.9497"
+                    ></path>
+                  </g>
+                </svg>
               </span>
               Our Cybersecurity Solutions
             </h2>

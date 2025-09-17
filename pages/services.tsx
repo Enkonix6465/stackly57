@@ -452,7 +452,8 @@ const services = (props: Props) => {
                 {
                   name: "Justin Kingdony",
                   role: "UI/UX Designer",
-                  photo: "/logo-stackly.png",
+                  photo:
+                    "https://i.pinimg.com/1200x/55/63/31/556331581172c567af13dc5787455d74.jpg",
                   socials: [
                     {
                       icon: <Twitch color="#fff" />,
@@ -475,7 +476,8 @@ const services = (props: Props) => {
                 {
                   name: "Michael Johnson",
                   role: "UI/UX Designer",
-                  photo: "/globe.svg",
+                  photo:
+                    "https://i.pinimg.com/736x/d9/b0/c4/d9b0c40107706b71b0470c01b3e23114.jpg",
                   socials: [
                     {
                       icon: <Twitch color="#fff" />,
@@ -505,7 +507,7 @@ const services = (props: Props) => {
                     width={320}
                     height={320}
                     alt={member.name + " photo"}
-                    className="w-full h-[320px] object-cover object-center mb-0"
+                    className="w-full h-full object-cover object-center mb-0"
                   />
                   <div className="absolute bottom-0 left-0 w-full px-6 py-6 bg-gradient-to-t from-[#0d1b2a]/90 to-transparent flex flex-col items-center">
                     <h3 className="font-bold text-2xl text-white mb-1 text-center">
@@ -545,21 +547,21 @@ const services = (props: Props) => {
                 {
                   name: "Sarah Lee",
                   company: "TechNova Inc.",
-                  logo: "/logo-stackly.png",
+                  logo: "https://randomuser.me/api/portraits/women/65.jpg",
                   feedback:
                     "Enkonix delivered a robust IT infrastructure for us. Their team was responsive, knowledgeable, and truly cared about our business goals.",
                 },
                 {
                   name: "Michael Chen",
                   company: "Cloudify Solutions",
-                  logo: "/globe.svg",
+                  logo: "https://randomuser.me/api/portraits/men/65.jpg",
                   feedback:
                     "The security awareness training transformed our team's approach to cyber threats. Highly recommended for any growing company!",
                 },
                 {
                   name: "Priya Patel",
                   company: "SafeNet Corp.",
-                  logo: "/window.svg",
+                  logo: "https://randomuser.me/api/portraits/women/66.jpg",
                   feedback:
                     "Their vulnerability assessment was thorough and actionable. We now feel confident in our security posture thanks to Enkonix.",
                 },

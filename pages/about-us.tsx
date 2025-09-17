@@ -5,24 +5,24 @@ import Image from "next/image";
 
 const team = [
   {
-    name: "Ramesh Bojanapu",
+    name: "Ramesh",
     role: "Founder & CEO",
-    img: "/team1.jpg",
+    img: "https://randomuser.me/api/portraits/men/44.jpg",
   },
   {
     name: "Priya Sharma",
     role: "CTO",
-    img: "/team2.jpg",
+    img: "https://randomuser.me/api/portraits/women/44.jpg",
   },
   {
     name: "Amit Patel",
     role: "Lead Developer",
-    img: "/team3.jpg",
+    img: "https://randomuser.me/api/portraits/men/45.jpg",
   },
   {
     name: "Sara Lee",
     role: "UI/UX Designer",
-    img: "/team4.jpg",
+    img: "https://randomuser.me/api/portraits/women/45.jpg",
   },
 ];
 
@@ -226,7 +226,7 @@ const AboutUs = () => {
             <div className="flex justify-center">
               <div className="relative     rounded-3xl shadow-2xl overflow-hidden border-4 border-blue-100 dark:border-blue-900 bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-950 dark:to-purple-900">
                 <Image
-                  src="/company-story.png"
+                  src="https://i.pinimg.com/1200x/fb/bf/9d/fbbf9d982ffd71e75d4e3a79b5f83cce.jpg"
                   alt="Company Story"
                   width={300}
                   height={300}

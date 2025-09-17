@@ -3,6 +3,7 @@ import SiteHeader from "@/components/SiteHeader";
 import AOS from "aos";
 import Head from "next/head";
 import React from "react";
+import Image from "next/image";
 import { useTranslation } from "react-i18next";
 type Props = {};
 
@@ -411,8 +412,8 @@ const home2 = (props: Props) => {
           <div className="flex-1 flex justify-center items-center relative  ">
             {/* Main Image */}
             <div className="relative z-10">
-              <img
-                src="/software-partner.png"
+              <Image
+                src="https://i.pinimg.com/736x/ef/5a/43/ef5a43bddd09fae0f0a64e5df8fc09e2.jpg"
                 alt="Software Innovation & Development"
                 width={420}
                 height={420}
@@ -542,8 +543,8 @@ const home2 = (props: Props) => {
           <div className="flex-1 flex justify-center items-center relative w-full mt-12 md:mt-0">
             {/* Main Image */}
             <div className="relative z-10">
-              <img
-                src="/it-solutions-theme.png"
+              <Image
+                src="https://i.pinimg.com/736x/03/16/dc/0316dc671ac3edaa3d21500f9b93c0f5.jpg"
                 alt="IT Solutions Theme"
                 width={420}
                 height={420}

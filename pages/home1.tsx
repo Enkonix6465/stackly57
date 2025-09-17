@@ -92,10 +92,10 @@ const Home1 = (props: Props) => {
               {/* Main Image */}
               <div className="relative z-10">
                 <Image
-                  src="/feature-main.png"
+                  src="https://i.pinimg.com/736x/f1/37/b1/f137b1914b1b9358e9ff9c0a76b852f3.jpg"
                   alt={t("home1.featureSection.mainImageAlt")}
-                  width={340}
-                  height={260}
+                  width={540}
+                  height={460}
                   className="rounded-2xl shadow-2xl border-4 border-blue-200 dark:border-blue-800 object-cover"
                 />
               </div>
@@ -318,7 +318,7 @@ const Home1 = (props: Props) => {
               <div className="relative">
                 <div className="absolute -top-8 -right-8 w-56 h-56 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full blur-2xl opacity-40"></div>
                 <Image
-                  src="/theme-business-woman.png"
+                  src="https://i.pinimg.com/1200x/10/03/24/10032454d5eafe518d7a38a897612130.jpg"
                   alt={t("home1.whyChooseUsSection.imageAlt")}
                   width={340}
                   height={420}
