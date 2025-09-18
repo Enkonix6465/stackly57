@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 const SecurityAwareness = () => {
   const { t } = useTranslation();
   return (
-    <main className="bg-[#101624] text-white min-h-screen caret-transparent">
+    <main className="min-h-screen caret-transparent">
       <SiteHeader />
       <section className="relative py-20 px-4 flex flex-col items-center justify-center text-center bg-gradient-to-r from-blue-700 to-purple-800">
         <h1 className="text-5xl font-extrabold mb-6 text-white drop-shadow-lg">
@@ -17,7 +17,7 @@ const SecurityAwareness = () => {
         </p>
       </section>
 
-      <section className="mx-auto py-10 px-4 bg-white/80 dark:bg-gray-900/80  shadow-xl border border-blue-100 dark:border-blue-900 backdrop-blur-lg">
+      <section className="mx-auto py-10 px-4 bg-white/80    dark:bg-gray-900/80  shadow-xl border border-blue-100 dark:border-blue-900 backdrop-blur-lg">
         <h2 className="text-3xl font-bold mb-6 text-blue-700 dark:text-blue-300">
           {t("securityAwareness.intro.title")}
         </h2>

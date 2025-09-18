@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 
-const ADMIN_EMAIL = "admin@enconix.in";
+const ADMIN_EMAIL = "admin@enkonix.in";
 const ADMIN_PASSWORD = "admin123";
 
 const Auth = () => {

@@ -109,13 +109,13 @@ const SiteHeader = () => {
       const userLogin = JSON.parse(
         localStorage.getItem("Current_User") || "null",
       );
-      const user = users.find((u: any) => u.email === userLogin.email);
-      user.logoutTime = new Date().toISOString();
-      // Redirect to login page or homepage
-      localStorage.setItem("All_Users", JSON.stringify(users));
-      window.location.href = "/auth";
-
+      const user = users.find((u: any) => u.email === userLogin?.email);
+      if (user) {
+        user.logoutTime = new Date().toISOString();
+        localStorage.setItem("All_Users", JSON.stringify(users));
+      }
       localStorage.removeItem("Current_User");
+      window.location.href = "/auth";
     }
   }
 
