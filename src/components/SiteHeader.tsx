@@ -128,7 +128,7 @@ const SiteHeader = () => {
         {/* Logo */}
         <Link href="/home1" className=" w-auto h-auto">
           <Image
-            src="/logo-stackly.png"
+            src="https://i.postimg.cc/DwdH9gv8/logo-stackly.png"
             alt="Logo"
             width={100}
             height={100}
