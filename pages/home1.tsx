@@ -17,7 +17,7 @@ type Props = {};
 
 const testimonialsData = [
   {
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    image: "https://randomuser.me/api/portraits/men/57.jpg",
     textKey: "home1.testimonials.0.text",
     nameKey: "home1.testimonials.0.name",
   },
@@ -578,7 +578,7 @@ const Home1 = (props: Props) => {
                                   : ""
                               }`}
                             >
-                              <Image
+                              <img
                                 className={`w-20 h-20 mx-auto mb-4 rounded-full ${
                                   indexToShow === activeIndex
                                     ? "ring-4 ring-blue-500"

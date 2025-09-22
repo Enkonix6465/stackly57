@@ -566,7 +566,7 @@ const services = (props: Props) => {
                     &#10077;
                   </span>
                   <div className="w-full flex flex-col items-center">
-                    <Image
+                    <img
                       src={client.logo}
                       width={56}
                       height={56}
