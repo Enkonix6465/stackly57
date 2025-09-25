@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -55,12 +56,12 @@ export default function Home() {
               IT Consulting
             </span>
           </p>
-          <a
+          <Link
             className="px-8 py-3 bg-blue-600 text-white rounded-xl shadow-lg hover:bg-blue-700 transition text-lg font-bold tracking-wide"
             href="/auth"
           >
             Go to Login
-          </a>
+          </Link>
         </div>
       </div>
     </>

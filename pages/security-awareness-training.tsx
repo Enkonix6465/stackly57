@@ -2,6 +2,7 @@ import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { useTranslation } from "react-i18next";
 
 const SecurityAwarenessTraining = () => {
@@ -793,12 +794,12 @@ const SecurityAwarenessTraining = () => {
             <p className="text-lg text-white/80 dark:text-white/70 mb-8">
               {t("securityAwarenessTraining.cta.subtitle")}
             </p>
-            <a
+            <Link
               href="/contact-us"
               className="inline-block bg-blue-600 dark:bg-blue-400 hover:bg-blue-700 dark:hover:bg-blue-500 text-white font-bold py-4 px-10 rounded-full shadow-lg transition-all text-lg"
             >
               {t("securityAwarenessTraining.cta.button")}
-            </a>
+            </Link>
           </div>
         </section>
         <SiteFooter />

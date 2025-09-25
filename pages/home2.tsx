@@ -4,6 +4,7 @@ import AOS from "aos";
 import Head from "next/head";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { useTranslation } from "react-i18next";
 type Props = {};
 
@@ -532,12 +533,12 @@ const home2 = (props: Props) => {
               </div>
             </div>
             {/* CTA Button */}
-            <a
+            <Link
               href="/services"
               className="bg-orange-400 dark:bg-orange-500 hover:bg-orange-500 dark:hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all text-base"
             >
               {t("home2.getStarted")}
-            </a>
+            </Link>
           </div>
           {/* Right: Themed Image & Abstract Accents */}
           <div className="flex-1 flex justify-center items-center relative w-full mt-12 md:mt-0">
@@ -653,12 +654,12 @@ const home2 = (props: Props) => {
                     <p className="text-gray-600 dark:text-gray-300 text-base leading-relaxed mb-4">
                       {t(card.desc)}
                     </p>
-                    <a
+                    <Link
                       href="/services"
                       className={`inline-block ${card.btnClass} text-white px-5 py-2 rounded-full font-semibold transition`}
                     >
                       {t("home2.learnMore")}
-                    </a>
+                    </Link>
                   </div>
                 </>
               ))}
@@ -773,12 +774,12 @@ const home2 = (props: Props) => {
             <p className="text-lg text-white/80 dark:text-white/70 mb-8">
               {t("home2.cta.description")}
             </p>
-            <a
+            <Link
               href="/contact-us"
               className="inline-block bg-blue-600 dark:bg-blue-400 hover:bg-blue-700 dark:hover:bg-blue-500 text-white font-bold py-4 px-10 rounded-full shadow-lg transition-all text-lg"
             >
               {t("home2.cta.button")}
-            </a>
+            </Link>
           </div>
         </section>
 

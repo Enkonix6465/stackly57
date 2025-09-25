@@ -379,7 +379,7 @@ const SiteHeader = () => {
                   <li>
                     <Link
                       href="/services"
-                      className="block px-4 border-b py-2 hover:bg-blue-50 dark:hover:bg-gray-700"
+                      className="block   border-b py-2 hover:bg-blue-50 dark:hover:bg-gray-700"
                     >
                       {t("hedder.navbar.All_Services")}
                     </Link>

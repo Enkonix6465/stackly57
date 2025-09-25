@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { useTranslation } from "react-i18next";
 
@@ -192,12 +193,12 @@ const Home1 = (props: Props) => {
                   {t("home1.featureSection.features.3")}
                 </li>
               </ul>
-              <a
+              <Link
                 href="/about-us"
                 className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all text-base"
               >
                 {t("home1.featureSection.cta")}
-              </a>
+              </Link>
             </div>
           </div>
         </section>

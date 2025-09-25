@@ -1,6 +1,6 @@
 import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
-import i18n from "@/i18n";
+import Link from "next/link";
 
 import Head from "next/head";
 import Image from "next/image";
@@ -558,12 +558,12 @@ const NetworkSecurity = () => {
             <p className="text-lg text-white/80 dark:text-white/70 mb-8">
               {t("networkSecurity.cta.subtitle")}
             </p>
-            <a
+            <Link
               href="/contact-us"
               className="inline-block bg-blue-600 dark:bg-blue-400 hover:bg-blue-700 dark:hover:bg-blue-500 text-white font-bold py-4 px-10 rounded-full shadow-lg transition-all text-lg"
             >
               {t("networkSecurity.cta.button")}
-            </a>
+            </Link>
           </div>
         </section>
         <SiteFooter />

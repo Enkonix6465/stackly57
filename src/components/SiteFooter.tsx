@@ -1,12 +1,4 @@
-import {
-  Facebook,
-  Instagram,
-  Linkedin,
-  Mail,
-  MapPin,
-  Phone,
-  Twitter,
-} from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
@@ -20,16 +12,17 @@ const services = [
   { name: "hedder.services.5", link: " /vulnerability-assessment" },
 ];
 
-const quickLinks = [
-  { key: "hedder.navbar.Home", href: "/home1" },
-  { key: "hedder.navbar.About_Us", href: "/about-us" },
-  { key: "hedder.navbar.Services", href: "/services" },
-  { key: "hedder.navbar.Blog", href: "/blog" },
-  { key: "hedder.navbar.Contact_Us", href: "/contact-us" },
-];
-
 const SiteFooter = () => {
   const { t } = useTranslation();
+  const quickLinks = [
+    { name: `${t("hedder.navbar.Home")}1`, href: "/home1" },
+    { name: `${t("hedder.navbar.Home")}2`, href: "/home2" },
+    { name: `${t("hedder.navbar.About_Us")}`, href: "/about-us" },
+    { name: `${t("hedder.navbar.Services")}`, href: "/services" },
+    { name: `${t("hedder.navbar.Blog")}`, href: "/blog" },
+    { name: `${t("hedder.navbar.Contact_Us")}`, href: "/contact-us" },
+  ];
+
   return (
     <footer className="bg-gradient-to-r from-blue-50 via-white to-blue-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-900 dark:text-white border-t border-blue-100 dark:border-gray-800 pt-10 pb-4 px-4">
       <div className=" max-w-screen   mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -46,11 +39,15 @@ const SiteFooter = () => {
           </div>
           <p className="text-sm leading-relaxed mb-4">{t("footer.about")}</p>
           <div className="flex gap-3 mt-2">
-            <a href="#" aria-label="Facebook" className="hover:text-blue-600">
+            <Link
+              href="#"
+              aria-label="Facebook"
+              className="hover:text-blue-600"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width={20}
-                height={20}
+                width={25}
+                height={25}
                 viewBox="0 0 256 256"
               >
                 <path
@@ -62,12 +59,12 @@ const SiteFooter = () => {
                   d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A129 129 0 0 0 128 256a129 129 0 0 0 20-1.555V165z"
                 ></path>
               </svg>
-            </a>
-            <a href="#" aria-label="Twitter" className="hover:text-blue-400">
+            </Link>
+            <Link href="#" aria-label="Twitter" className="hover:text-blue-400">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width={20}
-                height={20}
+                width={25}
+                height={25}
                 viewBox="0 0 256 256"
               >
                 <g fill="none">
@@ -79,12 +76,16 @@ const SiteFooter = () => {
                   ></path>
                 </g>
               </svg>
-            </a>
-            <a href="#" aria-label="LinkedIn" className="hover:text-blue-700">
+            </Link>
+            <Link
+              href="#"
+              aria-label="LinkedIn"
+              className="hover:text-blue-700"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width={20}
-                height={20}
+                width={25}
+                height={25}
                 viewBox="0 0 256 256"
               >
                 <g fill="none">
@@ -96,12 +97,16 @@ const SiteFooter = () => {
                   ></path>
                 </g>
               </svg>
-            </a>
-            <a href="#" aria-label="Instagram" className="hover:text-pink-500">
+            </Link>
+            <Link
+              href="#"
+              aria-label="Instagram"
+              className="hover:text-pink-500"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width={20}
-                height={20}
+                width={25}
+                height={25}
                 viewBox="0 0 256 256"
               >
                 <g fill="none">
@@ -150,7 +155,7 @@ const SiteFooter = () => {
                   </defs>
                 </g>
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -160,13 +165,13 @@ const SiteFooter = () => {
             {t("footer.quick_links")}
           </h3>
           <ul className="space-y-2">
-            {quickLinks.map((link) => (
-              <li key={link.key}>
+            {quickLinks.map((link, id) => (
+              <li key={id}>
                 <Link
                   href={link.href}
                   className="hover:text-blue-600 transition"
                 >
-                  {t(link.key)}
+                  {t(link.name)}
                 </Link>
               </li>
             ))}
