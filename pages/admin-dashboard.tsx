@@ -79,7 +79,37 @@ const AdminDashboard = () => {
               {
                 key: "stats",
                 label: t("adminDashboard.tabs.stats"),
-                icon: "📊",
+                icon: (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={20}
+                    height={20}
+                    viewBox="0 0 32 32"
+                  >
+                    <g fill="none">
+                      <path
+                        fill="#e1d8ec"
+                        d="M2 6a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v20c0 1.48-.804 2.773-2 3.465L26.554 29a4 4 0 0 0-3.014.23L22 30h-3l-3-1.5l-3 1.5h-3l-1.54-.77A4 4 0 0 0 5.446 29L4 29.465A4 4 0 0 1 2 26z"
+                      ></path>
+                      <path
+                        fill="#b4acbc"
+                        d="M10 11v10H2v1h8v8h1v-8h10v8h1v-8h8v-1h-8V11h8v-1h-8V2h-1v8H11V2h-1v8H2v1zm1 0h10v10H11z"
+                      ></path>
+                      <path
+                        fill="#00d26a"
+                        d="M6 30h4V10.214C10 9.542 9.453 9 8.774 9H5.226C4.547 9 4 9.542 4 10.213v19.252c.588.34 1.271.535 2 .535"
+                      ></path>
+                      <path
+                        fill="#f70a8d"
+                        d="M17.774 17h-3.548c-.679 0-1.226.542-1.226 1.214V30h6V18.214c0-.672-.547-1.214-1.226-1.214"
+                      ></path>
+                      <path
+                        fill="#00a6ed"
+                        d="M22 30h4c.729 0 1.412-.195 2-.535V7.209C28 6.539 27.453 6 26.774 6h-3.548C22.547 6 22 6.54 22 7.209z"
+                      ></path>
+                    </g>
+                  </svg>
+                ),
                 activeClass: "bg-blue-600 text-white scale-105",
                 inactiveClass:
                   "bg-blue-100 dark:bg-gray-800 text-blue-700 dark:text-blue-300",
@@ -89,7 +119,29 @@ const AdminDashboard = () => {
               {
                 key: "graph",
                 label: t("adminDashboard.tabs.graph"),
-                icon: "📈",
+                icon: (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={20}
+                    height={20}
+                    viewBox="0 0 32 32"
+                  >
+                    <g fill="none">
+                      <path
+                        fill="#e1d8ec"
+                        d="M2 6a4 4 0 0 1 4-4h20a4 4 0 0 1 3.731 2.556l-.585 1.776l.854.846V26a4 4 0 0 1-4 4H6a4 4 0 0 1-3.888-3.056l.67-1.893l-.782-.71z"
+                      ></path>
+                      <path
+                        fill="#b4acbc"
+                        d="M10 11v10H2v1h8v8h1v-8h10v8h1v-8h8v-1h-8V11h8v-1h-8V2h-1v8H11V2h-1v8H2v1zm1 0h10v10H11z"
+                      ></path>
+                      <path
+                        fill="#319fe7"
+                        d="M2.12 26.976A4 4 0 0 1 2 26v-1.701l7.062-6.973a2.2 2.2 0 0 1 3.06-.03l2.15 2.04a.5.5 0 0 0 .698-.009L29.722 4.531c.18.455.278.95.278 1.469v1.187L16.132 20.902a2.2 2.2 0 0 1-3.052.04l-2.15-2.017a.5.5 0 0 0-.694.01z"
+                      ></path>
+                    </g>
+                  </svg>
+                ),
                 activeClass: "bg-purple-600 text-white scale-105",
                 inactiveClass:
                   "bg-purple-100 dark:bg-gray-800 text-purple-700 dark:text-purple-300",
@@ -99,7 +151,25 @@ const AdminDashboard = () => {
               {
                 key: "users",
                 label: t("adminDashboard.tabs.users"),
-                icon: "👥",
+                icon: (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={20}
+                    height={20}
+                    viewBox="0 0 32 32"
+                  >
+                    <g fill="none">
+                      <path
+                        fill="#321b41"
+                        d="M15.84 23.93q.09.068.174.141q.084-.073.176-.141a11.07 11.07 0 0 1 12.65 0A2.91 2.91 0 0 1 30 26.29V30H2v-3.68a2.93 2.93 0 0 1 1.19-2.39a11.07 11.07 0 0 1 12.65 0"
+                      ></path>
+                      <path
+                        fill="#533566"
+                        d="M10.67 7.93h-2.3a4.24 4.24 0 0 0-4.23 4.83l.067 1.022a1.71 1.71 0 0 0 .224 3.397l.099 1.501a4.05 4.05 0 0 0 3.15 3.427v.933a1.81 1.81 0 1 0 3.62 0v-.923a4.05 4.05 0 0 0 3.2-3.437l.094-1.503a1.71 1.71 0 0 0 1.396-.867a1.71 1.71 0 0 0 1.441.87l.099 1.5a4.05 4.05 0 0 0 3.15 3.427v.933a1.81 1.81 0 1 0 3.62 0v-.923a4.05 4.05 0 0 0 3.2-3.437l.094-1.503a1.71 1.71 0 0 0 .212-3.39l.064-1.027a4.26 4.26 0 0 0-4.2-4.83h-2.3a4.24 4.24 0 0 0-4.23 4.83l.067 1.022a1.71 1.71 0 0 0-1.217.848a1.71 1.71 0 0 0-1.184-.843l.064-1.027a4.26 4.26 0 0 0-4.2-4.83"
+                      ></path>
+                    </g>
+                  </svg>
+                ),
                 activeClass: "bg-green-600 text-white scale-105",
                 inactiveClass:
                   "bg-green-100 dark:bg-gray-800 text-green-700 dark:text-green-400",
@@ -109,7 +179,9 @@ const AdminDashboard = () => {
             ].map((tab) => (
               <button
                 key={tab.key}
-                className={`py-3 px-6 rounded-xl font-bold text-lg transition-all flex items-center  duration-200 shadow-md ${tab.border} ${tab.hover} ${
+                className={`py-3 px-6 rounded-xl font-bold text-lg transition-all flex items-center  duration-200 shadow-md ${
+                  tab.border
+                } ${tab.hover} ${
                   activeTab === tab.key ? tab.activeClass : tab.inactiveClass
                 }`}
                 onClick={() => setActiveTab(tab.key)}
