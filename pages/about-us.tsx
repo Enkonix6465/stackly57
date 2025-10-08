@@ -59,11 +59,11 @@ const achievements = [
         viewBox="0 0 16 16"
       >
         <path
-          fill="#f97316"
+          fill="#38bdf8"
           d="M8 2.57a.5.5 0 0 1 .489.399l.389 1.89l1.92-.214l.087-.002a.5.5 0 0 1 .287.884l-.072.05l-1.68.953l.797 1.76l.028.083a.5.5 0 0 1-.19.528a.5.5 0 0 1-.56.017l-.07-.052l-1.43-1.3l-1.43 1.3a.5.5 0 0 1-.792-.576l.796-1.76l-1.68-.954a.501.501 0 0 1 .302-.932l1.92.214l.39-1.89l.025-.084a.5.5 0 0 1 .465-.315z"
         ></path>
         <path
-          fill="#f97316"
+          fill="#38bdf8"
           fillRule="evenodd"
           d="M8 0a6.005 6.005 0 0 1 5.127 9.12l1.7 2.55a1 1 0 0 1-.84 1.554l-2.34-.02l-.88 2.17a1.002 1.002 0 0 1-1.76.18l-1.01-1.51l-1.01 1.52a1 1 0 0 1-1.758-.18l-.88-2.17l-2.34.02a.999.999 0 0 1-.84-1.554l1.7-2.56A6.005 6.005 0 0 1 8 .01zM2 12.2l2.68-.023a.5.5 0 0 1 .469.311l1.01 2.49l2-3.01q-.08.004-.161.005c-1.79 0-3.4-.787-4.5-2.03l-1.5 2.26zm10.5-2.26a5.96 5.96 0 0 1-3 1.84l-.893 1.33l1.24 1.85l1.01-2.49a.5.5 0 0 1 .468-.312l2.68.024l-1.5-2.25zM8 .97c-2.76 0-5 2.24-5 5s2.24 5 5 5s5-2.24 5-5s-2.24-5-5-5"
           clipRule="evenodd"
@@ -82,7 +82,7 @@ const achievements = [
         viewBox="0 0 1024 1024"
       >
         <path
-          fill="#8b5cf6"
+          fill="#38bdf8"
           d="M854.4 800.9c.2-.3.5-.6.7-.9C920.6 722.1 960 621.7 960 512s-39.4-210.1-104.8-288c-.2-.3-.5-.5-.7-.8c-1.1-1.3-2.1-2.5-3.2-3.7c-.4-.5-.8-.9-1.2-1.4l-4.1-4.7l-.1-.1c-1.5-1.7-3.1-3.4-4.6-5.1l-.1-.1c-3.2-3.4-6.4-6.8-9.7-10.1l-.1-.1l-4.8-4.8l-.3-.3c-1.5-1.5-3-2.9-4.5-4.3c-.5-.5-1-1-1.6-1.5c-1-1-2-1.9-3-2.8c-.3-.3-.7-.6-1-1C736.4 109.2 629.5 64 512 64s-224.4 45.2-304.3 119.2c-.3.3-.7.6-1 1c-1 .9-2 1.9-3 2.9c-.5.5-1 1-1.6 1.5c-1.5 1.4-3 2.9-4.5 4.3l-.3.3l-4.8 4.8l-.1.1c-3.3 3.3-6.5 6.7-9.7 10.1l-.1.1c-1.6 1.7-3.1 3.4-4.6 5.1l-.1.1c-1.4 1.5-2.8 3.1-4.1 4.7c-.4.5-.8.9-1.2 1.4c-1.1 1.2-2.1 2.5-3.2 3.7c-.2.3-.5.5-.7.8C103.4 301.9 64 402.3 64 512s39.4 210.1 104.8 288c.2.3.5.6.7.9l3.1 3.7c.4.5.8.9 1.2 1.4l4.1 4.7c0 .1.1.1.1.2c1.5 1.7 3 3.4 4.6 5l.1.1c3.2 3.4 6.4 6.8 9.6 10.1l.1.1c1.6 1.6 3.1 3.2 4.7 4.7l.3.3c3.3 3.3 6.7 6.5 10.1 9.6c80.1 74 187 119.2 304.5 119.2s224.4-45.2 304.3-119.2a300 300 0 0 0 10-9.6l.3-.3c1.6-1.6 3.2-3.1 4.7-4.7l.1-.1c3.3-3.3 6.5-6.7 9.6-10.1l.1-.1c1.5-1.7 3.1-3.3 4.6-5c0-.1.1-.1.1-.2c1.4-1.5 2.8-3.1 4.1-4.7c.4-.5.8-.9 1.2-1.4a99 99 0 0 0 3.3-3.7m4.1-142.6c-13.8 32.6-32 62.8-54.2 90.2a444 444 0 0 0-81.5-55.9c11.6-46.9 18.8-98.4 20.7-152.6H887c-3 40.9-12.6 80.6-28.5 118.3M887 484H743.5c-1.9-54.2-9.1-105.7-20.7-152.6c29.3-15.6 56.6-34.4 81.5-55.9A373.86 373.86 0 0 1 887 484M658.3 165.5c39.7 16.8 75.8 40 107.6 69.2a394.7 394.7 0 0 1-59.4 41.8c-15.7-45-35.8-84.1-59.2-115.4c3.7 1.4 7.4 2.9 11 4.4m-90.6 700.6c-9.2 7.2-18.4 12.7-27.7 16.4V697a389.1 389.1 0 0 1 115.7 26.2c-8.3 24.6-17.9 47.3-29 67.8c-17.4 32.4-37.8 58.3-59 75.1m59-633.1c11 20.6 20.7 43.3 29 67.8A389.1 389.1 0 0 1 540 327V141.6c9.2 3.7 18.5 9.1 27.7 16.4c21.2 16.7 41.6 42.6 59 75M540 640.9V540h147.5c-1.6 44.2-7.1 87.1-16.3 127.8l-.3 1.2A445 445 0 0 0 540 640.9m0-156.9V383.1c45.8-2.8 89.8-12.5 130.9-28.1l.3 1.2c9.2 40.7 14.7 83.5 16.3 127.8zm-56 56v100.9c-45.8 2.8-89.8 12.5-130.9 28.1l-.3-1.2c-9.2-40.7-14.7-83.5-16.3-127.8zm-147.5-56c1.6-44.2 7.1-87.1 16.3-127.8l.3-1.2c41.1 15.6 85 25.3 130.9 28.1V484zM484 697v185.4c-9.2-3.7-18.5-9.1-27.7-16.4c-21.2-16.7-41.7-42.7-59.1-75.1c-11-20.6-20.7-43.3-29-67.8c37.2-14.6 75.9-23.3 115.8-26.1m0-370a389.1 389.1 0 0 1-115.7-26.2c8.3-24.6 17.9-47.3 29-67.8c17.4-32.4 37.8-58.4 59.1-75.1c9.2-7.2 18.4-12.7 27.7-16.4V327zM365.7 165.5c3.7-1.5 7.3-3 11-4.4c-23.4 31.3-43.5 70.4-59.2 115.4c-21-12-40.9-26-59.4-41.8c31.8-29.2 67.9-52.4 107.6-69.2M165.5 365.7c13.8-32.6 32-62.8 54.2-90.2c24.9 21.5 52.2 40.3 81.5 55.9c-11.6 46.9-18.8 98.4-20.7 152.6H137c3-40.9 12.6-80.6 28.5-118.3M137 540h143.5c1.9 54.2 9.1 105.7 20.7 152.6a444 444 0 0 0-81.5 55.9A373.86 373.86 0 0 1 137 540m228.7 318.5c-39.7-16.8-75.8-40-107.6-69.2c18.5-15.8 38.4-29.7 59.4-41.8c15.7 45 35.8 84.1 59.2 115.4c-3.7-1.4-7.4-2.9-11-4.4m292.6 0c-3.7 1.5-7.3 3-11 4.4c23.4-31.3 43.5-70.4 59.2-115.4c21 12 40.9 26 59.4 41.8a373.8 373.8 0 0 1-107.6 69.2"
         ></path>
       </svg>
@@ -232,12 +232,12 @@ const AboutUs = () => {
                 ].map((item, idx) => (
                   <div className={`${item.mb} relative`} key={idx}>
                     <div
-                      className={`absolute -left-9 top-0 w-8 h-8 ${item.bg} rounded-full flex items-center justify-center shadow-lg`}
+                      className={`absolute -left-9 top-0 w-10 h-10 bg-blue-500 dark:bg-blue-700 rounded-full flex items-center justify-center shadow-lg`}
                     >
                       {item.icon}
                     </div>
                     <div className="ml-8">
-                      <h3 className={`font-bold text-lg ${item.titleClass}`}>
+                      <h3 className={`font-bold text-lg text-blue-700 dark:text-blue-300`}>
                         {t(item.titleKey)}
                       </h3>
                       <p className="text-gray-600 dark:text-gray-400">
@@ -313,7 +313,7 @@ const AboutUs = () => {
                 },
                 {
                   icon: (
-                    <span className="w-16 h-16 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center mb-4 shadow-lg">
+                    <span className="w-16 h-16 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center mb-4 shadow-lg">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={50}
@@ -322,7 +322,7 @@ const AboutUs = () => {
                       >
                         <path
                           fill="none"
-                          stroke="#a78bfa"
+                          stroke="#38bdf8"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           d="M24 43.5c3.883 0 14.68-7.263 15.658-19.893v-13.48L24 4.5L8.342 10.127v13.48C8.906 35.517 19.834 43.5 24 43.5"
@@ -333,14 +333,14 @@ const AboutUs = () => {
                           cy={24.044}
                           r={5.846}
                           fill="none"
-                          stroke="#a78bfa"
+                          stroke="#38bdf8"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           strokeWidth={2}
                         ></circle>
                         <path
                           fill="none"
-                          stroke="#a78bfa"
+                          stroke="#38bdf8"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           d="m35.531 35.117l-7.179-7.18"
@@ -356,10 +356,10 @@ const AboutUs = () => {
                 },
                 {
                   icon: (
-                    <span className="w-16 h-16 rounded-full bg-orange-100 dark:bg-orange-900 flex items-center justify-center mb-4 shadow-lg">
+                    <span className="w-16 h-16 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center mb-4 shadow-lg">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        fill="#fb923c"
+                        fill="#38bdf8"
                         height={50}
                         width={50}
                         version="1.1"
@@ -381,7 +381,7 @@ const AboutUs = () => {
                   className={`flex flex-col items-center text-center relative md:w-1/3`}
                 >
                   {step.icon}
-                  <h3 className={`font-bold text-xl mb-2 ${step.titleClass}`}>
+                  <h3 className={`font-bold text-xl mb-2 text-blue-700 dark:text-blue-300`}>
                     {t(step.titleKey)}
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300">
@@ -450,8 +450,8 @@ const AboutUs = () => {
                       idx === 0
                         ? "bg-blue-100 dark:bg-blue-900"
                         : idx === 1
-                          ? "bg-orange-100 dark:bg-orange-900"
-                          : "bg-purple-100 dark:bg-purple-900"
+                        ? "bg-orange-100 dark:bg-orange-900"
+                        : "bg-purple-100 dark:bg-purple-900"
                     }`}
                     style={{
                       position: "absolute",

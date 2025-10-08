@@ -27,10 +27,26 @@ const blog = (props: Props) => {
         <SiteHeader />
         {/* Hero Section */}
         <section className="relative h-[100vh] flex flex-col justify-center items-center text-center bg-gradient-to-r from-blue-700 to-purple-800 overflow-hidden">
-          <h1 className="text-5xl font-extrabold mb-4 text-white drop-shadow-lg">
+          {/* Background Video */}
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover z-0"
+            style={{ pointerEvents: "none" }}
+          >
+            <source src="/blog-background-video.mp4" type="video/mp4" />
+            {/* Optionally add a webm source for better browser support */}
+            {/* <source src="/background-video.webm" type="video/webm" /> */}
+            Your browser does not support the video tag.
+          </video>
+          {/* Overlay for better text readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-purple-800 opacity-70 z-10"></div>
+          <h1 className="text-5xl font-extrabold mb-4 text-white drop-shadow-lg z-20">
             {t("blog.hero.title")}
           </h1>
-          <p className="text-lg max-w-xl mx-auto mb-6 text-white/80">
+          <p className="text-lg max-w-xl mx-auto mb-6 text-white/80 z-20">
             {t("blog.hero.subtitle")}
           </p>
         </section>

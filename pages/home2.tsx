@@ -391,7 +391,7 @@ const home2 = (props: Props) => {
             muted
             playsInline
           >
-            <source src="/your-background-video.mp4" type="video/mp4" />
+            <source src="/home2-background-video.mp4" type="video/mp4" />
             {/* Fallback for browsers that don't support the video tag */}
           </video>
           {/* Left: Headline, Description, CTA */}
