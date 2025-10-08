@@ -1,6 +1,5 @@
 import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
-import React from "react";
 import { useTranslation } from "react-i18next";
 
 const SecurityAwareness = () => {

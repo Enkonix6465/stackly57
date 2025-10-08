@@ -232,7 +232,7 @@ const AboutUs = () => {
                 ].map((item, idx) => (
                   <div className={`${item.mb} relative`} key={idx}>
                     <div
-                      className={`absolute -left-5 top-0 w-8 h-8 ${item.bg} rounded-full flex items-center justify-center shadow-lg`}
+                      className={`absolute -left-9 top-0 w-8 h-8 ${item.bg} rounded-full flex items-center justify-center shadow-lg`}
                     >
                       {item.icon}
                     </div>
@@ -433,13 +433,15 @@ const AboutUs = () => {
             <h2 className="text-3xl font-bold mb-8 text-purple-700 dark:text-purple-300">
               {t("about.achievements.title")}
             </h2>
-            <div className="relative flex flex-col items-center mx-auto">
+            <div className="relative flex flex-col items-center mx-auto mt-12">
               <div className="absolute md:block hidden left-1/2 transform -translate-x-1/2 top-8 bottom-8 w-1 bg-gradient-to-b from-blue-300 via-purple-300 to-orange-300 dark:from-blue-900 dark:via-purple-900 dark:to-orange-900 rounded-full z-0"></div>
               {achievements.map((ach, idx) => (
                 <div
                   key={idx}
-                  className={`relative z-10 flex flex-col items-center mb-12 last:mb-0 w-full ${
-                    idx % 2 === 0 ? " md:ml-0 md:mr-auto" : "md:mr-0 md:ml-auto"
+                  className={`relative z-10 flex flex-col items-center mb-12 last:mb-0  w-full ${
+                    idx % 2 === 0
+                      ? " min-[800px]:ml-0 min-[800px]:mr-auto"
+                      : "min-[800px]:mr-0 min-[800px]:ml-auto"
                   }`}
                   style={{ maxWidth: "400px" }}
                 >

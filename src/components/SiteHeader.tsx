@@ -128,7 +128,7 @@ const SiteHeader = () => {
         {/* Logo */}
         <Link href="/home1" className=" w-auto h-auto">
           <Image
-            src="https://i.postimg.cc/DwdH9gv8/logo-stackly.png"
+            src="/logo-stackly.png"
             alt="Logo"
             width={100}
             height={100}
@@ -175,7 +175,12 @@ const SiteHeader = () => {
           <li>
             <Link
               href="/about-us"
-              className="px-3 py-2 rounded-lg hover:bg-blue-100 dark:hover:bg-gray-800"
+              className={`px-3 py-2 rounded-lg 
+                ${
+                  router.pathname === "/about-us"
+                    ? "text-blue-900 dark:text-blue-200 font-bold"
+                    : ""
+                }hover:bg-blue-100 dark:hover:bg-gray-800`}
             >
               {t("hedder.navbar.About_Us")}
             </Link>
@@ -198,7 +203,7 @@ const SiteHeader = () => {
                 <li>
                   <Link
                     href="/services"
-                    className="block px-4 border-b py-2 hover:bg-blue-50 dark:hover:bg-gray-700"
+                    className={`block px-4 border-b py-2 hover:bg-blue-50 dark:hover:bg-gray-700 `}
                   >
                     {t("hedder.navbar.All_Services")}
                   </Link>
@@ -219,7 +224,12 @@ const SiteHeader = () => {
           <li>
             <Link
               href="/blog"
-              className="px-3 py-2 rounded-lg hover:bg-blue-100 dark:hover:bg-gray-800"
+              className={`px-3 py-2 rounded-lg hover:bg-blue-100 dark:hover:bg-gray-800
+                ${
+                  router.pathname === "/blog"
+                    ? "text-blue-900 dark:text-blue-200 font-bold"
+                    : ""
+                }`}
             >
               {t("hedder.navbar.Blog")}
             </Link>
@@ -227,7 +237,12 @@ const SiteHeader = () => {
           <li>
             <Link
               href="/contact-us"
-              className="px-3 py-2 rounded-lg hover:bg-blue-100 dark:hover:bg-gray-800"
+              className={`px-3 py-2 rounded-lg hover:bg-blue-100 dark:hover:bg-gray-800
+                ${
+                  router.pathname === "/contact-us"
+                    ? "text-blue-900 dark:text-blue-200 font-bold"
+                    : ""
+                }`}
             >
               {t("hedder.navbar.Contact_Us")}
             </Link>
@@ -276,14 +291,20 @@ const SiteHeader = () => {
             >
               {currentUser ? (
                 <>
-                  {typeof currentUser.firstName === "string" &&
-                  currentUser.firstName.length > 0
-                    ? currentUser.firstName[0]
-                    : ""}
-                  {typeof currentUser.lastName === "string" &&
-                  currentUser.lastName.length > 0
-                    ? currentUser.lastName[0]
-                    : ""}
+                  {currentUser.role === "admin" ? (
+                    <>AD</>
+                  ) : (
+                    <>
+                      {typeof currentUser.firstName === "string" &&
+                      currentUser.firstName.length > 0
+                        ? currentUser.firstName[0]
+                        : ""}
+                      {typeof currentUser.lastName === "string" &&
+                      currentUser.lastName.length > 0
+                        ? currentUser.lastName[0]
+                        : ""}
+                    </>
+                  )}
                 </>
               ) : (
                 <>AD</>
@@ -362,7 +383,12 @@ const SiteHeader = () => {
             <li>
               <Link
                 href="/about-us"
-                className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-blue-100 dark:hover:bg-gray-800 "
+                className={`flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-blue-100 dark:hover:bg-gray-800
+                  ${
+                    router.pathname === "/about-us"
+                      ? "text-blue-900 dark:text-blue-200 font-bold"
+                      : ""
+                  } `}
               >
                 <span>{t("hedder.navbar.About_Us")}</span>
               </Link>
@@ -379,7 +405,7 @@ const SiteHeader = () => {
                   <li>
                     <Link
                       href="/services"
-                      className="block   border-b py-2 hover:bg-blue-50 dark:hover:bg-gray-700"
+                      className="block px-4 border-b py-2 hover:bg-blue-50 dark:hover:bg-gray-700"
                     >
                       {t("hedder.navbar.All_Services")}
                     </Link>
@@ -400,7 +426,12 @@ const SiteHeader = () => {
             <li>
               <Link
                 href="/blog"
-                className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-blue-100 dark:hover:bg-gray-800 "
+                className={`flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-blue-100 dark:hover:bg-gray-800
+                  ${
+                    router.pathname === "/blog"
+                      ? "text-blue-900 dark:text-blue-200 font-bold"
+                      : ""
+                  } `}
               >
                 {t("hedder.navbar.Blog")}
               </Link>
@@ -408,7 +439,11 @@ const SiteHeader = () => {
             <li>
               <Link
                 href="/contact-us"
-                className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-blue-100 dark:hover:bg-gray-800 "
+                className={`flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-blue-100 dark:hover:bg-gray-800 ${
+                  router.pathname === "/contact-us"
+                    ? "text-blue-900 dark:text-blue-200 font-bold"
+                    : ""
+                } `}
               >
                 {t("hedder.navbar.Contact_Us")}
               </Link>
@@ -450,14 +485,20 @@ const SiteHeader = () => {
                 >
                   {currentUser ? (
                     <>
-                      {typeof currentUser.firstName === "string" &&
-                      currentUser.firstName.length > 0
-                        ? currentUser.firstName[0]
-                        : ""}
-                      {typeof currentUser.lastName === "string" &&
-                      currentUser.lastName.length > 0
-                        ? currentUser.lastName[0]
-                        : ""}
+                      {currentUser.role === "admin" ? (
+                        <>AD</>
+                      ) : (
+                        <>
+                          {typeof currentUser.firstName === "string" &&
+                          currentUser.firstName.length > 0
+                            ? currentUser.firstName[0]
+                            : ""}
+                          {typeof currentUser.lastName === "string" &&
+                          currentUser.lastName.length > 0
+                            ? currentUser.lastName[0]
+                            : ""}
+                        </>
+                      )}
                     </>
                   ) : (
                     <>AD</>
@@ -465,7 +506,7 @@ const SiteHeader = () => {
                   <ChevronDown size={16} />
                 </button>
                 {profileOpen && (
-                  <ul className="absolute right-0 mt-2 w-32 bg-white dark:bg-gray-800 shadow-xl rounded-lg py-2 border border-blue-100 dark:border-gray-700 z-10">
+                  <ul className="absolute text-nowrap right-0 mt-2   bg-white dark:bg-gray-800 shadow-xl rounded-lg py-2 border border-blue-100 dark:border-gray-700 z-10">
                     {currentUser &&
                       currentUser.role === "admin" &&
                       window.location.pathname != "/admin-dashboard" && (
@@ -480,7 +521,7 @@ const SiteHeader = () => {
                       )}
                     <li>
                       <button
-                        className="flex items-center gap-2 py-1 w-full rounded hover:bg-blue-100 dark:hover:bg-gray-700  font-semibold text-red-600 dark:text-red-400"
+                        className="flex items-center gap-2 px-4 py-2 hover:bg-blue-50 dark:hover:bg-gray-700 w-full"
                         onClick={() => handleLogout()}
                       >
                         <LogOut size={16} /> Logout

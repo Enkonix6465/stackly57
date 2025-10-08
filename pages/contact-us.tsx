@@ -1,7 +1,6 @@
 import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
 import React from "react";
-import Image from "next/image";
 import { useTranslation } from "react-i18next";
 
 const ContactUs: React.FC = (props) => {
@@ -120,7 +119,7 @@ const ContactUs: React.FC = (props) => {
     <main className="min-h-screen  ">
       <SiteHeader />
       {/* Hero Section */}
-      <section className="relative h-[100vh] flex flex-col justify-center items-center text-center bg-gradient-to-r from-blue-700 to-purple-800 overflow-hidden caret-transparent">
+      <section className="relative h-[100vh] flex flex-col justify-center items-center text-center bg-gradient-to-r from-blue-600 to-purple-900 overflow-hidden caret-transparent">
         {/* Background Video */}
         <video
           autoPlay
@@ -129,7 +128,7 @@ const ContactUs: React.FC = (props) => {
           playsInline
           className="absolute inset-0 w-full h-full object-cover z-0"
         >
-          <source src="/bg-video.mp4" type="video/mp4" />
+          <source src="/contactus_bg-video.mp4" type="video/mp4" />
           {t("contactUs.hero.videoFallback")}
         </video>
         {/* Overlay for readability */}
@@ -141,45 +140,6 @@ const ContactUs: React.FC = (props) => {
           <p className="text-lg max-w-xl mx-auto mb-6 text-white/80">
             {t("contactUs.hero.subtitle")}
           </p>
-        </div>
-      </section>
-
-      {/* Info Section: Address, Email, Phone Combined */}
-      <section className="py-10 px-4 flex justify-center caret-transparent">
-        <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Address Card */}
-          <div className="bg-white/80 dark:bg-gray-900/80 rounded-2xl shadow-lg p-8 border border-purple-100 dark:border-purple-900 backdrop-blur-lg flex flex-col items-center text-center">
-            <h3 className="text-2xl font-bold mb-2 text-purple-700 dark:text-purple-300">
-              {t("contactUs.info.address.title")}
-            </h3>
-            <p className="text-gray-700 dark:text-gray-300">
-              {t("contactUs.info.address.line1")}
-              <br />
-              {t("contactUs.info.address.line2")}
-            </p>
-          </div>
-          {/* Email Card */}
-          <div className="bg-white/80 dark:bg-gray-900/80 rounded-2xl shadow-lg p-8 border border-blue-100 dark:border-blue-900 backdrop-blur-lg flex flex-col items-center text-center">
-            <h3 className="text-2xl font-bold mb-2 text-blue-700 dark:text-blue-300">
-              {t("contactUs.info.email.title")}
-            </h3>
-            <p className="text-gray-700 dark:text-gray-300">
-              support@enkonix.com
-              <br />
-              info@enkonix.com
-            </p>
-          </div>
-          {/* Phone Card */}
-          <div className="bg-white/80 dark:bg-gray-900/80 rounded-2xl shadow-lg p-8 border border-purple-100 dark:border-purple-900 backdrop-blur-lg flex flex-col items-center text-center">
-            <h3 className="text-2xl font-bold mb-2 text-purple-700 dark:text-purple-300">
-              {t("contactUs.info.phone.title")}
-            </h3>
-            <p className="text-gray-700 dark:text-gray-300">
-              +1 (234) 567-8901
-              <br />
-              {t("contactUs.info.phone.hours")}
-            </p>
-          </div>
         </div>
       </section>
 
@@ -230,8 +190,47 @@ const ContactUs: React.FC = (props) => {
         </div>
       </section>
 
+      {/* Info Section: Address, Email, Phone Combined */}
+      <section className="py-10 px-4 flex justify-center caret-transparent">
+        <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Address Card */}
+          <div className="bg-white/80 dark:bg-gray-900/80 rounded-2xl shadow-lg p-8 border border-purple-100 dark:border-purple-900 backdrop-blur-lg flex flex-col items-center text-center">
+            <h3 className="text-2xl font-bold mb-2 text-purple-700 dark:text-purple-300">
+              {t("contactUs.info.address.title")}
+            </h3>
+            <p className="text-gray-700 dark:text-gray-300">
+              {t("contactUs.info.address.line1")}
+              <br />
+              {t("contactUs.info.address.line2")}
+            </p>
+          </div>
+          {/* Email Card */}
+          <div className="bg-white/80 dark:bg-gray-900/80 rounded-2xl shadow-lg p-8 border border-blue-100 dark:border-blue-900 backdrop-blur-lg flex flex-col items-center text-center">
+            <h3 className="text-2xl font-bold mb-2 text-blue-700 dark:text-blue-300">
+              {t("contactUs.info.email.title")}
+            </h3>
+            <p className="text-gray-700 dark:text-gray-300">
+              support@enkonix.com
+              <br />
+              info@enkonix.com
+            </p>
+          </div>
+          {/* Phone Card */}
+          <div className="bg-white/80 dark:bg-gray-900/80 rounded-2xl shadow-lg p-8 border border-purple-100 dark:border-purple-900 backdrop-blur-lg flex flex-col items-center text-center">
+            <h3 className="text-2xl font-bold mb-2 text-purple-700 dark:text-purple-300">
+              {t("contactUs.info.phone.title")}
+            </h3>
+            <p className="text-gray-700 dark:text-gray-300">
+              +1 (234) 567-8901
+              <br />
+              {t("contactUs.info.phone.hours")}
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Our Team Members Section */}
-      <section className=" caret-transparent  py-16 px-4 flex justify-center">
+      <section className=" caret-transparent bg-gradient-to-br from-blue-50 to-purple-100 dark:from-blue-950 dark:to-purple-900  py-16 px-4 flex justify-center">
         <div className="max-w-6xl w-full">
           <h2 className="text-3xl font-bold mb-10 text-blue-700 dark:text-blue-300 text-center">
             {t("contactUs.teamTitle")}
@@ -262,7 +261,7 @@ const ContactUs: React.FC = (props) => {
       </section>
 
       {/* FAQ Section (Accordion) */}
-      <section className="py-16 bg-gradient-to-br from-blue-50 to-purple-100 dark:from-blue-950 dark:to-purple-900  caret-transparent px-4 flex justify-center">
+      <section className="py-16 caret-transparent px-4 flex justify-center">
         <div className="w-full bg-white/80 dark:bg-gray-900/80 rounded-2xl shadow-xl p-10 border border-purple-100 dark:border-purple-900 backdrop-blur-lg">
           <h2 className="text-3xl font-bold mb-8 text-purple-700 dark:text-purple-300 text-center">
             {t("contactUs.faqTitle")}

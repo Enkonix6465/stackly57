@@ -2,9 +2,9 @@ import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
 import AOS from "aos";
 import Head from "next/head";
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
 import { useTranslation } from "react-i18next";
 type Props = {};
 
@@ -382,7 +382,7 @@ const home2 = (props: Props) => {
       <main className="caret-transparent">
         <SiteHeader />
         {/* Hero Section - Software Innovation & Development */}
-        <section className="relative flex flex-col md:flex-row items-center justify-between bg-gradient-to-r from-blue-500 to-purple-600 dark:from-blue-900 dark:to-purple-900 text-white px-8 py-20 overflow-hidden">
+        <section className="relative flex flex-col min-[769px]:flex-row items-center justify-between bg-gradient-to-r from-blue-500 to-purple-600 dark:from-blue-900 dark:to-purple-900 text-white px-8 py-20 overflow-hidden">
           {/* Background Video */}
           <video
             className="absolute inset-0 w-full h-full object-cover z-0 opacity-40 dark:opacity-30"
@@ -396,21 +396,21 @@ const home2 = (props: Props) => {
           </video>
           {/* Left: Headline, Description, CTA */}
           <div className="flex-1 z-10 max-w-xl relative">
-            <span className="text-orange-400 dark:text-orange-300 font-semibold tracking-wide mb-4 block text-sm">
+            <span className="  font-semibold tracking-wide mb-4 block text-sm">
               {t("home2.heroSubtitle")}
             </span>
-            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6 text-white dark:text-white">
+            <h1 className="text-4xl min-[769px]:text-5xl font-extrabold leading-tight mb-6 text-white dark:text-white">
               {t("home2.heroTitle")}
             </h1>
             <p className="mb-8 text-base text-white/80 dark:text-white/70">
               {t("home2.heroDescription")}
             </p>
-            <button className="bg-orange-400 dark:bg-orange-500 hover:bg-orange-500 dark:hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all text-base">
+            <button className="bg-blue-400 dark:bg-blue-500 hover:bg-blue-500 dark:hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all text-base">
               {t("home2.getStarted")}
             </button>
           </div>
           {/* Right: Image & Accents */}
-          <div className="flex-1 flex justify-center items-center relative  ">
+          <div className="flex-1 flex justify-center items-center relative min-[769px]:mt-0 mt-12">
             {/* Main Image */}
             <div className="relative z-10">
               <Image
@@ -433,7 +433,7 @@ const home2 = (props: Props) => {
             <p className="text-center text-gray-500 dark:text-gray-300 mb-10 text-base">
               {t("home2.features.description")}
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 min-[769px]:grid-cols-3 lg:grid-cols-4 gap-8">
               {features.map((feature, index) => (
                 <div
                   key={index}
@@ -460,10 +460,10 @@ const home2 = (props: Props) => {
         </section>
 
         {/* IT Solutions Section - matches reference image */}
-        <section className="relative flex flex-col md:flex-row items-center justify-between bg-[#eaf0f6] dark:bg-[#101624] px-8 py-20 overflow-hidden">
+        <section className="relative flex flex-col min-[769px]:flex-row items-center justify-between bg-[#eaf0f6] dark:bg-[#101624] px-8 py-20 overflow-hidden">
           {/* Left: Headline, Description, Feature Cards, CTA */}
           <div className="flex-1 z-10 max-w-xl w-full">
-            <h2 className="text-3xl md:text-4xl font-extrabold leading-tight mb-4 text-gray-900 dark:text-white">
+            <h2 className="text-3xl min-[769px]:text-4xl font-extrabold leading-tight mb-4 text-gray-900 dark:text-white">
               {t("home2.itSolutions.title")}
             </h2>
             <p className="mb-8 text-base text-gray-700 dark:text-gray-300">
@@ -483,15 +483,15 @@ const home2 = (props: Props) => {
                         width="18"
                         height="18"
                         rx="4"
-                        fill="#f97316"
+                        fill="#1447e6"
                         opacity="0.2"
                       />
                       <path
                         d="M7 7h10v10H7V7z"
-                        stroke="#f97316"
+                        stroke="#1447e6"
                         strokeWidth="2"
                       />
-                      <circle cx="12" cy="12" r="2" fill="#f97316" />
+                      <circle cx="12" cy="12" r="2" fill="#1447e6" />
                     </svg>
                   </span>
                 </div>
@@ -535,13 +535,13 @@ const home2 = (props: Props) => {
             {/* CTA Button */}
             <Link
               href="/services"
-              className="bg-orange-400 dark:bg-orange-500 hover:bg-orange-500 dark:hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all text-base"
+              className="bg-blue-400 dark:bg-blue-500 hover:bg-blue-500 dark:hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all text-base"
             >
               {t("home2.getStarted")}
             </Link>
           </div>
           {/* Right: Themed Image & Abstract Accents */}
-          <div className="flex-1 flex justify-center items-center relative w-full mt-12 md:mt-0">
+          <div className="flex-1 flex justify-center items-center relative w-full mt-12 min-[769px]:mt-0">
             {/* Main Image */}
             <div className="relative z-10">
               <Image
@@ -561,14 +561,14 @@ const home2 = (props: Props) => {
             <h2 className="text-4xl font-extrabold mb-10 text-center text-blue-700 dark:text-blue-300 tracking-tight">
               {t("home2.Expertise.title")}
             </h2>
-            <div className="grid md:grid-cols-3 gap-10">
+            <div className="grid min-[769px]:grid-cols-3 gap-10">
               {[
                 {
                   icon: (
                     <svg width="40" height="40" fill="none" viewBox="0 0 24 24">
                       <path
                         d="M12 2v20M2 12h20"
-                        stroke="#f97316"
+                        stroke="#1447e6"
                         strokeWidth="2"
                       />
                     </svg>
@@ -589,12 +589,12 @@ const home2 = (props: Props) => {
                       viewBox="0 0 24 24"
                     >
                       <path
-                        fill="#f97316"
+                        fill="#1447e6"
                         d="M12 3.19L5 6.3V12h7v8.93c3.72-1.15 6.47-4.82 7-8.94h-7z"
                         opacity={0.3}
                       ></path>
                       <path
-                        fill="#f97316"
+                        fill="#1447e6"
                         d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12c5.16-1.26 9-6.45 9-12V5zm0 19.93V12H5V6.3l7-3.11v8.8h7c-.53 4.12-3.28 7.79-7 8.94"
                       ></path>
                     </svg>
@@ -616,7 +616,7 @@ const home2 = (props: Props) => {
                     >
                       <path
                         fill="none"
-                        stroke="#f97316"
+                        stroke="#1447e6"
                         strokeWidth={2}
                         d="M6 9a3 3 0 1 0 0-6a3 3 0 0 0 0 6Zm0-6V0m0 12V9M0 6h3m6 0h3M2 2l2 2m4 4l2 2m0-8L8 4M4 8l-2 2m16 2a3 3 0 1 0 0-6a3 3 0 0 0 0 6Zm0-6V3m0 12v-3m-6-3h3m6 0h3M14 5l2 2m4 4l2 2m0-8l-2 2m-4 4l-2 2m-5 8a3 3 0 1 0 0-6a3 3 0 0 0 0 6Zm0-6v-3m0 12v-3m-6-3h3m6 0h3M5 14l2 2m4 4l2 2m0-8l-2 2m-4 4l-2 2"
                       ></path>
@@ -638,16 +638,13 @@ const home2 = (props: Props) => {
                       boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.15)",
                     }}
                   >
-                    <span className="absolute top-6 right-6 opacity-20 group-hover:opacity-40 transition">
-                      {card.icon}
-                    </span>
                     <span
                       className={`mb-6 inline-flex items-center justify-center w-20 h-20 rounded-full ${card.bg} shadow-lg`}
                     >
                       {card.icon}
                     </span>
                     <h3
-                      className={`font-extrabold text-xl mb-2 tracking-tight ${card.titleClass}`}
+                      className={`font-extrabold text-xl mb-2 tracking-tight text-blue-700 dark:text-blue-300`}
                     >
                       {t(card.title)}
                     </h3>
@@ -656,7 +653,7 @@ const home2 = (props: Props) => {
                     </p>
                     <Link
                       href="/services"
-                      className={`inline-block ${card.btnClass} text-white px-5 py-2 rounded-full font-semibold transition`}
+                      className={`inline-block bg-blue-600 dark:bg-blue-400 group-hover:bg-blue-700 dark:group-hover:bg-blue-500 text-white px-5 py-2 rounded-full font-semibold transition`}
                     >
                       {t("home2.learnMore")}
                     </Link>
@@ -673,94 +670,109 @@ const home2 = (props: Props) => {
             <h2 className="text-4xl font-extrabold mb-10 text-center text-blue-700 dark:text-blue-300 tracking-tight">
               {t("home2.insights.title")}
             </h2>
-            <div className="grid md:grid-cols-3 gap-10">
-              {/* Card 1 */}
-              <div className="relative bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-xl hover:scale-105 transition group flex flex-col items-start border border-blue-100 dark:border-blue-800">
-                <span className="absolute top-6 right-6 bg-blue-100 dark:bg-blue-800 text-blue-600 dark:text-blue-300 px-3 py-1 rounded-full text-xs font-bold">
-                  {t("home2.insights.card1.label")}
-                </span>
-                <div className="mb-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={50}
-                    height={50}
-                    viewBox="0 0 24 24"
+            <div className="grid min-[769px]:grid-cols-3 gap-10">
+              {[
+                {
+                  key: 1,
+                  border: "border-blue-100 dark:border-blue-800",
+
+                  badge: t("home2.insights.card1.label"),
+                  icon: (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={50}
+                      height={50}
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="#1447e6"
+                        d="M22 2h-1v1h1zm-1 1h-1v1h1zm-1 1h-4v1h4zm-4-1h-2v1h2zm-2-1h-1v1h1zm-1-1h-2v1h2zm-2 1h-1v1h1zm-1 1H8v1h2zM8 4H4v1h4zM4 3H3v1h1zM3 2H2v1h1zm0 12H2v2h1zm1 2H3v2h1zm1 2H4v1h1zm2 1H5v1h2zm2 1H7v1h2zm2 1H9v1h2zm2 1h-2v1h2zm2-1h-2v1h2zm2-1h-2v1h2zm2-1h-2v1h2zm1-1h-1v1h1zm1-2h-1v2h1zm1-2h-1v2h1zm1-11h-1v11h1zM2 3H1v11h1z"
+                      />
+                      <path
+                        fill="#1447e6"
+                        d="M20 5v1h-4V5h-2V4h-1V3h-2v1h-1v1H8v1H4V5H3v9h1v2h1v2h2v1h2v1h2v1h2v-1h2v-1h2v-1h2v-2h1v-2h1V5zM10 17v-2h1v-3h-1V9h1V8h2v1h1v3h-1v3h1v2z"
+                      />
+                    </svg>
+                  ),
+                  titleClass: "",
+                  title: t("home2.insights.card1.title"),
+                  description: t("home2.insights.card1.description"),
+                },
+                {
+                  key: 2,
+                  border: "border-purple-100 dark:border-purple-800",
+                  badgeClass:
+                    "bg-purple-100 dark:bg-purple-800 text-purple-600 dark:text-purple-300",
+                  badge: t("home2.insights.card2.label"),
+                  icon: (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={50}
+                      height={50}
+                      viewBox="0 0 32 32"
+                    >
+                      <path
+                        fill="#1447e6"
+                        d="M22 30H10c-1.1 0-2-.9-2-2v-3h2v3h12v-3h2v3c0 1.1-.9 2-2 2m-7-15.2V25h2V14.8l2.6 2.6L21 16l-5-5l-5 5l1.4 1.4z"
+                      />
+                      <path
+                        fill="#1447e6"
+                        d="M24.8 9.1C23.9 5 20.3 2 16 2S8.1 5 7.2 9.1c-3 .6-5.2 3.3-5.2 6.4C2 19.1 4.9 22 8.5 22H12v-2H8.5C6 20 4 18 4 15.5c0-2.3 1.8-4.3 4.1-4.5H9l.1-.8C9.5 6.6 12.5 4 16 4s6.5 2.6 6.9 6.1l.1.9l.8.1c2.3.2 4.1 2.2 4.1 4.5c0 2.5-2 4.5-4.5 4.5H20v2h3.5c3.6 0 6.5-2.9 6.5-6.5c0-3.2-2.2-5.9-5.2-6.5"
+                      />
+                    </svg>
+                  ),
+                  titleClass: "text-purple-700 dark:text-purple-300",
+                  title: t("home2.insights.card2.title"),
+                  description: t("home2.insights.card2.description"),
+                },
+                {
+                  key: 3,
+                  border: "border-green-100 dark:border-green-800",
+                  badgeClass:
+                    "bg-green-100 dark:bg-green-800 text-green-600 dark:text-green-300",
+                  badge: t("home2.insights.card3.label"),
+                  icon: (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={50}
+                      height={50}
+                      viewBox="0 0 64 64"
+                    >
+                      <path
+                        fill="#1447e6"
+                        d="M9.756 24.065a3.37 3.37 0 0 1 3.366 3.366c0 1.856-1.51 3.363-3.366 3.363s-3.364-1.508-3.364-3.364a3.366 3.366 0 0 1 3.364-3.366zM32.062 5.333a4.426 4.426 0 1 1 0 8.853a4.423 4.423 0 0 1-4.424-4.423a4.43 4.43 0 0 1 4.424-4.43M7.681 19.64l.688 1.094a3.4 3.4 0 0 1 4.68 1.062l1.091-.69a4.69 4.69 0 0 0-6.459-1.466m3.103-5.202l.424 1.219a3.396 3.396 0 0 1 4.321 2.088l1.218-.425a4.69 4.69 0 0 0-5.963-2.881zm4.194-4.371l.14 1.284a3.4 3.4 0 0 1 3.742 3.006l1.282-.141a4.69 4.69 0 0 0-5.163-4.149zm4.917-2.034a3.4 3.4 0 0 1 2.968 3.772l1.282.152a4.69 4.69 0 0 0-4.096-5.205zm20.564-1.654a3.4 3.4 0 0 1-.76 4.738l.756 1.047a4.69 4.69 0 0 0 1.05-6.539l-1.046.755zm5.246 2.512a3.4 3.4 0 0 1-1.806 4.444l.502 1.19a4.69 4.69 0 0 0 2.494-6.133zm4.547 3.625a3.4 3.4 0 0 1-2.762 3.926l.22 1.271a4.69 4.69 0 0 0 3.814-5.416l-1.272.22zm.04 7.761l-.07 1.288a4.69 4.69 0 0 0 4.933-4.42l-1.29-.071a3.4 3.4 0 0 1-3.574 3.204zm3.436 10.941c-1.872 0-3.39-1.506-3.39-3.362s1.517-3.362 3.39-3.362c1.87 0 3.39 1.505 3.39 3.362c0 1.856-1.52 3.362-3.39 3.362m3.577 5.745l1.268.002l2.594 9.058c.2.695.976 1.077 1.734.86c.76-.217 1.24-.881.984-1.75l-2.667-9.292c-1.066-3.715-4.176-3.599-4.176-3.599h-6.627s-3.107-.116-4.176 3.599l-2.669 9.292c-.254.869.226 1.533.986 1.75c.758.217 1.534-.165 1.731-.86l2.596-9.058l1.266-.002l-3.465 12.084h14.09l-3.467-12.084zM9.686 35.677c1.214 0 1.928-.444 1.954-3.8H7.786c.028 3.356.678 3.8 1.9 3.8"
+                      />
+                      <path
+                        fill="#1447e6"
+                        d="M14.268 37.209h1.23v9.397c0 .814.658 1.476 1.468 1.476a1.46 1.46 0 0 0 1.456-1.476V36.183c0-2.378-1.95-4.306-4.328-4.306h-1.522c0 3.275-.956 4.662-2.366 4.662v3.787c.416.177.71.592.71 1.072c0 .644-.516 1.174-1.16 1.174c-.646 0-1.16-.512-1.16-1.158c0-.483.29-.894.706-1.072v-3.79c-1.48 0-2.392-1.513-2.392-4.675H5.462c-2.38 0-4.501 1.928-4.501 4.306v10.423c0 .814.638 1.475 1.452 1.475c.812 0 1.472-.661 1.472-1.475v-9.397h1.218v11.838h9.165zm24.551-15.732h-1.12v34.924c0 1.379-1.118 2.496-2.498 2.496s-2.497-1.117-2.497-2.496v-21.63h-1.28v21.63a2.5 2.5 0 0 1-4.998 0V21.477h-1.124L25.3 34.356a1.906 1.906 0 0 1-3.812 0v-14.24c0-3.136 2.244-4.912 5.317-4.912h10.513c3.072 0 5.317 1.777 5.317 4.912v14.24a1.906 1.906 0 0 1-3.812 0l-.006-12.879z"
+                      />
+                    </svg>
+                  ),
+                  titleClass: "text-green-700 dark:text-green-300",
+                  title: t("home2.insights.card3.title"),
+                  description: t("home2.insights.card3.description"),
+                },
+              ].map((card) => (
+                <div
+                  key={card.key}
+                  className={`relative bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-xl hover:scale-105 transition group flex flex-col items-start border ${card.border}`}
+                >
+                  <span
+                    className={`absolute top-6 right-6 px-3 py-1 rounded-full text-xs font-bold bg-blue-100 dark:bg-blue-800 text-blue-600 dark:text-blue-300`}
                   >
-                    <path
-                      fill="#f97316"
-                      d="M22 2h-1v1h1zm-1 1h-1v1h1zm-1 1h-4v1h4zm-4-1h-2v1h2zm-2-1h-1v1h1zm-1-1h-2v1h2zm-2 1h-1v1h1zm-1 1H8v1h2zM8 4H4v1h4zM4 3H3v1h1zM3 2H2v1h1zm0 12H2v2h1zm1 2H3v2h1zm1 2H4v1h1zm2 1H5v1h2zm2 1H7v1h2zm2 1H9v1h2zm2 1h-2v1h2zm2-1h-2v1h2zm2-1h-2v1h2zm2-1h-2v1h2zm1-1h-1v1h1zm1-2h-1v2h1zm1-2h-1v2h1zm1-11h-1v11h1zM2 3H1v11h1z"
-                    ></path>
-                    <path
-                      fill="#f97316"
-                      d="M20 5v1h-4V5h-2V4h-1V3h-2v1h-1v1H8v1H4V5H3v9h1v2h1v2h2v1h2v1h2v1h2v-1h2v-1h2v-1h2v-2h1v-2h1V5zM10 17v-2h1v-3h-1V9h1V8h2v1h1v3h-1v3h1v2z"
-                    ></path>
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold mb-2 text-blue-700 dark:text-blue-300">
-                  {t("home2.insights.card1.title")}
-                </h3>
-                <p className="mb-4 text-gray-700 dark:text-gray-300">
-                  {t("home2.insights.card1.description")}
-                </p>
-              </div>
-              {/* Card 2 */}
-              <div className="relative bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-xl hover:scale-105 transition group flex flex-col items-start border border-purple-100 dark:border-purple-800">
-                <span className="absolute top-6 right-6 bg-purple-100 dark:bg-purple-800 text-purple-600 dark:text-purple-300 px-3 py-1 rounded-full text-xs font-bold">
-                  {t("home2.insights.card2.label")}
-                </span>
-                <div className="mb-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={50}
-                    height={50}
-                    viewBox="0 0 32 32"
+                    {card.badge}
+                  </span>
+                  <div className="mb-4">{card.icon}</div>
+                  <h3
+                    className={`text-xl font-bold mb-2 text-blue-700 dark:text-blue-300`}
                   >
-                    <path
-                      fill="#f97316"
-                      d="M22 30H10c-1.1 0-2-.9-2-2v-3h2v3h12v-3h2v3c0 1.1-.9 2-2 2m-7-15.2V25h2V14.8l2.6 2.6L21 16l-5-5l-5 5l1.4 1.4z"
-                    ></path>
-                    <path
-                      fill="#f97316"
-                      d="M24.8 9.1C23.9 5 20.3 2 16 2S8.1 5 7.2 9.1c-3 .6-5.2 3.3-5.2 6.4C2 19.1 4.9 22 8.5 22H12v-2H8.5C6 20 4 18 4 15.5c0-2.3 1.8-4.3 4.1-4.5H9l.1-.8C9.5 6.6 12.5 4 16 4s6.5 2.6 6.9 6.1l.1.9l.8.1c2.3.2 4.1 2.2 4.1 4.5c0 2.5-2 4.5-4.5 4.5H20v2h3.5c3.6 0 6.5-2.9 6.5-6.5c0-3.2-2.2-5.9-5.2-6.5"
-                    ></path>
-                  </svg>
+                    {card.title}
+                  </h3>
+                  <p className="mb-4 text-gray-700 dark:text-gray-300">
+                    {card.description}
+                  </p>
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-purple-700 dark:text-purple-300">
-                  {t("home2.insights.card2.title")}
-                </h3>
-                <p className="mb-4 text-gray-700 dark:text-gray-300">
-                  {t("home2.insights.card2.description")}
-                </p>
-              </div>
-              {/* Card 3 */}
-              <div className="relative bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-xl hover:scale-105 transition group flex flex-col items-start border border-green-100 dark:border-green-800">
-                <span className="absolute top-6 right-6 bg-green-100 dark:bg-green-800 text-green-600 dark:text-green-300 px-3 py-1 rounded-full text-xs font-bold">
-                  {t("home2.insights.card3.label")}
-                </span>
-                <div className="mb-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={50}
-                    height={50}
-                    viewBox="0 0 64 64"
-                  >
-                    <path
-                      fill="#f97316"
-                      d="M9.756 24.065a3.37 3.37 0 0 1 3.366 3.366c0 1.856-1.51 3.363-3.366 3.363s-3.364-1.508-3.364-3.364a3.366 3.366 0 0 1 3.364-3.366zM32.062 5.333a4.426 4.426 0 1 1 0 8.853a4.423 4.423 0 0 1-4.424-4.423a4.43 4.43 0 0 1 4.424-4.43M7.681 19.64l.688 1.094a3.4 3.4 0 0 1 4.68 1.062l1.091-.69a4.69 4.69 0 0 0-6.459-1.466m3.103-5.202l.424 1.219a3.396 3.396 0 0 1 4.321 2.088l1.218-.425a4.69 4.69 0 0 0-5.963-2.881zm4.194-4.371l.14 1.284a3.4 3.4 0 0 1 3.742 3.006l1.282-.141a4.69 4.69 0 0 0-5.163-4.149zm4.917-2.034a3.4 3.4 0 0 1 2.968 3.772l1.282.152a4.69 4.69 0 0 0-4.096-5.205zm20.564-1.654a3.4 3.4 0 0 1-.76 4.738l.756 1.047a4.69 4.69 0 0 0 1.05-6.539l-1.046.755zm5.246 2.512a3.4 3.4 0 0 1-1.806 4.444l.502 1.19a4.69 4.69 0 0 0 2.494-6.133zm4.547 3.625a3.4 3.4 0 0 1-2.762 3.926l.22 1.271a4.69 4.69 0 0 0 3.814-5.416l-1.272.22zm.04 7.761l-.07 1.288a4.69 4.69 0 0 0 4.933-4.42l-1.29-.071a3.4 3.4 0 0 1-3.574 3.204zm3.436 10.941c-1.872 0-3.39-1.506-3.39-3.362s1.517-3.362 3.39-3.362c1.87 0 3.39 1.505 3.39 3.362c0 1.856-1.52 3.362-3.39 3.362m3.577 5.745l1.268.002l2.594 9.058c.2.695.976 1.077 1.734.86c.76-.217 1.24-.881.984-1.75l-2.667-9.292c-1.066-3.715-4.176-3.599-4.176-3.599h-6.627s-3.107-.116-4.176 3.599l-2.669 9.292c-.254.869.226 1.533.986 1.75c.758.217 1.534-.165 1.731-.86l2.596-9.058l1.266-.002l-3.465 12.084h14.09l-3.467-12.084zM9.686 35.677c1.214 0 1.928-.444 1.954-3.8H7.786c.028 3.356.678 3.8 1.9 3.8"
-                    ></path>
-                    <path
-                      fill="#f97316"
-                      d="M14.268 37.209h1.23v9.397c0 .814.658 1.476 1.468 1.476a1.46 1.46 0 0 0 1.456-1.476V36.183c0-2.378-1.95-4.306-4.328-4.306h-1.522c0 3.275-.956 4.662-2.366 4.662v3.787c.416.177.71.592.71 1.072c0 .644-.516 1.174-1.16 1.174c-.646 0-1.16-.512-1.16-1.158c0-.483.29-.894.706-1.072v-3.79c-1.48 0-2.392-1.513-2.392-4.675H5.462c-2.38 0-4.501 1.928-4.501 4.306v10.423c0 .814.638 1.475 1.452 1.475c.812 0 1.472-.661 1.472-1.475v-9.397h1.218v11.838h9.165zm24.551-15.732h-1.12v34.924c0 1.379-1.118 2.496-2.498 2.496s-2.497-1.117-2.497-2.496v-21.63h-1.28v21.63a2.5 2.5 0 0 1-4.998 0V21.477h-1.124L25.3 34.356a1.906 1.906 0 0 1-3.812 0v-14.24c0-3.136 2.244-4.912 5.317-4.912h10.513c3.072 0 5.317 1.777 5.317 4.912v14.24a1.906 1.906 0 0 1-3.812 0l-.006-12.879z"
-                    ></path>
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold mb-2 text-green-700 dark:text-green-300">
-                  {t("home2.insights.card3.title")}
-                </h3>
-                <p className="mb-4 text-gray-700 dark:text-gray-300">
-                  {t("home2.insights.card3.description")}
-                </p>
-              </div>
+              ))}
             </div>
           </div>
         </section>
@@ -768,7 +780,7 @@ const home2 = (props: Props) => {
         {/* CTA Section - Book a Free Consultation */}
         <section className="py-16 px-4 bg-gradient-to-r from-blue-500 to-purple-600 dark:from-blue-900 dark:to-purple-900 flex flex-col items-center justify-center">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-white dark:text-blue-300 tracking-tight">
+            <h2 className="text-3xl min-[769px]:text-4xl font-extrabold mb-4 text-white dark:text-blue-300 tracking-tight">
               {t("home2.cta.title")}
             </h2>
             <p className="text-lg text-white/80 dark:text-white/70 mb-8">

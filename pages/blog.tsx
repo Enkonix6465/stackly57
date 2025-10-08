@@ -100,14 +100,6 @@ const blog = (props: Props) => {
         <section className="py-20 px-4 bg-gradient-to-br from-purple-100 to-blue-50 dark:from-purple-900 dark:to-blue-950 flex justify-center items-center">
           <div className="max-w-3xl w-full mx-auto">
             <div className="relative rounded-3xl bg-white/70 dark:bg-gray-900/70 backdrop-blur-xl border-4 border-transparent bg-clip-padding shadow-2xl p-10 flex flex-col items-center text-center transition-all duration-300 hover:scale-[1.02] hover:border-gradient-to-r hover:from-purple-400 hover:to-blue-400">
-              <span className="absolute block not-md:hidden  -left-10 top-25 bg-gradient-to-r from-purple-500 to-blue-500 p-4 rounded-full shadow-lg">
-                <svg width="40" height="40" fill="none" viewBox="0 0 24 24">
-                  <path
-                    fill="white"
-                    d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
-                  />
-                </svg>
-              </span>
               <h2 className="text-3xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-300 dark:to-blue-300 drop-shadow-lg">
                 {t("blog.about.title")}
               </h2>
@@ -141,7 +133,7 @@ const blog = (props: Props) => {
         <section className="py-20 px-4 bg-gradient-to-br from-blue-100 to-purple-50 dark:from-blue-900 dark:to-purple-950 flex flex-col items-center">
           <div className="  w-full mx-auto">
             <div className="mb-10 text-center">
-              <h2 className="text-4xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-300 dark:to-purple-300 drop-shadow-lg flex items-center justify-center gap-3">
+              <h2 className="text-3xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-300 dark:to-purple-300 drop-shadow-lg flex items-center justify-center gap-3">
                 <span className="inline-block bg-gradient-to-r from-blue-500 to-purple-500 p-2 rounded-full">
                   <svg width="32" height="32" fill="none" viewBox="0 0 24 24">
                     <path
@@ -202,7 +194,7 @@ const blog = (props: Props) => {
         {/* Recent Comments Section */}
         <section className="py-16 px-4 bg-gradient-to-br from-blue-50 to-purple-100 dark:from-blue-950 dark:to-purple-900">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-2xl font-extrabold mb-4 text-purple-700 dark:text-purple-300">
+            <h2 className="text-3xl font-extrabold mb-4 text-purple-700 dark:text-purple-300">
               {t("blog.comments.title")}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
@@ -259,14 +251,6 @@ const blog = (props: Props) => {
         <section className="py-20 px-4 bg-gradient-to-br from-purple-50 to-blue-100 dark:from-purple-950 dark:to-blue-900 flex justify-center items-center">
           <div className="max-w-2xl w-full mx-auto">
             <div className="relative rounded-3xl bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl border-4 border-transparent bg-clip-padding shadow-2xl p-10 flex flex-col items-center text-center transition-all duration-300 hover:scale-[1.02] hover:border-gradient-to-r hover:from-purple-400 hover:to-blue-400">
-              <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-gradient-to-r from-purple-500 to-blue-500 p-4 rounded-full shadow-lg">
-                <svg width="40" height="40" fill="none" viewBox="0 0 24 24">
-                  <path
-                    fill="white"
-                    d="M4 4h16v16H4V4zm8 2a6 6 0 100 12 6 6 0 000-12zm0 10a4 4 0 110-8 4 4 0 010 8z"
-                  />
-                </svg>
-              </span>
               <h2 className="text-3xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-300 dark:to-blue-300 drop-shadow-lg">
                 {t("blog.newsletter.title")}
               </h2>
