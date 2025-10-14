@@ -65,12 +65,12 @@ const Auth = () => {
       setMessage("Invalid credentials.");
       return;
     }
+    window.location.href = "/home1";
     user.loginTime = new Date().toISOString();
     setCurrentUser(user);
     setMessage("Login successful!");
     // Update login time in All_Users
     setAllUsers(users.map((u: any) => (u.email === user.email ? user : u)));
-    window.location.href = "/home1";
   };
 
   // User Forgot Password
@@ -95,13 +95,14 @@ const Auth = () => {
       adminLogin.email === ADMIN_EMAIL &&
       adminLogin.password === ADMIN_PASSWORD
     ) {
+      window.location.href = "/admin-dashboard";
       setCurrentUser({
         email: ADMIN_EMAIL,
         role: "admin",
         loginTime: new Date().toISOString(),
       });
+
       setMessage("Admin login successful!");
-      window.location.href = "/admin-dashboard";
     } else {
       setMessage("Invalid admin credentials.");
     }
@@ -383,43 +384,49 @@ const Auth = () => {
         )}
 
         {activeTab === "admin" && (
-          <form className="space-y-4" onSubmit={handleAdminLogin}>
-            <input
-              type="email"
-              required
-              placeholder="Admin Email"
-              className="w-full px-4 py-2 rounded border"
-              value={adminLogin.email}
-              onChange={(e) =>
-                setAdminLogin({ ...adminLogin, email: e.target.value })
-              }
-            />
-            <input
-              type={showAdminPassword ? "text" : "password"}
-              required
-              placeholder="Admin Password"
-              className="w-full px-4 py-2 rounded border"
-              value={adminLogin.password}
-              onChange={(e) =>
-                setAdminLogin({ ...adminLogin, password: e.target.value })
-              }
-            />
-            <div className="w-full flex justify-end mt-1">
+          <>
+            {" "}
+            <div className="mb-6 text-gray-700 dark:text-gray-300 text-base font-medium">
+              Admin Access: Please enter your credentials to proceed.
+            </div>{" "}
+            <form className="space-y-4" onSubmit={handleAdminLogin}>
+              <input
+                type="email"
+                required
+                placeholder="Admin Email"
+                className="w-full px-4 py-2 rounded border"
+                value={adminLogin.email}
+                onChange={(e) =>
+                  setAdminLogin({ ...adminLogin, email: e.target.value })
+                }
+              />
+              <input
+                type={showAdminPassword ? "text" : "password"}
+                required
+                placeholder="Admin Password"
+                className="w-full px-4 py-2 rounded border"
+                value={adminLogin.password}
+                onChange={(e) =>
+                  setAdminLogin({ ...adminLogin, password: e.target.value })
+                }
+              />
+              <div className="w-full flex justify-end mt-1">
+                <button
+                  type="button"
+                  className="text-sm  absolute       right-10 mb-0 inline-block  bottom-[115px]     text-blue-600 dark:text-blue-400 hover:underline focus:outline-none"
+                  onClick={() => setShowAdminPassword((prev) => !prev)}
+                >
+                  {showAdminPassword ? <EyeClosed /> : <Eye />}
+                </button>
+              </div>
               <button
-                type="button"
-                className="text-sm  absolute       right-10 mb-0 inline-block  bottom-[115px]     text-blue-600 dark:text-blue-400 hover:underline focus:outline-none"
-                onClick={() => setShowAdminPassword((prev) => !prev)}
+                type="submit"
+                className="w-full py-2 bg-blue-600 text-white rounded font-bold hover:bg-blue-700 transition"
               >
-                {showAdminPassword ? <EyeClosed /> : <Eye />}
+                Admin Login
               </button>
-            </div>
-            <button
-              type="submit"
-              className="w-full py-2 bg-blue-600 text-white rounded font-bold hover:bg-blue-700 transition"
-            >
-              Admin Login
-            </button>
-          </form>
+            </form>
+          </>
         )}
       </div>
     </div>

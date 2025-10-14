@@ -237,9 +237,11 @@ const AboutUs = () => {
                       {item.icon}
                     </div>
                     <div className="ml-8">
-                      <h3 className={`font-bold text-lg text-blue-700 dark:text-blue-300`}>
+                      <h5
+                        className={`font-bold text-lg text-blue-700 dark:text-blue-300`}
+                      >
                         {t(item.titleKey)}
-                      </h3>
+                      </h5>
                       <p className="text-gray-600 dark:text-gray-400">
                         {t(item.descKey)}
                       </p>
@@ -256,7 +258,7 @@ const AboutUs = () => {
                   alt={t("about.story.imageAlt")}
                   width={400}
                   height={400}
-                  className="object-cover opacity-80"
+                  className="object-cover h-100 opacity-80"
                 />
                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-blue-700/80 to-transparent p-6">
                   <h3 className="text-2xl font-bold text-white mb-2">
@@ -381,7 +383,9 @@ const AboutUs = () => {
                   className={`flex flex-col items-center text-center relative md:w-1/3`}
                 >
                   {step.icon}
-                  <h3 className={`font-bold text-xl mb-2 text-blue-700 dark:text-blue-300`}>
+                  <h3
+                    className={`font-bold text-xl mb-2 text-blue-700 dark:text-blue-300`}
+                  >
                     {t(step.titleKey)}
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300">
@@ -450,8 +454,8 @@ const AboutUs = () => {
                       idx === 0
                         ? "bg-blue-100 dark:bg-blue-900"
                         : idx === 1
-                        ? "bg-orange-100 dark:bg-orange-900"
-                        : "bg-purple-100 dark:bg-purple-900"
+                          ? "bg-orange-100 dark:bg-orange-900"
+                          : "bg-purple-100 dark:bg-purple-900"
                     }`}
                     style={{
                       position: "absolute",

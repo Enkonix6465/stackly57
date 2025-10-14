@@ -126,8 +126,8 @@ const useAdminData = () => {
 // --- TabButton Component ---
 const TabButton = ({ tab, activeTab, setActiveTab }: any) => (
   <button
-    key={tab.key}
-    className={`relative py-2.5 px-4 md:px-6 rounded-lg font-semibold text-sm md:text-base transition-all duration-300 flex items-center gap-3 transform hover:-translate-y-1 focus:outline-none focus-visible:ring-2 ${
+    aria-pressed={activeTab === tab.key}
+    className={`flex-shrink-0 whitespace-nowrap min-w-[110px] md:min-w-[140px] relative py-2.5 px-4 md:px-6 rounded-lg font-semibold text-sm md:text-base transition-all duration-300 flex items-center gap-3 transform hover:-translate-y-1 focus:outline-none focus-visible:ring-2 ${
       activeTab === tab.key
         ? `text-white shadow-lg ${tab.activeClass}`
         : "text-slate-600 dark:text-slate-300 hover:bg-slate-200/60 dark:hover:bg-slate-700/50"
@@ -189,7 +189,7 @@ const ChartCard = ({ title, children }: any) => (
 // --- Stats Tab Content ---
 const StatsTabContent = ({ stats, t }: any) => (
   <section className="w-full max-w-7xl animate-fade-in">
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
       {stats.map((stat: any) => (
         <StatCard key={stat.key} stat={stat} t={t} />
       ))}
@@ -399,15 +399,21 @@ const AdminDashboard = () => {
           </div>
 
           {/* Tab Navigation */}
-          <div className="max-w-7xl mx-auto mb-8 flex items-center justify-center md:justify-start w-fit p-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 space-x-2">
-            {tabs.map((tab) => (
-              <TabButton
-                key={tab.key}
-                tab={tab}
-                activeTab={activeTab}
-                setActiveTab={setActiveTab}
-              />
-            ))}
+          <div className="max-w-7xl mx-auto mb-8">
+            <div className="rounded-xl bg-slate-200/80 dark:bg-slate-800/80 p-1.5">
+              <div className="-mx-1 overflow-x-auto no-scrollbar">
+                <div className="inline-flex items-center space-x-2 px-1">
+                  {tabs.map((tab) => (
+                    <TabButton
+                      key={tab.key}
+                      tab={tab}
+                      activeTab={activeTab}
+                      setActiveTab={setActiveTab}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Tab Content */}

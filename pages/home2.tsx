@@ -396,9 +396,6 @@ const home2 = (props: Props) => {
           </video>
           {/* Left: Headline, Description, CTA */}
           <div className="flex-1 z-10 max-w-xl relative">
-            <span className="  font-semibold tracking-wide mb-4 block text-sm">
-              {t("home2.heroSubtitle")}
-            </span>
             <h1 className="text-4xl min-[769px]:text-5xl font-extrabold leading-tight mb-6 text-white dark:text-white">
               {t("home2.heroTitle")}
             </h1>

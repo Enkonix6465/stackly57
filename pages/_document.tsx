@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <link rel="icon" type="image/x-icon" href="/favicon.png" />
       </Head>
-      <body>
+      <body className="[&::-webkit-scrollbar]:hidden">
         <Main />
         <NextScript />
       </body>
