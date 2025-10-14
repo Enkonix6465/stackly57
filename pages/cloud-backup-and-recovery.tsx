@@ -478,186 +478,209 @@ const CloudBackupAndRecovery = () => {
             {t("cloudBackupAndRecovery.managed.title")}
           </h2>
           <div className="grid md:grid-cols-3 gap-10">
-            {/* IT Strategy Card */}
-            <div className="relative bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-950 dark:to-purple-950 p-10 rounded-3xl shadow-xl border-2 border-blue-200 dark:border-blue-800 flex flex-col items-center group hover:scale-105 transition-all">
-              <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-14 h-14 bg-blue-500/20 dark:bg-blue-900/30 rounded-full blur-xl"></div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={60}
-                height={60}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="oklch(48.8% 0.243 264.376)"
-                  d="M5.596 10.629L3.404 9.377q-.182-.1-.293-.29Q3 8.895 3 8.674V6.171q0-.22.111-.411t.293-.29l2.192-1.253q.18-.105.401-.105q.22 0 .407.105L8.596 5.47q.182.1.293.291t.111.41v2.504q0 .22-.111.411t-.293.291l-2.192 1.252q-.18.106-.401.106q-.22 0-.407-.106M16.27 13.5V9.777l1.923 1.129q.384.22.596.58t.212.799v4.584q0 .44-.212.8t-.596.579l-3.884 2.268q-.385.217-.811.217t-.805-.217l-3.884-2.268q-.384-.22-.596-.58T8 16.87v-4.584q0-.44.212-.8t.596-.58l1.923-1.128V13.5q0 1.163.803 1.966q.804.803 1.968.803t1.965-.803t.802-1.966M14 8v5.5q0 .213-.144.356t-.357.144t-.356-.144T13 13.5V3.808q0-.343.232-.576T13.808 3h5.683q.475 0 .712.429q.238.429-.036.833l-.523.784q-.136.205-.136.45t.136.458l.523.785q.273.403.036.832T19.491 8z"
-                ></path>
-              </svg>
-              <h3 className="text-2xl font-bold mb-3 text-blue-700 dark:text-blue-300">
-                {t("cloudBackupAndRecovery.managed.cards.0.title")}
-              </h3>
-              <ul className="list-disc ml-4 text-gray-700 dark:text-gray-300 text-left space-y-2">
-                <li>{t("cloudBackupAndRecovery.managed.cards.0.items.0")}</li>
-                <li>{t("cloudBackupAndRecovery.managed.cards.0.items.1")}</li>
-                <li>{t("cloudBackupAndRecovery.managed.cards.0.items.2")}</li>
-              </ul>
-            </div>
-            {/* Cloud Services Card */}
-            <div className="relative bg-gradient-to-br from-purple-100 to-blue-100 dark:from-purple-950 dark:to-blue-950 p-10 rounded-3xl shadow-xl border-2 border-purple-200 dark:border-purple-800 flex flex-col items-center group hover:scale-105 transition-all">
-              <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-14 h-14 bg-purple-500/20 dark:bg-purple-900/30 rounded-full blur-xl"></div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={40}
-                height={40}
-                viewBox="0 0 48 48"
-              >
-                <g fill="none">
-                  <path
-                    fill="url(#SVG3hu2RdmB)"
-                    d="M24 9c-6.29 0-11.45 4.84-11.959 11H11.5a8.5 8.5 0 0 0 0 17h25a8.5 8.5 0 0 0 0-17h-.541C35.45 13.84 30.29 9 24 9"
-                  ></path>
-                  <path
-                    fill="url(#SVGcOlLPecK)"
-                    fillOpacity={0.3}
-                    d="M20 28.5a8.5 8.5 0 1 1-17 0a8.5 8.5 0 0 1 17 0"
-                  ></path>
-                  <path
-                    fill="url(#SVGwGonHcZM)"
-                    fillOpacity={0.3}
-                    d="M24 33c6.627 0 12-5.373 12-12S30.627 9 24 9c-6.296 0-11.46 4.85-11.96 11.017a8.5 8.5 0 0 1 7.2 12.002C20.7 32.65 22.309 33 24 33"
-                  ></path>
-                  <path
-                    fill="url(#SVGN8BPNKNb)"
-                    d="M24 33c6.627 0 12-5.373 12-12S30.627 9 24 9c-6.296 0-11.46 4.85-11.96 11.017a8.5 8.5 0 0 1 7.2 12.002C20.7 32.65 22.309 33 24 33"
-                  ></path>
-                  <path
-                    fill="url(#SVGgjX5EcGo)"
-                    fillOpacity={0.5}
-                    d="M24 9c-6.29 0-11.45 4.84-11.959 11H11.5a8.5 8.5 0 0 0 0 17h25a8.5 8.5 0 0 0 0-17h-.541C35.45 13.84 30.29 9 24 9"
-                  ></path>
-                  <defs>
-                    <linearGradient
-                      id="SVG3hu2RdmB"
-                      x1={4.5}
-                      x2={22.079}
-                      y1={14.25}
-                      y2={41.645}
-                      gradientUnits="userSpaceOnUse"
+            {(() => {
+              const managedCards = [
+                {
+                  key: "it-strategy",
+                  circleBg: "bg-blue-500/20 dark:bg-blue-900/30",
+                  container:
+                    "from-blue-100 to-purple-100 dark:from-blue-950 dark:to-purple-950 border-blue-200 dark:border-blue-800",
+                  svg: (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={60}
+                      height={60}
+                      viewBox="0 0 24 24"
                     >
-                      <stop stopColor="#0fafff"></stop>
-                      <stop offset={1} stopColor="#367af2"></stop>
-                    </linearGradient>
-                    <linearGradient
-                      id="SVGcOlLPecK"
-                      x1={3}
-                      x2={14.46}
-                      y1={22.912}
-                      y2={33.055}
-                      gradientUnits="userSpaceOnUse"
+                      <path
+                        fill="oklch(48.8% 0.243 264.376)"
+                        d="M5.596 10.629L3.404 9.377q-.182-.1-.293-.29Q3 8.895 3 8.674V6.171q0-.22.111-.411t.293-.29l2.192-1.253q.18-.105.401-.105q.22 0 .407.105L8.596 5.47q.182.1.293.291t.111.41v2.504q0 .22-.111.411t-.293.291l-2.192 1.252q-.18.106-.401.106q-.22 0-.407-.106M16.27 13.5V9.777l1.923 1.129q.384.22.596.58t.212.799v4.584q0 .44-.212.8t-.596.579l-3.884 2.268q-.385.217-.811.217t-.805-.217l-3.884-2.268q-.384-.22-.596-.58T8 16.87v-4.584q0-.44.212-.8t.596-.58l1.923-1.128V13.5q0 1.163.803 1.966q.804.803 1.968.803t1.965-.803t.802-1.966M14 8v5.5q0 .213-.144.356t-.357.144t-.356-.144T13 13.5V3.808q0-.343.232-.576T13.808 3h5.683q.475 0 .712.429q.238.429-.036.833l-.523.784q-.136.205-.136.45t.136.458l.523.785q.273.403.036.832T19.491 8z"
+                      ></path>
+                    </svg>
+                  ),
+                  titleKey: "cloudBackupAndRecovery.managed.cards.0.title",
+                  titleClass: "text-blue-700 dark:text-blue-300",
+                  itemsPrefix: "cloudBackupAndRecovery.managed.cards.0.items",
+                },
+                {
+                  key: "cloud-services",
+                  circleBg: "bg-purple-500/20 dark:bg-purple-900/30",
+                  container:
+                    "from-purple-100 to-blue-100 dark:from-purple-950 dark:to-blue-950 border-purple-200 dark:border-purple-800",
+                  svg: (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={40}
+                      height={40}
+                      viewBox="0 0 48 48"
                     >
-                      <stop stopColor="#fff"></stop>
-                      <stop
-                        offset={1}
-                        stopColor="#fcfcfc"
-                        stopOpacity={0}
-                      ></stop>
-                    </linearGradient>
-                    <linearGradient
-                      id="SVGwGonHcZM"
-                      x1={16.193}
-                      x2={19.363}
-                      y1={10.35}
-                      y2={26.899}
-                      gradientUnits="userSpaceOnUse"
+                      <g fill="none">
+                        <path
+                          fill="url(#SVG3hu2RdmB)"
+                          d="M24 9c-6.29 0-11.45 4.84-11.959 11H11.5a8.5 8.5 0 0 0 0 17h25a8.5 8.5 0 0 0 0-17h-.541C35.45 13.84 30.29 9 24 9"
+                        ></path>
+                        <path
+                          fill="url(#SVGcOlLPecK)"
+                          fillOpacity={0.3}
+                          d="M20 28.5a8.5 8.5 0 1 1-17 0a8.5 8.5 0 0 1 17 0"
+                        ></path>
+                        <path
+                          fill="url(#SVGwGonHcZM)"
+                          fillOpacity={0.3}
+                          d="M24 33c6.627 0 12-5.373 12-12S30.627 9 24 9c-6.296 0-11.46 4.85-11.96 11.017a8.5 8.5 0 0 1 7.2 12.002C20.7 32.65 22.309 33 24 33"
+                        ></path>
+                        <path
+                          fill="url(#SVGN8BPNKNb)"
+                          d="M24 33c6.627 0 12-5.373 12-12S30.627 9 24 9c-6.296 0-11.46 4.85-11.96 11.017a8.5 8.5 0 0 1 7.2 12.002C20.7 32.65 22.309 33 24 33"
+                        ></path>
+                        <path
+                          fill="url(#SVGgjX5EcGo)"
+                          fillOpacity={0.5}
+                          d="M24 9c-6.29 0-11.45 4.84-11.959 11H11.5a8.5 8.5 0 0 0 0 17h25a8.5 8.5 0 0 0 0-17h-.541C35.45 13.84 30.29 9 24 9"
+                        ></path>
+                        <defs>
+                          <linearGradient
+                            id="SVG3hu2RdmB"
+                            x1={4.5}
+                            x2={22.079}
+                            y1={14.25}
+                            y2={41.645}
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stopColor="#0fafff"></stop>
+                            <stop offset={1} stopColor="#367af2"></stop>
+                          </linearGradient>
+                          <linearGradient
+                            id="SVGcOlLPecK"
+                            x1={3}
+                            x2={14.46}
+                            y1={22.912}
+                            y2={33.055}
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stopColor="#fff"></stop>
+                            <stop
+                              offset={1}
+                              stopColor="#fcfcfc"
+                              stopOpacity={0}
+                            ></stop>
+                          </linearGradient>
+                          <linearGradient
+                            id="SVGwGonHcZM"
+                            x1={16.193}
+                            x2={19.363}
+                            y1={10.35}
+                            y2={26.899}
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stopColor="#fff"></stop>
+                            <stop
+                              offset={1}
+                              stopColor="#fcfcfc"
+                              stopOpacity={0}
+                            ></stop>
+                          </linearGradient>
+                          <radialGradient
+                            id="SVGN8BPNKNb"
+                            cx={0}
+                            cy={0}
+                            r={1}
+                            gradientTransform="rotate(-22.883 77.27 -17.737)scale(14.6589 13.0847)"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop offset={0.412} stopColor="#2c87f5"></stop>
+                            <stop
+                              offset={1}
+                              stopColor="#2c87f5"
+                              stopOpacity={0}
+                            ></stop>
+                          </radialGradient>
+                          <radialGradient
+                            id="SVGgjX5EcGo"
+                            cx={0}
+                            cy={0}
+                            r={1}
+                            gradientTransform="matrix(16.18734 31.02285 -230.48087 120.26209 22.25 7.25)"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop
+                              offset={0.5}
+                              stopColor="#dd3ce2"
+                              stopOpacity={0}
+                            ></stop>
+                            <stop offset={1} stopColor="#dd3ce2"></stop>
+                          </radialGradient>
+                        </defs>
+                      </g>
+                    </svg>
+                  ),
+                  titleKey: "cloudBackupAndRecovery.managed.cards.1.title",
+                  titleClass: "text-purple-700 dark:text-purple-300",
+                  itemsPrefix: "cloudBackupAndRecovery.managed.cards.1.items",
+                },
+                {
+                  key: "managed-support",
+                  circleBg: "bg-green-500/20 dark:bg-green-900/30",
+                  container:
+                    "from-blue-100 to-purple-100 dark:from-blue-950 dark:to-purple-950 border-blue-200 dark:border-blue-800",
+                  svg: (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={40}
+                      height={40}
+                      viewBox="0 0 16 16"
                     >
-                      <stop stopColor="#fff"></stop>
-                      <stop
-                        offset={1}
-                        stopColor="#fcfcfc"
-                        stopOpacity={0}
-                      ></stop>
-                    </linearGradient>
-                    <radialGradient
-                      id="SVGN8BPNKNb"
-                      cx={0}
-                      cy={0}
-                      r={1}
-                      gradientTransform="rotate(-22.883 77.27 -17.737)scale(14.6589 13.0847)"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop offset={0.412} stopColor="#2c87f5"></stop>
-                      <stop
-                        offset={1}
-                        stopColor="#2c87f5"
-                        stopOpacity={0}
-                      ></stop>
-                    </radialGradient>
-                    <radialGradient
-                      id="SVGgjX5EcGo"
-                      cx={0}
-                      cy={0}
-                      r={1}
-                      gradientTransform="matrix(16.18734 31.02285 -230.48087 120.26209 22.25 7.25)"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop
-                        offset={0.5}
-                        stopColor="#dd3ce2"
-                        stopOpacity={0}
-                      ></stop>
-                      <stop offset={1} stopColor="#dd3ce2"></stop>
-                    </radialGradient>
-                  </defs>
-                </g>
-              </svg>
-              <h3 className="text-2xl font-bold mb-3 text-purple-700 dark:text-purple-300">
-                {t("cloudBackupAndRecovery.managed.cards.1.title")}
-              </h3>
-              <ul className="list-disc ml-4 text-gray-700 dark:text-gray-300 text-left space-y-2">
-                <li>{t("cloudBackupAndRecovery.managed.cards.1.items.0")}</li>
-                <li>{t("cloudBackupAndRecovery.managed.cards.1.items.1")}</li>
-                <li>{t("cloudBackupAndRecovery.managed.cards.1.items.2")}</li>
-              </ul>
-            </div>
-            {/* Managed Support Card */}
-            <div className="relative bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-950 dark:to-purple-950 p-10 rounded-3xl shadow-xl border-2 border-blue-200 dark:border-blue-800 flex flex-col items-center group hover:scale-105 transition-all">
-              <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-14 h-14 bg-green-500/20 dark:bg-green-900/30 rounded-full blur-xl"></div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={40}
-                height={40}
-                viewBox="0 0 16 16"
-              >
-                <g fill="none">
-                  <path
-                    fill="url(#SVGiiWppNsS)"
-                    d="M7.647 2.146a.5.5 0 0 1 .708 0C9.595 3.39 10.969 4 12.5 4a.5.5 0 0 1 .5.5v3.001c0 3.219-1.641 5.407-4.842 6.473a.5.5 0 0 1-.316 0C4.642 12.908 3 10.72 3 7.501V4.5a.5.5 0 0 1 .5-.5c1.53 0 2.904-.611 4.147-1.854"
-                  ></path>
-                  <defs>
-                    <radialGradient
-                      id="SVGiiWppNsS"
-                      cx={0}
-                      cy={0}
-                      r={1}
-                      gradientTransform="matrix(15.35727 23.24988 -19.97817 13.1962 -.929 -4.75)"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop offset={0.338} stopColor="#0fafff"></stop>
-                      <stop offset={0.529} stopColor="#367af2"></stop>
-                      <stop offset={0.682} stopColor="#5750e2"></stop>
-                      <stop offset={0.861} stopColor="#cc23d1"></stop>
-                    </radialGradient>
-                  </defs>
-                </g>
-              </svg>
-              <h3 className="text-2xl font-bold mb-3 text-green-700 dark:text-green-400">
-                {t("cloudBackupAndRecovery.managed.cards.2.title")}
-              </h3>
-              <ul className="list-disc ml-4 text-gray-700 dark:text-gray-300 text-left space-y-2">
-                <li>{t("cloudBackupAndRecovery.managed.cards.2.items.0")}</li>
-                <li>{t("cloudBackupAndRecovery.managed.cards.2.items.1")}</li>
-                <li>{t("cloudBackupAndRecovery.managed.cards.2.items.2")}</li>
-              </ul>
-            </div>
+                      <g fill="none">
+                        <path
+                          fill="url(#SVGiiWppNsS)"
+                          d="M7.647 2.146a.5.5 0 0 1 .708 0C9.595 3.39 10.969 4 12.5 4a.5.5 0 0 1 .5.5v3.001c0 3.219-1.641 5.407-4.842 6.473a.5.5 0 0 1-.316 0C4.642 12.908 3 10.72 3 7.501V4.5a.5.5 0 0 1 .5-.5c1.53 0 2.904-.611 4.147-1.854"
+                        ></path>
+                        <defs>
+                          <radialGradient
+                            id="SVGiiWppNsS"
+                            cx={0}
+                            cy={0}
+                            r={1}
+                            gradientTransform="matrix(15.35727 23.24988 -19.97817 13.1962 -.929 -4.75)"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop offset={0.338} stopColor="#0fafff"></stop>
+                            <stop offset={0.529} stopColor="#367af2"></stop>
+                            <stop offset={0.682} stopColor="#5750e2"></stop>
+                            <stop offset={0.861} stopColor="#cc23d1"></stop>
+                          </radialGradient>
+                        </defs>
+                      </g>
+                    </svg>
+                  ),
+                  titleKey: "cloudBackupAndRecovery.managed.cards.2.title",
+                  titleClass: "text-green-700 dark:text-green-400",
+                  itemsPrefix: "cloudBackupAndRecovery.managed.cards.2.items",
+                },
+              ];
+
+              return managedCards.map((card) => (
+                <div
+                  key={card.key}
+                  className={`relative bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-950 dark:to-purple-950 border-blue-200 dark:border-blue-800 p-10 rounded-3xl shadow-xl border-2 flex flex-col items-center group hover:scale-105 transition-all`}
+                >
+                  <div
+                    className={`absolute -top-8 left-1/2 -translate-x-1/2 w-14 h-14 bg-blue-500/20 dark:bg-blue-900/30 rounded-full blur-xl`}
+                  ></div>
+                  {card.svg}
+                  <h3
+                    className={`text-2xl font-bold mb-3 text-blue-700 dark:text-blue-300`}
+                  >
+                    {t(card.titleKey)}
+                  </h3>
+                  <ul className="list-disc ml-4 text-gray-700 dark:text-gray-300 text-left space-y-2">
+                    <li>{t(`${card.itemsPrefix}.0`)}</li>
+                    <li>{t(`${card.itemsPrefix}.1`)}</li>
+                    <li>{t(`${card.itemsPrefix}.2`)}</li>
+                  </ul>
+                </div>
+              ));
+            })()}
           </div>
         </section>
 
@@ -692,7 +715,7 @@ const CloudBackupAndRecovery = () => {
                       viewBox="0 0 16 16"
                     >
                       <path
-                        fill="oklch(48.8% 0.243 264.376)"
+                        fill="#1447e6"
                         d="M4.03 5.507a4 4 0 0 1 7.887-.323A5.5 5.5 0 0 0 5.207 12H4.25a3.25 3.25 0 0 1-.22-6.493M15 10.5a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m-4.854-2.353l-2 2a.5.5 0 0 0 .708.707L10 9.707V12.5a.5.5 0 0 0 1 0V9.707l1.146 1.147a.5.5 0 0 0 .708-.708l-2-2A.5.5 0 0 0 10.503 8h-.006a.5.5 0 0 0-.348.144z"
                       ></path>
                     </svg>
@@ -717,11 +740,11 @@ const CloudBackupAndRecovery = () => {
                       viewBox="0 0 32 32"
                     >
                       <path
-                        fill="oklch(49.6% 0.265 301.924)"
+                        fill="#1447e6"
                         d="M19 24h4v4h-4zm7 0h4v4h-4zm-7-7h4v4h-4zm7 0h4v4h-4z"
                       ></path>
                       <path
-                        fill="oklch(49.6% 0.265 301.924)"
+                        fill="#1447e6"
                         d="M17 24H4V10h24v5h2v-5a2 2 0 0 0-2-2h-6V4a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2v4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h13ZM12 4h8v4h-8Z"
                       ></path>
                     </svg>
@@ -746,7 +769,7 @@ const CloudBackupAndRecovery = () => {
                       viewBox="0 0 2048 2048"
                     >
                       <path
-                        fill="oklch(52.7% 0.154 150.069)"
+                        fill="#1447e6"
                         d="M1168 946q38 15 74 33t70 41q-22 24-40 50t-33 56q-77-50-164-76t-179-26q-88 0-170 23t-153 64t-129 100t-100 130t-65 153t-23 170H128q0-120 35-231t101-205t156-167t204-115q-113-74-176-186t-64-248q0-106 40-199t109-163T696 40T896 0t199 40t163 109t110 163t40 200q0 66-16 129t-48 119t-75 103t-101 83M512 512q0 80 30 149t82 122t122 83t150 30q79 0 149-30t122-82t83-122t30-150q0-79-30-149t-82-122t-123-83t-149-30q-80 0-149 30t-122 82t-83 123t-30 149m1472 832q0 52-16 101t-48 91v512l-256-128l-256 128v-512q-31-42-47-91t-17-101q0-66 25-124t68-101t102-69t125-26t124 25t101 69t69 102t26 124m-320-192q-40 0-75 15t-61 41t-41 61t-15 75t15 75t41 61t61 41t75 15t75-15t61-41t41-61t15-75t-15-75t-41-61t-61-41t-75-15m128 689v-204q-60 27-128 27t-128-27v204q32-16 64-31t64-33q32 17 64 32t64 32"
                       ></path>
                     </svg>
@@ -771,12 +794,12 @@ const CloudBackupAndRecovery = () => {
                       className="flex flex-col items-center text-center flex-1"
                     >
                       <span
-                        className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 shadow-lg ${step.bg}`}
+                        className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 shadow-lg bg-blue-100 dark:bg-blue-900`}
                       >
                         {step.icon}
                       </span>
                       <h3
-                        className={`font-bold text-lg mb-2 ${step.titleClass}`}
+                        className={`font-bold text-lg mb-2 text-blue-700 dark:text-blue-300`}
                       >
                         {step.title}
                       </h3>
@@ -787,7 +810,7 @@ const CloudBackupAndRecovery = () => {
                       </ul>
 
                       <span
-                        className={`hidden md:block w-16 h-2 rounded-full mx-auto ${step.connector}`}
+                        className={`hidden md:block w-16 h-2 rounded-full mx-auto bg-blue-200 dark:bg-blue-900`}
                       ></span>
                     </div>
                   ))}

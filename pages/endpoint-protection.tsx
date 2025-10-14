@@ -457,75 +457,98 @@ const EndpointProtection = () => {
             {t("endpointProtection.managed.title")}
           </h2>
           <div className="grid md:grid-cols-3 gap-10">
-            {/* IT Strategy Card */}
-            <div className="relative bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-950 dark:to-purple-950 p-10 rounded-3xl shadow-xl border-2 border-blue-200 dark:border-blue-800 flex flex-col items-center group hover:scale-105 transition-all">
-              <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-14 h-14 bg-blue-500/20 dark:bg-blue-900/30 rounded-full blur-xl"></div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={60}
-                height={60}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="oklch(48.8% 0.243 264.376)"
-                  d="M5.596 10.629L3.404 9.377q-.182-.1-.293-.29Q3 8.895 3 8.674V6.171q0-.22.111-.411t.293-.29l2.192-1.253q.18-.105.401-.105q.22 0 .407.105L8.596 5.47q.182.1.293.291t.111.41v2.504q0 .22-.111.411t-.293.291l-2.192 1.252q-.18.106-.401.106q-.22 0-.407-.106M16.27 13.5V9.777l1.923 1.129q.384.22.596.58t.212.799v4.584q0 .44-.212.8t-.596.579l-3.884 2.268q-.385.217-.811.217t-.805-.217l-3.884-2.268q-.384-.22-.596-.58T8 16.87v-4.584q0-.44.212-.8t.596-.58l1.923-1.128V13.5q0 1.163.803 1.966q.804.803 1.968.803t1.965-.803t.802-1.966M14 8v5.5q0 .213-.144.356t-.357.144t-.356-.144T13 13.5V3.808q0-.343.232-.576T13.808 3h5.683q.475 0 .712.429q.238.429-.036.833l-.523.784q-.136.205-.136.45t.136.458l.523.785q.273.403.036.832T19.491 8z"
-                ></path>
-              </svg>
-              <h3 className="text-2xl font-bold mb-3 text-blue-700 dark:text-blue-300">
-                {t("endpointProtection.managed.cards.0.title")}
-              </h3>
-              <ul className="list-disc ml-4 text-gray-700 dark:text-gray-300 text-left space-y-2">
-                <li>{t("endpointProtection.managed.cards.0.items.0")}</li>
-                <li>{t("endpointProtection.managed.cards.0.items.1")}</li>
-                <li>{t("endpointProtection.managed.cards.0.items.2")}</li>
-              </ul>
-            </div>
-            {/* Cloud Services Card */}
-            <div className="relative bg-gradient-to-br from-purple-100 to-blue-100 dark:from-purple-950 dark:to-blue-950 p-10 rounded-3xl shadow-xl border-2 border-purple-200 dark:border-purple-800 flex flex-col items-center group hover:scale-105 transition-all">
-              <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-14 h-14 bg-purple-500/20 dark:bg-purple-900/30 rounded-full blur-xl"></div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={48}
-                height={48}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="oklch(49.6% 0.265 301.924)"
-                  d="M23.505 17.503h-2v2h2zm-5.001 4.001h-2v2h2zm2-4v1h-2v-1h-1v-3.001h1v2h1v1zm-4.001 2v1h-2v-1h-1v-5.001h1v4h1v1.001zm-5.001-5.001v5.001h-1v1h-2v-1h1v-1h1v-4.001zm-3 7.001h-2v2h2zm-1.001-7.001v3h-1v1h-2v-1h1v-1h1v-2zm15.004-7.002v-1h-1v-1h-2v-2h-1.001v-1h-1V1.5h-5.002v1h-1v1h-1v1h-1v-1h-3v1H5.5v1h-1v2.001h-2v1h-1v3.001h1v1h1v1h18.005v-1h1v-1h1v-4zm-8.002 3.001v-1h-1v-2h1v1h1V5.5h1v3h1v-1h1v2h-1v1.001h-1v1h-1v-1zm-4.001-4v1h1v2h-1v-1h-1v3h-1v-3h-1v1h-1v-2h1v-1h1V5.5h1v1zM3.5 17.503h-2v2h2z"
-                ></path>
-              </svg>
-              <h3 className="text-2xl font-bold mb-3 text-purple-700 dark:text-purple-300">
-                {t("endpointProtection.managed.cards.1.title")}
-              </h3>
-              <ul className="list-disc ml-4 text-gray-700 dark:text-gray-300 text-left space-y-2">
-                <li>{t("endpointProtection.managed.cards.1.items.0")}</li>
-                <li>{t("endpointProtection.managed.cards.1.items.1")}</li>
-                <li>{t("endpointProtection.managed.cards.1.items.2")}</li>
-              </ul>
-            </div>
-            {/* Managed Support Card */}
-            <div className="relative bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-950 dark:to-purple-950 p-10 rounded-3xl shadow-xl border-2 border-blue-200 dark:border-blue-800 flex flex-col items-center group hover:scale-105 transition-all">
-              <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-14 h-14 bg-green-500/20 dark:bg-green-900/30 rounded-full blur-xl"></div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={48}
-                height={48}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="oklch(52.7% 0.154 150.069)"
-                  d="m17 22l-.3-1.5q-.3-.125-.562-.262T15.6 19.9l-1.45.45l-1-1.7l1.15-1q-.05-.3-.05-.65t.05-.65l-1.15-1l1-1.7l1.45.45q.275-.2.538-.337t.562-.263L17 12h2l.3 1.5q.3.125.563.263t.537.337l1.45-.45l1 1.7l-1.15 1q.05.3.05.65t-.05.65l1.15 1l-1 1.7l-1.45-.45q-.275.2-.537.338t-.563.262L19 22zm1-3q.825 0 1.413-.587T20 17t-.587-1.412T18 15t-1.412.588T16 17t.588 1.413T18 19M2 20V4h8l2 2h10v5.275q-.875-.625-1.9-.95T17.975 10q-2.95 0-4.962 2.063T11 16.975q0 .8.175 1.55T11.7 20z"
-                ></path>
-              </svg>
-              <h3 className="text-2xl font-bold mb-3 text-green-700 dark:text-green-400">
-                {t("endpointProtection.managed.cards.2.title")}
-              </h3>
-              <ul className="list-disc ml-4 text-gray-700 dark:text-gray-300 text-left space-y-2">
-                <li>{t("endpointProtection.managed.cards.2.items.0")}</li>
-                <li>{t("endpointProtection.managed.cards.2.items.1")}</li>
-                <li>{t("endpointProtection.managed.cards.2.items.2")}</li>
-              </ul>
-            </div>
+            {(() => {
+              const managedCards = [
+                {
+                  key: "it-strategy",
+                  circleBg: "bg-blue-500/20 dark:bg-blue-900/30",
+                  container:
+                    "from-blue-100 to-purple-100 dark:from-blue-950 dark:to-purple-950 border-blue-200 dark:border-blue-800",
+                  svg: (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={60}
+                      height={60}
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="#1447e6"
+                        d="M5.596 10.629L3.404 9.377q-.182-.1-.293-.29Q3 8.895 3 8.674V6.171q0-.22.111-.411t.293-.29l2.192-1.253q.18-.105.401-.105q.22 0 .407.105L8.596 5.47q.182.1.293.291t.111.41v2.504q0 .22-.111.411t-.293.291l-2.192 1.252q-.18.106-.401.106q-.22 0-.407-.106M16.27 13.5V9.777l1.923 1.129q.384.22.596.58t.212.799v4.584q0 .44-.212.8t-.596.579l-3.884 2.268q-.385.217-.811.217t-.805-.217l-3.884-2.268q-.384-.22-.596-.58T8 16.87v-4.584q0-.44.212-.8t.596-.58l1.923-1.128V13.5q0 1.163.803 1.966q.804.803 1.968.803t1.965-.803t.802-1.966M14 8v5.5q0 .213-.144.356t-.357.144t-.356-.144T13 13.5V3.808q0-.343.232-.576T13.808 3h5.683q.475 0 .712.429q.238.429-.036.833l-.523.784q-.136.205-.136.45t.136.458l.523.785q.273.403.036.832T19.491 8z"
+                      />
+                    </svg>
+                  ),
+                  titleKey: "endpointProtection.managed.cards.0.title",
+                  titleClass: "text-blue-700 dark:text-blue-300",
+                  itemsPrefix: "endpointProtection.managed.cards.0.items",
+                },
+                {
+                  key: "cloud-services",
+                  circleBg: "bg-purple-500/20 dark:bg-purple-900/30",
+                  container:
+                    "from-purple-100 to-blue-100 dark:from-purple-950 dark:to-blue-950 border-purple-200 dark:border-purple-800",
+                  svg: (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={48}
+                      height={48}
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="#1447e6"
+                        d="M23.505 17.503h-2v2h2zm-5.001 4.001h-2v2h2zm2-4v1h-2v-1h-1v-3.001h1v2h1v1zm-4.001 2v1h-2v-1h-1v-5.001h1v4h1v1.001zm-5.001-5.001v5.001h-1v1h-2v-1h1v-1h1v-4.001zm-3 7.001h-2v2h2zm-1.001-7.001v3h-1v1h-2v-1h1v-1h1v-2zm15.004-7.002v-1h-1v-1h-2v-2h-1.001v-1h-1V1.5h-5.002v1h-1v1h-1v1h-1v-1h-3v1H5.5v1h-1v2.001h-2v1h-1v3.001h1v1h1v1h18.005v-1h1v-1h1v-4zm-8.002 3.001v-1h-1v-2h1v1h1V5.5h1v3h1v-1h1v2h-1v1.001h-1v1h-1v-1zm-4.001-4v1h1v2h-1v-1h-1v3h-1v-3h-1v1h-1v-2h1v-1h1V5.5h1v1zM3.5 17.503h-2v2h2z"
+                      />
+                    </svg>
+                  ),
+                  titleKey: "endpointProtection.managed.cards.1.title",
+                  titleClass: "text-purple-700 dark:text-purple-300",
+                  itemsPrefix: "endpointProtection.managed.cards.1.items",
+                },
+                {
+                  key: "managed-support",
+                  circleBg: "bg-green-500/20 dark:bg-green-900/30",
+                  container:
+                    "from-blue-100 to-purple-100 dark:from-blue-950 dark:to-purple-950 border-blue-200 dark:border-blue-800",
+                  svg: (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={48}
+                      height={48}
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="#1447e6"
+                        d="m17 22l-.3-1.5q-.3-.125-.562-.262T15.6 19.9l-1.45.45l-1-1.7l1.15-1q-.05-.3-.05-.65t.05-.65l-1.15-1l1-1.7l1.45.45q.275-.2.538-.337t.562-.263L17 12h2l.3 1.5q.3.125.563.263t.537.337l1.45-.45l1 1.7l-1.15 1q.05.3.05.65t-.05.65l1.15 1l-1 1.7l-1.45-.45q-.275.2-.537.338t-.563.262L19 22zm1-3q.825 0 1.413-.587T20 17t-.587-1.412T18 15t-1.412.588T16 17t.588 1.413T18 19M2 20V4h8l2 2h10v5.275q-.875-.625-1.9-.95T17.975 10q-2.95 0-4.962 2.063T11 16.975q0 .8.175 1.55T11.7 20z"
+                      />
+                    </svg>
+                  ),
+                  titleKey: "endpointProtection.managed.cards.2.title",
+                  titleClass: "text-green-700 dark:text-green-400",
+                  itemsPrefix: "endpointProtection.managed.cards.2.items",
+                },
+              ];
+
+              return managedCards.map((card) => (
+                <div
+                  key={card.key}
+                  className={`relative bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-950 dark:to-purple-950 border-blue-200 dark:border-blue-800 p-10 rounded-3xl shadow-xl border-2 flex flex-col items-center group hover:scale-105 transition-all`}
+                >
+                  <div
+                    className={`absolute -top-8 left-1/2 -translate-x-1/2 w-14 h-14 bg-blue-500/20 dark:bg-blue-900/30 rounded-full blur-xl`}
+                  ></div>
+                  {card.svg}
+                  <h3
+                    className={`text-2xl font-bold mb-3 text-blue-700 dark:text-blue-300`}
+                  >
+                    {t(card.titleKey)}
+                  </h3>
+                  <ul className="list-disc ml-4 text-gray-700 dark:text-gray-300 text-left space-y-2">
+                    <li>{t(`${card.itemsPrefix}.0`)}</li>
+                    <li>{t(`${card.itemsPrefix}.1`)}</li>
+                    <li>{t(`${card.itemsPrefix}.2`)}</li>
+                  </ul>
+                </div>
+              ));
+            })()}
           </div>
         </section>
 
@@ -667,15 +690,15 @@ const EndpointProtection = () => {
                       viewBox="0 0 32 32"
                     >
                       <path
-                        fill="oklch(49.6% 0.265 301.924)"
+                        fill="#2f88ff"
                         d="M15 20H9a3 3 0 0 0-3 3v2h2v-2a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2h2v-2a3 3 0 0 0-3-3m-3-1a4 4 0 1 0-4-4a4 4 0 0 0 4 4m0-6a2 2 0 1 1-2 2a2 2 0 0 1 2-2"
                       ></path>
                       <path
-                        fill="oklch(49.6% 0.265 301.924)"
+                        fill="#2f88ff"
                         d="M28 19v9H4V8h12V6H4a2 2 0 0 0-2 2v20a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2v-9Z"
                       ></path>
                       <path
-                        fill="oklch(49.6% 0.265 301.924)"
+                        fill="#2f88ff"
                         d="M20 19h6v2h-6zm2 4h4v2h-4zm10-13V8h-2.101a5 5 0 0 0-.732-1.753l1.49-1.49l-1.414-1.414l-1.49 1.49A5 5 0 0 0 26 4.101V2h-2v2.101a5 5 0 0 0-1.753.732l-1.49-1.49l-1.414 1.414l1.49 1.49A5 5 0 0 0 20.101 8H18v2h2.101a5 5 0 0 0 .732 1.753l-1.49 1.49l1.414 1.414l1.49-1.49a5 5 0 0 0 1.753.732V16h2v-2.101a5 5 0 0 0 1.753-.732l1.49 1.49l1.414-1.414l-1.49-1.49A5 5 0 0 0 29.899 10zm-7 2a3 3 0 1 1 3-3a3.003 3.003 0 0 1-3 3"
                       ></path>
                     </svg>
@@ -700,7 +723,7 @@ const EndpointProtection = () => {
                       viewBox="0 0 2048 2048"
                     >
                       <path
-                        fill="oklch(52.7% 0.154 150.069)"
+                        fill="#2f88ff"
                         d="M1168 946q38 15 74 33t70 41q-22 24-40 50t-33 56q-77-50-164-76t-179-26q-88 0-170 23t-153 64t-129 100t-100 130t-65 153t-23 170H128q0-120 35-231t101-205t156-167t204-115q-113-74-176-186t-64-248q0-106 40-199t109-163T696 40T896 0t199 40t163 109t110 163t40 200q0 66-16 129t-48 119t-75 103t-101 83M512 512q0 80 30 149t82 122t122 83t150 30q79 0 149-30t122-82t83-122t30-150q0-79-30-149t-82-122t-123-83t-149-30q-80 0-149 30t-122 82t-83 123t-30 149m1472 832q0 52-16 101t-48 91v512l-256-128l-256 128v-512q-31-42-47-91t-17-101q0-66 25-124t68-101t102-69t125-26t124 25t101 69t69 102t26 124m-320-192q-40 0-75 15t-61 41t-41 61t-15 75t15 75t41 61t61 41t75 15t75-15t61-41t41-61t15-75t-15-75t-41-61t-61-41t-75-15m128 689v-204q-60 27-128 27t-128-27v204q32-16 64-31t64-33q32 17 64 32t64 32"
                       ></path>
                     </svg>
@@ -725,12 +748,12 @@ const EndpointProtection = () => {
                       className="flex flex-col items-center text-center flex-1"
                     >
                       <span
-                        className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 shadow-lg ${step.bg}`}
+                        className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 shadow-lg bg-blue-100 dark:bg-blue-900`}
                       >
                         {step.icon}
                       </span>
                       <h3
-                        className={`font-bold text-lg mb-2 ${step.titleClass}`}
+                        className={`font-bold text-lg mb-2 text-blue-700 dark:text-blue-300`}
                       >
                         {step.title}
                       </h3>

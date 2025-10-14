@@ -428,208 +428,219 @@ const SecurityAwarenessTraining = () => {
             {t("securityAwarenessTraining.managed.title")}
           </h2>
           <div className="grid md:grid-cols-3 gap-10">
-            {/* IT Strategy Card */}
-            <div className="relative bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-950 dark:to-purple-950 p-10 rounded-3xl shadow-xl border-2 border-blue-200 dark:border-blue-800 flex flex-col items-center group hover:scale-105 transition-all">
-              <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-14 h-14 bg-blue-500/20 dark:bg-blue-900/30 rounded-full blur-xl"></div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={60}
-                height={60}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="oklch(48.8% 0.243 264.376)"
-                  d="M5.596 10.629L3.404 9.377q-.182-.1-.293-.29Q3 8.895 3 8.674V6.171q0-.22.111-.411t.293-.29l2.192-1.253q.18-.105.401-.105q.22 0 .407.105L8.596 5.47q.182.1.293.291t.111.41v2.504q0 .22-.111.411t-.293.291l-2.192 1.252q-.18.106-.401.106q-.22 0-.407-.106M16.27 13.5V9.777l1.923 1.129q.384.22.596.58t.212.799v4.584q0 .44-.212.8t-.596.579l-3.884 2.268q-.385.217-.811.217t-.805-.217l-3.884-2.268q-.384-.22-.596-.58T8 16.87v-4.584q0-.44.212-.8t.596-.58l1.923-1.128V13.5q0 1.163.803 1.966q.804.803 1.968.803t1.965-.803t.802-1.966M14 8v5.5q0 .213-.144.356t-.357.144t-.356-.144T13 13.5V3.808q0-.343.232-.576T13.808 3h5.683q.475 0 .712.429q.238.429-.036.833l-.523.784q-.136.205-.136.45t.136.458l.523.785q.273.403.036.832T19.491 8z"
-                ></path>
-              </svg>
-              <h3 className="text-2xl font-bold mb-3 text-blue-700 dark:text-blue-300">
-                {t("securityAwarenessTraining.managed.cards.0.title")}
-              </h3>
-              <ul className="list-disc ml-4 text-gray-700 dark:text-gray-300 text-left space-y-2">
-                <li>
-                  {t("securityAwarenessTraining.managed.cards.0.items.0")}
-                </li>
-                <li>
-                  {t("securityAwarenessTraining.managed.cards.0.items.1")}
-                </li>
-                <li>
-                  {t("securityAwarenessTraining.managed.cards.0.items.2")}
-                </li>
-              </ul>
-            </div>
-            {/* Cloud Services Card */}
-            <div className="relative bg-gradient-to-br from-purple-100 to-blue-100 dark:from-purple-950 dark:to-blue-950 p-10 rounded-3xl shadow-xl border-2 border-purple-200 dark:border-purple-800 flex flex-col items-center group hover:scale-105 transition-all">
-              <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-14 h-14 bg-purple-500/20 dark:bg-purple-900/30 rounded-full blur-xl"></div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={60}
-                height={60}
-                viewBox="0 0 16 16"
-              >
-                <g fill="none">
-                  <path
-                    fill="url(#SVGvye7Ocvj)"
-                    d="M4.03 5.507a4 4 0 0 1 7.94 0A3.25 3.25 0 0 1 11.75 12h-7.5a3.25 3.25 0 0 1-.22-6.493"
-                  ></path>
-                  <path
-                    fill="url(#SVGplNOQedF)"
-                    fillOpacity={0.3}
-                    d="M7.5 8.75a3.25 3.25 0 1 1-6.5 0a3.25 3.25 0 0 1 6.5 0"
-                  ></path>
-                  <path
-                    fill="url(#SVGl0DDYcSn)"
-                    fillOpacity={0.3}
-                    d="M8 10a4 4 0 1 0-3.97-4.493q.11-.007.22-.007a3.25 3.25 0 0 1 3.027 4.435Q7.63 10 8 10"
-                  ></path>
-                  <path
-                    fill="url(#SVGenx0EdAm)"
-                    d="M8 10a4 4 0 1 0-3.97-4.493q.11-.007.22-.007a3.25 3.25 0 0 1 3.027 4.435Q7.63 10 8 10"
-                  ></path>
-                  <path
-                    fill="url(#SVGliSTmcLR)"
-                    fillOpacity={0.5}
-                    d="M4.03 5.507a4 4 0 0 1 7.94 0A3.25 3.25 0 0 1 11.75 12h-7.5a3.25 3.25 0 0 1-.22-6.493"
-                  ></path>
-                  <defs>
-                    <linearGradient
-                      id="SVGvye7Ocvj"
-                      x1={1.5}
-                      x2={7.948}
-                      y1={3.875}
-                      y2={13.254}
-                      gradientUnits="userSpaceOnUse"
+            {(() => {
+              const managedCards = [
+                {
+                  key: "it-strategy",
+                  circleBg: "bg-blue-500/20 dark:bg-blue-900/30",
+                  containerBg:
+                    "bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-950 dark:to-purple-950",
+                  border: "border-blue-200 dark:border-blue-800",
+                  svg: (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={60}
+                      height={60}
+                      viewBox="0 0 24 24"
                     >
-                      <stop stopColor="#0fafff"></stop>
-                      <stop offset={1} stopColor="#367af2"></stop>
-                    </linearGradient>
-                    <linearGradient
-                      id="SVGplNOQedF"
-                      x1={1}
-                      x2={5.382}
-                      y1={6.613}
-                      y2={10.492}
-                      gradientUnits="userSpaceOnUse"
+                      <path
+                        fill="#1447e6"
+                        d="M5.596 10.629L3.404 9.377q-.182-.1-.293-.29Q3 8.895 3 8.674V6.171q0-.22.111-.411t.293-.29l2.192-1.253q.18-.105.401-.105q.22 0 .407.105L8.596 5.47q.182.1.293.291t.111.41v2.504q0 .22-.111.411t-.293.291l-2.192 1.252q-.18.106-.401.106q-.22 0-.407-.106M16.27 13.5V9.777l1.923 1.129q.384.22.596.58t.212.799v4.584q0 .44-.212.8t-.596.579l-3.884 2.268q-.385.217-.811.217t-.805-.217l-3.884-2.268q-.384-.22-.596-.58T8 16.87v-4.584q0-.44.212-.8t.596-.58l1.923-1.128V13.5q0 1.163.803 1.966q.804.803 1.968.803t1.965-.803t.802-1.966M14 8v5.5q0 .213-.144.356t-.357.144t-.356-.144T13 13.5V3.808q0-.343.232-.576T13.808 3h5.683q.475 0 .712.429q.238.429-.036.833l-.523.784q-.136.205-.136.45t.136.458l.523.785q.273.403.036.832T19.491 8z"
+                      ></path>
+                    </svg>
+                  ),
+                  titleKey: "securityAwarenessTraining.managed.cards.0.title",
+                  titleClass: "text-blue-700 dark:text-blue-300",
+                  itemsPrefix:
+                    "securityAwarenessTraining.managed.cards.0.items",
+                },
+                {
+                  key: "cloud-services",
+                  circleBg: "bg-purple-500/20 dark:bg-purple-900/30",
+                  containerBg:
+                    "bg-gradient-to-br from-purple-100 to-blue-100 dark:from-purple-950 dark:to-blue-950",
+                  border: "border-purple-200 dark:border-purple-800",
+                  svg: (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={60}
+                      height={60}
+                      viewBox="0 0 16 16"
                     >
-                      <stop stopColor="#fff"></stop>
-                      <stop
-                        offset={1}
-                        stopColor="#fcfcfc"
-                        stopOpacity={0}
-                      ></stop>
-                    </linearGradient>
-                    <linearGradient
-                      id="SVGl0DDYcSn"
-                      x1={5.412}
-                      x2={6.47}
-                      y1={2.45}
-                      y2={7.965}
-                      gradientUnits="userSpaceOnUse"
+                      <g fill="none">
+                        <path
+                          fill="url(#SVGvye7Ocvj)"
+                          d="M4.03 5.507a4 4 0 0 1 7.94 0A3.25 3.25 0 0 1 11.75 12h-7.5a3.25 3.25 0 0 1-.22-6.493"
+                        ></path>
+                        <path
+                          fill="url(#SVGplNOQedF)"
+                          fillOpacity={0.3}
+                          d="M7.5 8.75a3.25 3.25 0 1 1-6.5 0a3.25 3.25 0 0 1 6.5 0"
+                        ></path>
+                        <path
+                          fill="url(#SVGl0DDYcSn)"
+                          fillOpacity={0.3}
+                          d="M8 10a4 4 0 1 0-3.97-4.493q.11-.007.22-.007a3.25 3.25 0 0 1 3.027 4.435Q7.63 10 8 10"
+                        ></path>
+                        <path
+                          fill="url(#SVGenx0EdAm)"
+                          d="M8 10a4 4 0 1 0-3.97-4.493q.11-.007.22-.007a3.25 3.25 0 0 1 3.027 4.435Q7.63 10 8 10"
+                        ></path>
+                        <path
+                          fill="url(#SVGliSTmcLR)"
+                          fillOpacity={0.5}
+                          d="M4.03 5.507a4 4 0 0 1 7.94 0A3.25 3.25 0 0 1 11.75 12h-7.5a3.25 3.25 0 0 1-.22-6.493"
+                        ></path>
+                        <defs>
+                          <linearGradient
+                            id="SVGvye7Ocvj"
+                            x1={1.5}
+                            x2={7.948}
+                            y1={3.875}
+                            y2={13.254}
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stopColor="#0fafff"></stop>
+                            <stop offset={1} stopColor="#367af2"></stop>
+                          </linearGradient>
+                          <linearGradient
+                            id="SVGplNOQedF"
+                            x1={1}
+                            x2={5.382}
+                            y1={6.613}
+                            y2={10.492}
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stopColor="#fff"></stop>
+                            <stop
+                              offset={1}
+                              stopColor="#fcfcfc"
+                              stopOpacity={0}
+                            ></stop>
+                          </linearGradient>
+                          <linearGradient
+                            id="SVGl0DDYcSn"
+                            x1={5.412}
+                            x2={6.47}
+                            y1={2.45}
+                            y2={7.965}
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stopColor="#fff"></stop>
+                            <stop
+                              offset={1}
+                              stopColor="#fcfcfc"
+                              stopOpacity={0}
+                            ></stop>
+                          </linearGradient>
+                          <radialGradient
+                            id="SVGenx0EdAm"
+                            cx={0}
+                            cy={0}
+                            r={1}
+                            gradientTransform="matrix(4.49228 -1.9 1.69846 4.01577 4.342 8.55)"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop offset={0.412} stopColor="#2c87f5"></stop>
+                            <stop
+                              offset={1}
+                              stopColor="#2c87f5"
+                              stopOpacity={0}
+                            ></stop>
+                          </radialGradient>
+                          <radialGradient
+                            id="SVGliSTmcLR"
+                            cx={0}
+                            cy={0}
+                            r={1}
+                            gradientTransform="matrix(5.39581 11.07954 -79.00581 38.47637 7.417 1.375)"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop
+                              offset={0.5}
+                              stopColor="#dd3ce2"
+                              stopOpacity={0}
+                            ></stop>
+                            <stop offset={1} stopColor="#dd3ce2"></stop>
+                          </radialGradient>
+                        </defs>
+                      </g>
+                    </svg>
+                  ),
+                  titleKey: "securityAwarenessTraining.managed.cards.1.title",
+                  titleClass: "text-purple-700 dark:text-purple-300",
+                  itemsPrefix:
+                    "securityAwarenessTraining.managed.cards.1.items",
+                },
+                {
+                  key: "managed-support",
+                  circleBg: "bg-green-500/20 dark:bg-green-900/30",
+                  containerBg:
+                    "bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-950 dark:to-purple-950",
+                  border: "border-blue-200 dark:border-blue-800",
+                  svg: (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={60}
+                      height={60}
+                      viewBox="0 0 48 48"
                     >
-                      <stop stopColor="#fff"></stop>
-                      <stop
-                        offset={1}
-                        stopColor="#fcfcfc"
-                        stopOpacity={0}
-                      ></stop>
-                    </linearGradient>
-                    <radialGradient
-                      id="SVGenx0EdAm"
-                      cx={0}
-                      cy={0}
-                      r={1}
-                      gradientTransform="matrix(4.49228 -1.9 1.69846 4.01577 4.342 8.55)"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop offset={0.412} stopColor="#2c87f5"></stop>
-                      <stop
-                        offset={1}
-                        stopColor="#2c87f5"
-                        stopOpacity={0}
-                      ></stop>
-                    </radialGradient>
-                    <radialGradient
-                      id="SVGliSTmcLR"
-                      cx={0}
-                      cy={0}
-                      r={1}
-                      gradientTransform="matrix(5.39581 11.07954 -79.00581 38.47637 7.417 1.375)"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop
-                        offset={0.5}
-                        stopColor="#dd3ce2"
-                        stopOpacity={0}
-                      ></stop>
-                      <stop offset={1} stopColor="#dd3ce2"></stop>
-                    </radialGradient>
-                  </defs>
-                </g>
-              </svg>
-              <h3 className="text-2xl font-bold mb-3 text-purple-700 dark:text-purple-300">
-                {t("securityAwarenessTraining.managed.cards.1.title")}
-              </h3>
-              <ul className="list-disc ml-4 text-gray-700 dark:text-gray-300 text-left space-y-2">
-                <li>
-                  {t("securityAwarenessTraining.managed.cards.1.items.0")}
-                </li>
-                <li>
-                  {t("securityAwarenessTraining.managed.cards.1.items.1")}
-                </li>
-                <li>
-                  {t("securityAwarenessTraining.managed.cards.1.items.2")}
-                </li>
-              </ul>
-            </div>
-            {/* Managed Support Card */}
-            <div className="relative bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-950 dark:to-purple-950 p-10 rounded-3xl shadow-xl border-2 border-blue-200 dark:border-blue-800 flex flex-col items-center group hover:scale-105 transition-all">
-              <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-14 h-14 bg-green-500/20 dark:bg-green-900/30 rounded-full blur-xl"></div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={60}
-                height={60}
-                viewBox="0 0 48 48"
-              >
-                <path fill="#bf360c" d="M13 30h22v12H13z"></path>
-                <g fill="#ffa726">
-                  <circle cx={10} cy={26} r={4}></circle>
-                  <circle cx={38} cy={26} r={4}></circle>
-                </g>
-                <path
-                  fill="#ffb74d"
-                  d="M39 19c0-12.7-30-8.3-30 0v10c0 8.3 6.7 15 15 15s15-6.7 15-15z"
-                ></path>
-                <g fill="#784719">
-                  <circle cx={30} cy={26} r={2}></circle>
-                  <circle cx={18} cy={26} r={2}></circle>
-                </g>
-                <path
-                  fill="#ff5722"
-                  d="M24 2C15.5 2 3 7.8 3 35.6L13 42V24l16.8-9.8L35 21v21l10-8.2c0-5.6-.9-29-15.4-29L28.2 2z"
-                ></path>
-                <path
-                  fill="#757575"
-                  d="M45 24c-.6 0-1 .4-1 1v-7c0-8.8-7.2-16-16-16h-9c-.6 0-1 .4-1 1s.4 1 1 1h9c7.7 0 14 6.3 14 14v10c0 .6.4 1 1 1s1-.4 1-1v2c0 3.9-3.1 7-7 7H24c-.6 0-1 .4-1 1s.4 1 1 1h13c5 0 9-4 9-9v-5c0-.6-.4-1-1-1"
-                ></path>
-                <g fill="#37474f">
-                  <path d="M45 22h-1c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h1c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2"></path>
-                  <circle cx={24} cy={38} r={2}></circle>
-                </g>
-              </svg>
-              <h3 className="text-2xl font-bold mb-3 text-green-700 dark:text-green-400">
-                {t("securityAwarenessTraining.managed.cards.2.title")}
-              </h3>
-              <ul className="list-disc ml-4 text-gray-700 dark:text-gray-300 text-left space-y-2">
-                <li>
-                  {t("securityAwarenessTraining.managed.cards.2.items.0")}
-                </li>
-                <li>
-                  {t("securityAwarenessTraining.managed.cards.2.items.1")}
-                </li>
-                <li>
-                  {t("securityAwarenessTraining.managed.cards.2.items.2")}
-                </li>
-              </ul>
-            </div>
+                      <path fill="#bf360c" d="M13 30h22v12H13z"></path>
+                      <g fill="#ffa726">
+                        <circle cx={10} cy={26} r={4}></circle>
+                        <circle cx={38} cy={26} r={4}></circle>
+                      </g>
+                      <path
+                        fill="#ffb74d"
+                        d="M39 19c0-12.7-30-8.3-30 0v10c0 8.3 6.7 15 15 15s15-6.7 15-15z"
+                      ></path>
+                      <g fill="#784719">
+                        <circle cx={30} cy={26} r={2}></circle>
+                        <circle cx={18} cy={26} r={2}></circle>
+                      </g>
+                      <path
+                        fill="#ff5722"
+                        d="M24 2C15.5 2 3 7.8 3 35.6L13 42V24l16.8-9.8L35 21v21l10-8.2c0-5.6-.9-29-15.4-29L28.2 2z"
+                      ></path>
+                      <path
+                        fill="#757575"
+                        d="M45 24c-.6 0-1 .4-1 1v-7c0-8.8-7.2-16-16-16h-9c-.6 0-1 .4-1 1s.4 1 1 1h9c7.7 0 14 6.3 14 14v10c0 .6.4 1 1 1s1-.4 1-1v2c0 3.9-3.1 7-7 7H24c-.6 0-1 .4-1 1s.4 1 1 1h13c5 0 9-4 9-9v-5c0-.6-.4-1-1-1"
+                      ></path>
+                      <g fill="#37474f">
+                        <path d="M45 22h-1c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h1c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2"></path>
+                        <circle cx={24} cy={38} r={2}></circle>
+                      </g>
+                    </svg>
+                  ),
+                  titleKey: "securityAwarenessTraining.managed.cards.2.title",
+                  titleClass: "text-green-700 dark:text-green-400",
+                  itemsPrefix:
+                    "securityAwarenessTraining.managed.cards.2.items",
+                },
+              ];
+
+              return managedCards.map((card) => (
+                <div
+                  key={card.key}
+                  className={`relative bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-950 dark:to-purple-950 p-10 rounded-3xl shadow-xl border-2 border-blue-200 dark:border-blue-800 flex flex-col items-center group hover:scale-105 transition-all`}
+                >
+                  <div
+                    className={`absolute -top-8 left-1/2 -translate-x-1/2 w-14 h-14 bg-blue-500/20 dark:bg-blue-900/30 rounded-full blur-xl`}
+                  />
+                  {card.svg}
+                  <h3
+                    className={`text-2xl font-bold mb-3 text-blue-700 dark:text-blue-300`}
+                  >
+                    {t(card.titleKey)}
+                  </h3>
+                  <ul className="list-disc ml-4 text-gray-700 dark:text-gray-300 text-left space-y-2">
+                    <li>{t(`${card.itemsPrefix}.0`)}</li>
+                    <li>{t(`${card.itemsPrefix}.1`)}</li>
+                    <li>{t(`${card.itemsPrefix}.2`)}</li>
+                  </ul>
+                </div>
+              ));
+            })()}
           </div>
         </section>
 
@@ -662,7 +673,7 @@ const SecurityAwarenessTraining = () => {
                       viewBox="0 0 24 24"
                     >
                       <path
-                        fill="oklch(48.8% 0.243 264.376)"
+                        fill="#1447e6"
                         d="M12 12h7c-.53 4.11-3.28 7.78-7 8.92zH5V6.3l7-3.11M12 1L3 5v6c0 5.55 3.84 10.73 9 12c5.16-1.27 9-6.45 9-12V5z"
                       ></path>
                     </svg>
@@ -687,30 +698,30 @@ const SecurityAwarenessTraining = () => {
                       viewBox="0 0 32 32"
                     >
                       <path
-                        fill="oklch(49.6% 0.265 301.924)"
+                        fill="#1447e6"
                         d="M30 24v-2h-2.101a5 5 0 0 0-.732-1.753l1.49-1.49l-1.414-1.414l-1.49 1.49A5 5 0 0 0 24 18.101V16h-2v2.101a5 5 0 0 0-1.753.732l-1.49-1.49l-1.414 1.414l1.49 1.49A5 5 0 0 0 18.101 22H16v2h2.101a5 5 0 0 0 .732 1.753l-1.49 1.49l1.414 1.414l1.49-1.49a5 5 0 0 0 1.753.732V30h2v-2.101a5 5 0 0 0 1.753-.732l1.49 1.49l1.414-1.414l-1.49-1.49A5 5 0 0 0 27.899 24Zm-7 2a3 3 0 1 1 3-3a3.003 3.003 0 0 1-3 3"
                       ></path>
                       <path
-                        fill="oklch(49.6% 0.265 301.924)"
+                        fill="#1447e6"
                         d="M28 4H4a2 2 0 0 0-2 2v20a2 2 0 0 0 2 2h10v-2H4V12h24v3h2V6a2 2 0 0 0-2-2m0 6H4V6h24Z"
                       ></path>
                       <circle
                         cx={20}
                         cy={8}
                         r={1}
-                        fill="oklch(49.6% 0.265 301.924)"
+                        fill="#1447e6"
                       ></circle>
                       <circle
                         cx={23}
                         cy={8}
                         r={1}
-                        fill="oklch(49.6% 0.265 301.924)"
+                        fill="#1447e6"
                       ></circle>
                       <circle
                         cx={26}
                         cy={8}
                         r={1}
-                        fill="oklch(49.6% 0.265 301.924)"
+                        fill="#1447e6"
                       ></circle>
                     </svg>
                   ),
@@ -734,7 +745,7 @@ const SecurityAwarenessTraining = () => {
                       viewBox="0 0 2048 2048"
                     >
                       <path
-                        fill="oklch(52.7% 0.154 150.069)"
+                        fill="#1447e6"
                         d="M1168 946q38 15 74 33t70 41q-22 24-40 50t-33 56q-77-50-164-76t-179-26q-88 0-170 23t-153 64t-129 100t-100 130t-65 153t-23 170H128q0-120 35-231t101-205t156-167t204-115q-113-74-176-186t-64-248q0-106 40-199t109-163T696 40T896 0t199 40t163 109t110 163t40 200q0 66-16 129t-48 119t-75 103t-101 83M512 512q0 80 30 149t82 122t122 83t150 30q79 0 149-30t122-82t83-122t30-150q0-79-30-149t-82-122t-123-83t-149-30q-80 0-149 30t-122 82t-83 123t-30 149m1472 832q0 52-16 101t-48 91v512l-256-128l-256 128v-512q-31-42-47-91t-17-101q0-66 25-124t68-101t102-69t125-26t124 25t101 69t69 102t26 124m-320-192q-40 0-75 15t-61 41t-41 61t-15 75t15 75t41 61t61 41t75 15t75-15t61-41t41-61t15-75t-15-75t-41-61t-61-41t-75-15m128 689v-204q-60 27-128 27t-128-27v204q32-16 64-31t64-33q32 17 64 32t64 32"
                       ></path>
                     </svg>
@@ -759,12 +770,12 @@ const SecurityAwarenessTraining = () => {
                       className="flex flex-col items-center text-center flex-1"
                     >
                       <span
-                        className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 shadow-lg ${step.bg}`}
+                        className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 shadow-lg bg-blue-100 dark:bg-blue-900`}
                       >
                         {step.icon}
                       </span>
                       <h3
-                        className={`font-bold text-lg mb-2 ${step.titleClass}`}
+                        className={`font-bold text-lg mb-2 text-blue-700 dark:text-blue-300`}
                       >
                         {step.title}
                       </h3>
@@ -775,7 +786,7 @@ const SecurityAwarenessTraining = () => {
                       </ul>
 
                       <span
-                        className={`hidden md:block w-16 h-2 rounded-full mx-auto ${step.connector}`}
+                        className={`hidden md:block w-16 h-2 rounded-full mx-auto bg-blue-200 dark:bg-blue-900`}
                       ></span>
                     </div>
                   ))}
